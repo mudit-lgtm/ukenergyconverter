@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://ukconverter.site/sitemap.xml
+
+# Block any future admin or draft folders
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://energyconverter.netlify.app/sitemap.xml
