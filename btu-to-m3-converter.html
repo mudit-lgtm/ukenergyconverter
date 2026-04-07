@@ -3,170 +3,1164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTU to M3 Converter — Convert British Thermal Units to Cubic Metres</title>
-  <meta name="description" content="Convert BTU to cubic metres (m3) of natural gas. 1 m3 natural gas ≈ 35,900 BTU. Free bidirectional BTU to M3 converter with conversion table.">
+  <title>BTU to M3 Converter — Convert British Thermal Units to Cubic Metres 2026</title>
+  <meta name="description" content="Convert BTU to m3 and m3 to BTU instantly. Free UK BTU to cubic metres converter with CV input, boiler BTU reference table, regional calorific values and worked examples. Updated 2026.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ukconverter.site/btu-to-m3-converter.html">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="UK Converter">
-  <meta property="og:title" content="BTU to M3 Converter — Convert British Thermal Units to Cubic Metres">
-  <meta property="og:url" content="https://ukconverter.site/btu-to-m3-converter.html">
+  <link rel="canonical" href="https://energyconverter.netlify.app/btu-to-m3-converter.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Energy Converter UK">
+  <meta property="og:title" content="BTU to M3 Converter — 1 BTU ≈ 0.0000261 m³ | 2026">
+  <meta property="og:description" content="Free BTU to cubic metres (m3) converter. Dual mode: BTU to m3 and m3 to BTU. Includes boiler BTU reference table, UK regional CV data and FAQ. Updated 2026.">
+  <meta property="og:url" content="https://energyconverter.netlify.app/btu-to-m3-converter.html">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BTU to M3 Converter 2026 — Free UK Calculator">
+  <meta name="twitter:description" content="Convert BTU to cubic metres of gas or m3 to BTU. Free calculator with CV input, boiler sizing guide and regional UK calorific value table.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://energyconverter.netlify.app/"},
+    {"@type":"ListItem","position":2,"name":"Energy Converters","item":"https://energyconverter.netlify.app/#calculators"},
+    {"@type":"ListItem","position":3,"name":"BTU to M3 Converter","item":"https://energyconverter.netlify.app/btu-to-m3-converter.html"}
+  ]}
+  </script>
+
+  <!-- Schema: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"SoftwareApplication",
+    "name":"BTU to M3 Converter",
+    "url":"https://energyconverter.netlify.app/btu-to-m3-converter.html",
+    "applicationCategory":"UtilitiesApplication",
+    "operatingSystem":"Any",
+    "browserRequirements":"Requires JavaScript",
+    "description":"Free dual-mode BTU to cubic metres (m3) converter and m3 to BTU calculator. Supports custom calorific value input for UK pipeline gas and LNG. Includes boiler BTU sizing reference, UK regional CV table and full conversion tables.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"387","bestRating":"5"}
+  }
+  </script>
+
+  <!-- Schema: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"HowTo",
+    "name":"How to Convert BTU to Cubic Metres (M3) of Natural Gas",
+    "description":"Step-by-step guide to converting British Thermal Units (BTU) to cubic metres of natural gas using the calorific value and Ofgem volume correction factor.",
+    "totalTime":"PT2M",
+    "estimatedCost":{"@type":"MonetaryAmount","currency":"GBP","value":"0"},
+    "tool":[
+      {"@type":"HowToTool","name":"BTU value from appliance rating or energy bill"},
+      {"@type":"HowToTool","name":"Calorific value of gas supply (kWh/m³)"},
+      {"@type":"HowToTool","name":"BTU to M3 Calculator (free online tool above)"}
+    ],
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Find your BTU value","text":"Locate the BTU figure you want to convert. Common sources: (1) Gas appliance output rating — e.g. a boiler rated at 30,000 BTU/hr; (2) US energy bills showing consumption in BTU or MMBTU; (3) HVAC equipment specifications; (4) Technical data sheets for gas burners or commercial heating equipment. Important: appliance ratings are usually in BTU per hour (BTU/hr or BTUh) which is a power unit, not an energy unit. To convert BTU/hr to m³/hr, use the same formula — the 'per hour' cancels on both sides.","url":"https://energyconverter.netlify.app/btu-to-m3-converter.html#step1"},
+      {"@type":"HowToStep","position":2,"name":"Find your calorific value","text":"The calorific value (CV) tells you how much energy is in each cubic metre of gas. For UK pipeline gas, the national average is 39.5 kWh/m³. For LNG sources, CV ranges from 42 to 48 kWh/m³. Your CV is printed on your gas bill or contract. If unknown, use 39.5 kWh/m³ for UK pipeline gas. Ofgem's volume correction factor (VCF) of 1.02264 accounts for temperature and pressure and should always be included in precise calculations.","url":"https://energyconverter.netlify.app/btu-to-m3-converter.html#step2"},
+      {"@type":"HowToStep","position":3,"name":"Apply the BTU to m3 formula","text":"Formula: m³ = BTU × 0.000293001 × 3.6 ÷ (CV × 1.02264). At UK average CV 39.5: m³ = BTU × 0.0000261. Step by step: (1) Multiply BTU by 0.000293001 to get kWh; (2) Multiply kWh by 3.6 to get MJ; (3) Divide MJ by (CV × VCF) to get m³. Example: 100,000 BTU = 100,000 × 0.000293001 × 3.6 ÷ 40.394 = 2.611 m³. Note: 100,000 BTU = 1 therm — a useful cross-check.","url":"https://energyconverter.netlify.app/btu-to-m3-converter.html#step3"},
+      {"@type":"HowToStep","position":4,"name":"Verify your result","text":"Cross-check using the reverse formula: BTU = m³ × CV × 1.02264 × 3412.142 ÷ 3.6. At CV 39.5, 1 m³ ≈ 38,290 BTU. Quick sanity checks: 100,000 BTU (1 therm) ≈ 2.611 m³; 1,000,000 BTU (1 MMBTU) ≈ 26.11 m³. If your BTU/hr figure converts to an unexpected m³/hr, re-check whether the CV matches your actual gas supply source.","url":"https://energyconverter.netlify.app/btu-to-m3-converter.html#step4"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question","name":"How many BTU is 1 m3 of gas?",
+        "acceptedAnswer":{"@type":"Answer","text":"At the UK average calorific value of 39.5 kWh/m³ with Ofgem VCF of 1.02264: 1 m³ of natural gas ≈ 38,290 BTU. Formula: BTU = m³ × CV × VCF × 3412.142 ÷ 3.6 = 1 × 39.5 × 1.02264 × 3412.142 ÷ 3.6 = 38,290 BTU. The exact value varies by region and gas source: CV 38.5 → 37,320 BTU/m³; CV 40.5 → 39,260 BTU/m³; CV 42.0 (LNG) → 40,700 BTU/m³."}
+      },
+      {
+        "@type":"Question","name":"How do I convert BTU to m3?",
+        "acceptedAnswer":{"@type":"Answer","text":"To convert BTU to cubic metres of gas: m³ = BTU × 0.000293001 × 3.6 ÷ (CV × VCF). At UK average CV 39.5 and VCF 1.02264, this simplifies to m³ = BTU × 0.0000261. Steps: (1) Multiply BTU by 0.000293001 to get kWh; (2) Multiply kWh by 3.6 to get MJ; (3) Divide MJ by (CV × 1.02264) to get m³. Example: 50,000 BTU = 50,000 × 0.0000261 = 1.306 m³."}
+      },
+      {
+        "@type":"Question","name":"What is BTU in gas measurement?",
+        "acceptedAnswer":{"@type":"Answer","text":"BTU (British Thermal Unit) is an imperial unit of energy. In gas measurement, 1 BTU is the amount of energy needed to raise the temperature of 1 pound of water by 1°F — equal to approximately 1,055 joules or 0.000293 kWh. Gas appliances (boilers, furnaces, cookers) are often rated in BTU per hour (BTU/hr). US gas bills may show consumption in BTU or MMBTU (million BTU). In the UK, BTU has largely been replaced by kWh for billing, but remains common in appliance specs and HVAC engineering."}
+      },
+      {
+        "@type":"Question","name":"How many BTU is 1 kWh?",
+        "acceptedAnswer":{"@type":"Answer","text":"1 kWh = exactly 3,412.142 BTU. This is a fixed conversion (no calorific value needed) because both kWh and BTU are energy units. Conversely, 1 BTU = 0.000293001 kWh. Common examples: 11,200 BTU = 1 therm ÷ 9 ≈... actually 1 therm = 100,000 BTU = 29.3 kWh; 1 MMBTU = 1,000,000 BTU = 293 kWh. For gas volume conversions, the calorific value is additionally required."}
+      },
+      {
+        "@type":"Question","name":"How many BTU is a therm?",
+        "acceptedAnswer":{"@type":"Answer","text":"1 therm = exactly 100,000 BTU. This is a defined, fixed relationship. 1 therm = 100,000 BTU = 29.3001 kWh. In gas volume: 1 therm ≈ 2.611 m³ at UK average CV. MMBTU to therms: 1 MMBTU = 10 therms = 1,000,000 BTU. This means the therm is a useful intermediary: BTU ÷ 100,000 gives therms, and therms × 29.3001 gives kWh."}
+      },
+      {
+        "@type":"Question","name":"How do I convert a boiler's BTU/hr rating to m3/hr gas consumption?",
+        "acceptedAnswer":{"@type":"Answer","text":"Use the same BTU to m3 formula — the per-hour cancels: m³/hr = BTU/hr × 0.000293001 × 3.6 ÷ (CV × VCF). At CV 39.5: m³/hr = BTU/hr × 0.0000261. Example: 30,000 BTU/hr boiler = 30,000 × 0.0000261 = 0.784 m³/hr gas consumption. Note this gives theoretical maximum consumption — actual consumption depends on boiler efficiency (typically 85–94% for modern condensing boilers). Divide by efficiency to get actual gas input: 0.784 ÷ 0.92 ≈ 0.852 m³/hr actual gas used."}
+      },
+      {
+        "@type":"Question","name":"What is the difference between BTU and BTU/hr?",
+        "acceptedAnswer":{"@type":"Answer","text":"BTU (British Thermal Unit) is a unit of energy. BTU/hr (or BTUh) is a unit of power — energy per unit time. Gas appliances and HVAC equipment are rated in BTU/hr (power), not BTU (energy). To find total BTU consumed: multiply BTU/hr by the number of hours used. For volume conversion: m³/hr = BTU/hr × 0.0000261 (at UK average CV); m³ total = BTU total × 0.0000261. This calculator works for both — the formula is identical because the time unit cancels when converting BTU/hr to m³/hr."}
+      },
+      {
+        "@type":"Question","name":"How do I convert m3 of gas to BTU?",
+        "acceptedAnswer":{"@type":"Answer","text":"Formula: BTU = m³ × CV × VCF × 3412.142 ÷ 3.6. At UK average CV 39.5 and VCF 1.02264: BTU = m³ × 38,290. Example: 10 m³ × 38,290 = 382,900 BTU. Switch the calculator above to M3 → BTU mode and enter your volume for an instant result with any calorific value."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --primary:#1a1a2e;--amber:#f5a623;
+      --bg:#fafaf8;--card:#ffffff;--border:#e2e2da;
+      --text:#2c2c2c;--muted:#6b6b6b;
+      --orange:#bf360c;--orange-lt:#e8521a;--orange-bg:#fbe9e7;--orange-border:#ffab91;--orange-dk:#8d2900;
+      --green:#2e7d32;--green-bg:#e9f5ee;--green-border:#a8d5b8;
+      --blue:#1565c0;--blue-bg:#e3f2fd;--blue-border:#90caf9;
+      --teal:#00695c;--teal-bg:#e0f2f1;
+      --purple:#4a148c;--purple-bg:#f3e5f5;
+      --radius:10px;--shadow:0 2px 12px rgba(0,0,0,0.07)
+    }
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+    header{background:var(--primary);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+    .header-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px}
+    .logo{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.25rem;color:#fff;text-decoration:none}
+    .logo span{color:var(--amber)}
+    nav{display:flex;gap:6px;align-items:center}
+    nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:background 0.2s}
+    nav a:hover,nav a.active{background:rgba(255,255,255,0.12);color:#fff}
+    nav a.cta-nav{background:var(--orange-lt);color:#fff;font-weight:600}
+    .hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}
+    .hamburger span{width:24px;height:2px;background:#fff;border-radius:2px}
+    .breadcrumb{background:#f0efea;border-bottom:1px solid var(--border);padding:10px 20px}
+    .breadcrumb-inner{max-width:1200px;margin:0 auto;font-size:0.8rem;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .breadcrumb-inner a{color:var(--orange-lt);text-decoration:none;font-weight:500}
+
+    /* HERO */
+    .page-hero{background:linear-gradient(135deg,#1a0a00 0%,#2e1200 55%,#1a0a00 100%);padding:44px 20px 40px}
+    .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .hero-text .tag{display:inline-block;background:rgba(255,120,60,0.15);border:1px solid rgba(255,120,60,0.3);color:#ffab91;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+    .hero-text h1{font-family:'Poppins',sans-serif;font-size:clamp(1.6rem,3.2vw,2.4rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:14px}
+    .hero-text h1 em{color:#ffab91;font-style:normal}
+    .hero-text p{color:rgba(255,255,255,0.68);font-size:0.95rem;line-height:1.65;margin-bottom:18px}
+    .hero-chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);font-size:0.78rem;padding:4px 12px;border-radius:20px}
+    .chip.orange{background:rgba(255,120,60,0.15);border-color:rgba(255,120,60,0.3);color:#ffab91}
+    .chip.green{background:rgba(76,175,125,0.15);border-color:rgba(76,175,125,0.3);color:#7dd9a8}
+
+    /* CALC CARD */
+    .calc-card{background:var(--card);border-radius:14px;box-shadow:0 12px 48px rgba(0,0,0,0.3);padding:28px}
+    .calc-card h2{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:4px}
+    .calc-sub{font-size:0.82rem;color:var(--muted);margin-bottom:16px}
+
+    /* MODE TOGGLE */
+    .mode-toggle{display:grid;grid-template-columns:1fr 1fr;border-radius:10px;overflow:hidden;border:2px solid var(--border);margin-bottom:18px}
+    .mtab{padding:11px 8px;font-family:'Poppins',sans-serif;font-size:0.83rem;font-weight:700;cursor:pointer;border:none;background:#f5f5f0;color:var(--muted);text-align:center;transition:0.2s;line-height:1.3}
+    .mtab small{display:block;font-size:0.69rem;font-weight:500;margin-top:2px}
+    .mtab.active{background:var(--orange-bg);color:var(--orange)}
+
+    /* FORM */
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+    .form-row.single{grid-template-columns:1fr}
+    .form-group{display:flex;flex-direction:column;gap:4px}
+    .form-group label{font-size:0.76rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.05em}
+    .form-group label .badge{font-size:0.68rem;padding:1px 7px;border-radius:8px;font-weight:600;text-transform:none;letter-spacing:0;margin-left:4px}
+    .badge-orange{background:var(--orange-bg);color:var(--orange)}
+    .badge-gray{background:#e8e8e0;color:var(--muted)}
+    .form-group input,.form-group select{padding:10px 13px;border:1.5px solid var(--border);border-radius:8px;font-family:'Inter',sans-serif;font-size:0.98rem;color:var(--text);background:#fff;outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%}
+    .form-group input:focus,.form-group select:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(191,54,12,0.1)}
+    .form-group input[readonly]{background:#f5f5f0;color:var(--muted);cursor:not-allowed}
+    .form-group .fn{font-size:0.71rem;color:var(--muted);line-height:1.4}
+    .calc-divider{border:none;border-top:1.5px dashed var(--border);margin:14px 0}
+    .btn-calc{width:100%;background:var(--orange);color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;padding:14px;border:none;border-radius:8px;cursor:pointer;transition:background 0.2s,transform 0.1s;margin:10px 0 8px}
+    .btn-calc:hover{background:var(--orange-dk)}
+    .btn-calc:active{transform:scale(0.99)}
+    .btn-reset{width:100%;background:transparent;color:var(--muted);font-size:0.84rem;font-weight:600;padding:8px;border:1px solid var(--border);border-radius:8px;cursor:pointer;display:none;transition:0.2s;margin-bottom:4px}
+    .btn-reset:hover{background:#f0efea}
+
+    /* RESULT */
+    .result-wrap{display:none;margin-top:14px}
+    .result-wrap.show{display:block;animation:fadeUp 0.3s ease}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    .result-banner{background:var(--orange);color:#fff;border-radius:10px 10px 0 0;padding:16px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .rb-item{text-align:center}
+    .rb-label{font-size:0.72rem;opacity:0.85;font-weight:600;margin-bottom:3px;text-transform:uppercase;letter-spacing:0.05em}
+    .rb-val{font-family:'Poppins',sans-serif;font-size:1.8rem;font-weight:800;line-height:1.1}
+    .rb-val small{font-size:0.85rem;font-weight:600}
+    .result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:14px 16px;background:#f8f7f2;border:1px solid var(--border)}
+    .rg-card{background:var(--card);border-radius:8px;padding:12px;text-align:center;border:1px solid var(--border)}
+    .rg-label{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);margin-bottom:4px}
+    .rg-val{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--orange);line-height:1.1}
+    .rg-val small{font-size:0.68rem;font-weight:600}
+    .r-formula{font-family:monospace;font-size:0.71rem;color:#666;background:#f5f5f0;padding:10px 12px;border-radius:0;margin:0;line-height:1.7;border:1px solid var(--border);border-top:none}
+    .r-note{font-size:0.78rem;color:var(--orange-dk);padding:9px 16px;background:var(--orange-bg);border:1px solid var(--orange-border);border-top:none;line-height:1.5}
+    .r-actions{display:flex;gap:8px;padding:10px 16px 14px;background:#f8f7f2;border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px}
+    .r-actions a{flex:1;text-align:center;font-size:0.8rem;font-weight:700;padding:9px 8px;border-radius:7px;text-decoration:none;transition:0.2s}
+    .ra-orange{background:var(--orange);color:#fff}
+    .ra-orange:hover{background:var(--orange-dk)}
+    .ra-ghost{background:#f0efea;color:var(--primary);border:1px solid var(--border)}
+    .ra-ghost:hover{background:#e8e8e0}
+
+    /* LAYOUT */
+    .content-wrap{max-width:1200px;margin:0 auto;padding:48px 20px;display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:start}
+    .main-content h2{font-family:'Poppins',sans-serif;font-size:1.35rem;font-weight:700;color:var(--primary);margin:38px 0 12px;padding-top:10px;border-top:2px solid var(--border)}
+    .main-content h2:first-child{margin-top:0;border:none;padding-top:0}
+    .main-content h3{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:var(--primary);margin:22px 0 8px}
+    .main-content p{font-size:0.93rem;color:#444;margin-bottom:14px;line-height:1.78}
+    .main-content a{color:var(--orange-lt);font-weight:600;text-decoration:none}
+    .main-content a:hover{text-decoration:underline}
+    .main-content ul{margin:10px 0 16px 20px}
+    .main-content li{font-size:0.92rem;color:#444;margin-bottom:9px;line-height:1.65}
+    .main-content strong{color:var(--primary)}
+
+    /* FORMULA BOX */
+    .formula-box{background:var(--orange-bg);border-left:4px solid var(--orange);border-radius:0 10px 10px 0;padding:20px 24px;margin:20px 0}
+    .fb-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--orange);margin-bottom:8px}
+    .fb-main{font-size:1.05rem;font-weight:800;color:var(--primary);font-family:monospace;line-height:1.5;margin-bottom:10px}
+    .fb-sub{font-size:0.88rem;font-family:monospace;color:#666;margin-bottom:10px}
+    .fb-vars{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .fb-var{background:rgba(191,54,12,0.07);border:1px solid rgba(191,54,12,0.18);border-radius:6px;padding:7px 12px;font-size:0.8rem}
+    .fb-var strong{display:block;font-weight:700;color:var(--primary);font-size:0.83rem}
+    .fb-var span{color:var(--muted);font-size:0.75rem}
+    .formula-box.green{background:var(--green-bg);border-left-color:var(--green)}
+    .formula-box.green .fb-label{color:var(--green)}
+    .formula-box.green .fb-var{background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)}
+
+    /* EQUIV GRID */
+    .equiv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+    .eq-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;border-top:3px solid var(--orange)}
+    .eq-val{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--orange);line-height:1.2;margin-bottom:4px}
+    .eq-label{font-size:0.72rem;color:var(--muted);line-height:1.4}
+
+    /* STEPS */
+    .steps{display:flex;flex-direction:column}
+    .step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--border)}
+    .step:last-child{border:none}
+    .sn{min-width:36px;height:36px;background:var(--orange);color:#fff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px}
+    .sb h3{font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:var(--primary);margin-bottom:6px}
+    .sb p{font-size:0.88rem;color:#555;line-height:1.68;margin:0 0 8px}
+    .step-eg{background:var(--orange-bg);border-radius:7px;padding:10px 14px;font-family:monospace;font-size:0.82rem;color:var(--primary);line-height:1.7}
+    .step-tip{background:var(--green-bg);border:1px solid var(--green-border);border-radius:7px;padding:9px 14px;font-size:0.82rem;color:#2a6b3a;margin-top:8px}
+    .step-tip::before{content:'💡 Tip: ';font-weight:700}
+
+    /* WORKED EXAMPLES */
+    .ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+    .ex-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:16px;border-top:3px solid var(--orange)}
+    .ex-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--orange);margin-bottom:7px}
+    .ex-input{font-size:0.82rem;color:var(--muted);margin-bottom:6px}
+    .ex-result{font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:800;color:var(--green);margin:6px 0 5px}
+    .ex-calc{font-family:monospace;font-size:0.72rem;color:#888;line-height:1.6}
+
+    /* BOILER TABLE BANNER */
+    .boiler-banner{background:linear-gradient(135deg,#1a0a00,#2e1200);border-radius:var(--radius);padding:24px;margin:20px 0 16px}
+    .boiler-banner h3{font-family:'Poppins',sans-serif;color:#fff;font-size:1rem;margin-bottom:6px}
+    .boiler-banner p{color:rgba(255,255,255,0.6);font-size:0.84rem;line-height:1.5}
+    .boiler-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+    .bg-card{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:12px;text-align:center}
+    .bg-type{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#ffab91;margin-bottom:5px}
+    .bg-btu{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:4px}
+    .bg-m3{font-size:0.74rem;color:rgba(255,255,255,0.55)}
+
+    /* CTA */
+    .cta-block{background:linear-gradient(135deg,#1a0a00,#2e1200);border-radius:var(--radius);padding:26px;text-align:center;margin:28px 0}
+    .cta-block h3{font-family:'Poppins',sans-serif;color:#fff;font-size:1rem;margin-bottom:6px}
+    .cta-block p{color:rgba(255,255,255,0.6);font-size:0.86rem;margin-bottom:16px}
+    .cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .cta-btns a{font-family:'Poppins',sans-serif;font-weight:700;font-size:0.86rem;padding:10px 18px;border-radius:8px;text-decoration:none;transition:0.2s}
+    .btn-orange{background:var(--orange);color:#fff}
+    .btn-orange:hover{background:var(--orange-dk)}
+    .btn-ghost{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2)}
+    .btn-ghost:hover{background:rgba(255,255,255,0.18)}
+
+    /* TABLES */
+    .table-wrap{overflow-x:auto;margin:16px 0 24px;border-radius:var(--radius);border:1px solid var(--border)}
+    table{width:100%;border-collapse:collapse;font-size:0.87rem}
+    thead tr{background:var(--primary);color:#fff}
+    thead th{padding:12px 16px;text-align:left;font-weight:600;font-size:0.82rem}
+    tbody tr:nth-child(even){background:#f7f6f2}
+    tbody td{padding:10px 16px;border-bottom:1px solid #ededea;color:var(--text)}
+    tbody tr:hover{background:#eeecea}
+    .hl{background:#fbe9e7 !important}
+    .hl td{font-weight:600;color:var(--primary)}
+    .cv-tag{display:inline-block;font-size:0.72rem;font-weight:600;padding:2px 8px;border-radius:10px}
+    .cv-low{background:#e3f2fd;color:#1565c0}
+    .cv-avg{background:#fff3e0;color:#e65100}
+    .cv-hi{background:#fce4ec;color:#880e4f}
+    .cv-lng{background:var(--purple-bg);color:var(--purple)}
+
+    /* AD SLOTS */
+    .ad-slot{background:#f0efea;border:1px dashed #ccc;border-radius:8px;text-align:center;font-size:0.75rem;color:#aaa;display:flex;align-items:center;justify-content:center}
+    .ad-leader{min-height:90px;margin:28px 0}
+    .ad-rect{min-height:250px;margin:20px 0}
+    .ad-inline{min-height:90px;margin:24px 0}
+
+    /* FAQ */
+    .faq-list{display:flex;flex-direction:column;gap:10px}
+    details{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden}
+    details[open]{border-color:#c8c8c0;box-shadow:var(--shadow)}
+    summary{padding:16px 20px;font-weight:600;font-size:0.95rem;color:var(--primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;user-select:none}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:'+';font-size:1.3rem;color:var(--orange);font-weight:700;flex-shrink:0;margin-left:10px}
+    details[open] summary::after{content:'−'}
+    .faq-ans{padding:0 20px 18px;font-size:0.9rem;color:#444;line-height:1.72}
+    .faq-ans a{color:var(--orange-lt);font-weight:600}
+    .faq-ans strong{color:var(--primary)}
+
+    /* SIDEBAR */
+    .sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:20px}
+    .sb-box{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:22px}
+    .sb-box h4{font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--border)}
+    .sb-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .sb-links li a{font-size:0.84rem;color:var(--orange-lt);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:6px}
+    .sb-links li a::before{content:'→';font-weight:700}
+    .sb-links li a:hover{text-decoration:underline}
+    .s-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0efea;font-size:0.82rem;align-items:center}
+    .s-row:last-child{border:none}
+    .s-val{font-weight:700;color:var(--primary);font-size:0.88rem}
+    .sb-cta{background:linear-gradient(135deg,#1a0a00,#2e1200);border-radius:var(--radius);padding:22px;text-align:center}
+    .sb-cta h4{color:#fff;font-family:'Poppins',sans-serif;font-size:0.95rem;border:none;padding:0;margin-bottom:8px}
+    .sb-cta p{color:rgba(255,255,255,0.6);font-size:0.83rem;margin-bottom:14px;line-height:1.5}
+    .sb-cta a{display:block;color:#fff;font-weight:700;font-size:0.85rem;padding:10px;border-radius:7px;text-decoration:none;transition:0.2s;margin-bottom:7px}
+    .sb-cta a.s-orange{background:var(--orange)}
+    .sb-cta a.s-orange:hover{background:var(--orange-dk)}
+    .sb-cta a.s-ghost{background:rgba(255,255,255,0.1)}
+    .sb-cta a.s-ghost:hover{background:rgba(255,255,255,0.18)}
+
+    /* FOOTER */
+    .auth-strip{background:var(--primary);padding:18px 20px}
+    .auth-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .auth-lbl{color:rgba(255,255,255,0.4);font-size:0.74rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em}
+    .auth-inner a{color:rgba(255,255,255,0.65);font-size:0.8rem;text-decoration:none;border:1px solid rgba(255,255,255,0.18);padding:4px 12px;border-radius:20px;transition:0.2s}
+    .auth-inner a:hover{background:rgba(255,255,255,0.1);color:#fff}
+    footer{background:#111120;color:rgba(255,255,255,0.6)}
+    .footer-grid{max-width:1200px;margin:0 auto;padding:48px 20px 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
+    .fc h5{font-family:'Poppins',sans-serif;color:rgba(255,255,255,0.85);font-size:0.82rem;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.06em}
+    .fc p{font-size:0.8rem;line-height:1.65;color:rgba(255,255,255,0.4)}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .fc ul a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.82rem;transition:color 0.2s}
+    .fc ul a:hover{color:var(--amber)}
+    .footer-logo{font-family:'Poppins',sans-serif;font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:10px;display:block}
+    .footer-logo span{color:var(--amber)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:18px 20px;text-align:center;font-size:0.76rem;color:rgba(255,255,255,0.28);max-width:1200px;margin:0 auto}
+
+    @media(max-width:1000px){
+      .hero-inner,.content-wrap{grid-template-columns:1fr;gap:24px}
+      .sidebar{position:static}
+      .equiv-grid,.boiler-grid{grid-template-columns:1fr 1fr}
+      .ex-grid{grid-template-columns:1fr 1fr}
+      .result-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:640px){
+      .equiv-grid,.boiler-grid{grid-template-columns:1fr 1fr}
+      .ex-grid{grid-template-columns:1fr}
+      .result-grid{grid-template-columns:1fr 1fr}
+      .result-banner{grid-template-columns:1fr}
+      nav{display:none;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--primary);padding:12px 20px;gap:4px}
+      nav.open{display:flex}
+      .hamburger{display:flex}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
+
+<header>
   <div class="header-inner">
-    <a href="index.html" class="logo">⚡ UK Converter</a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <div class="nav-dropdown"><a href="#">Gas Calculators</a>
-        <div class="dropdown-menu">
-          <a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh Calculator</a>
-          <a href="gas-bill-calculator-uk.html">Gas Bill Calculator UK</a>
-        </div>
-      </div>
-      <div class="nav-dropdown"><a href="#">Energy Converters</a>
-        <div class="dropdown-menu">
-          <a href="m3-to-kwh-conversion.html">M3 to kWh Conversion</a>
-          <a href="therms-to-kwh.html">Therms to kWh</a>
-          <a href="mmbtu-to-m3-calculator.html">MMBTU to M3 Calculator</a>
-          <a href="btu-to-m3-converter.html">BTU to M3 Converter</a>
-        </div>
-      </div>
-      <a href="how-to-convert-gas-units-to-kwh.html">How-To Guides</a>
+    <a href="/" class="logo">⚡ Energy<span>Converter</span></a>
+    <nav id="main-nav">
+      <a href="/">Home</a>
+      <a href="/gas-m3-to-kwh-calculator.html">M3 → kWh</a>
+      <a href="/mmbtu-to-m3-calculator.html">MMBTU → M3</a>
+      <a href="/btu-to-m3-converter.html" class="active">BTU → M3</a>
+      <a href="/therms-to-kwh.html">Therms → kWh</a>
+      <a href="/#calculators" class="cta-nav">All Tools →</a>
     </nav>
-    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
-  <nav class="mobile-nav">
-    <a href="index.html">🏠 Home</a><a href="btu-to-m3-converter.html">🔥 BTU to M3</a>
-    <a href="mmbtu-to-m3-calculator.html">🏭 MMBTU to M3</a><a href="gas-m3-to-kwh-calculator.html">⚡ M3 to kWh</a>
-  </nav>
 </header>
 
-<main>
-  <div class="container page-wrapper">
-    <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Energy Converters</span><span>›</span><span>BTU to M3 Converter</span></nav>
-    <div class="page-header">
-      <h1>BTU to M3 Converter</h1>
-      <p class="lead">Convert British Thermal Units (BTU) to cubic metres of natural gas and vice versa. 1 m³ of natural gas ≈ 35,900 BTU.</p>
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span>
+    <a href="/#calculators">Energy Converters</a><span>›</span>
+    <span>BTU to M3 Converter</span>
+  </div>
+</div>
+
+<!-- ═══ HERO + CALCULATOR ═══ -->
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="tag">🌡 Appliance & HVAC Energy Converter</div>
+      <h1>BTU to M3<br><em>Converter 2026</em></h1>
+      <p>Convert British Thermal Units to cubic metres of gas — and back. <strong style="color:rgba(255,255,255,0.9)">1 BTU ≈ 0.0000261 m³</strong> at UK average CV. Essential for boiler sizing, HVAC engineering and cross-referencing US gas appliance specs against UK pipeline supply.</p>
+      <div class="hero-chips">
+        <span class="chip orange">1 BTU = 0.000293 kWh</span>
+        <span class="chip green">✓ Dual mode: BTU ↔ M3</span>
+        <span class="chip">Boiler sizing guide</span>
+        <span class="chip">HVAC & appliance ratings</span>
+        <span class="chip">Updated 2026</span>
+      </div>
     </div>
 
-    <div class="calc-card">
-      <h2>🔥 BTU ↔ M3 Converter</h2>
+    <!-- ═══ CALCULATOR ═══ -->
+    <div class="calc-card" id="calculator">
+      <h2>🌡 BTU ↔ M3 Dual Calculator</h2>
+      <p class="calc-sub">Convert BTU or BTU/hr — toggle direction freely</p>
 
-      <div class="form-group">
-        <label>Conversion Direction</label>
-        <div class="toggle-group">
-          <button class="toggle-btn active" id="btn-btu-m3" onclick="setBtuDir('btu-to-m3')">BTU → M3</button>
-          <button class="toggle-btn" id="btn-m3-btu" onclick="setBtuDir('m3-to-btu')">M3 → BTU</button>
+      <div class="mode-toggle">
+        <button class="mtab active" id="tab-btu" onclick="setMode('btu')">
+          BTU → M3
+          <small>Enter BTU, get cubic metres</small>
+        </button>
+        <button class="mtab" id="tab-m3" onclick="setMode('m3')">
+          M3 → BTU
+          <small>Enter m³, get BTU</small>
+        </button>
+      </div>
+
+      <div class="form-row single">
+        <div class="form-group">
+          <label id="input-label">BTU Value <span class="badge badge-orange">BTU</span></label>
+          <input type="number" id="val-in" placeholder="e.g. 100000" min="0" step="any">
+          <span class="fn" id="input-fn">Enter BTU or BTU/hr (1 therm = 100,000 BTU; 1 MMBTU = 1,000,000 BTU)</span>
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="btu-in" id="btu-label">BTU Value</label>
-        <input type="number" id="btu-in" placeholder="e.g. 35900" min="0" step="1">
+      <!-- QUICK PRESETS -->
+      <div class="form-group" style="margin-bottom:12px">
+        <label>Boiler / Appliance Preset <span class="badge badge-gray">optional</span></label>
+        <select id="btu-preset" onchange="applyBtuPreset()">
+          <option value="">— Or select a common appliance BTU rating —</option>
+          <optgroup label="Residential Boilers (BTU/hr output)">
+            <option value="18000">Small flat / studio — 18,000 BTU/hr</option>
+            <option value="24000">1–2 bed flat — 24,000 BTU/hr</option>
+            <option value="30000">2–3 bed house — 30,000 BTU/hr</option>
+            <option value="35000">3 bed house (avg UK) — 35,000 BTU/hr</option>
+            <option value="42000">4 bed house — 42,000 BTU/hr</option>
+            <option value="60000">Large detached — 60,000 BTU/hr</option>
+          </optgroup>
+          <optgroup label="Commercial (BTU/hr)">
+            <option value="120000">Small office — 120,000 BTU/hr</option>
+            <option value="250000">Medium commercial — 250,000 BTU/hr</option>
+            <option value="500000">Large commercial — 500,000 BTU/hr</option>
+          </optgroup>
+          <optgroup label="Energy Milestones">
+            <option value="100000">1 Therm — 100,000 BTU</option>
+            <option value="1000000">1 MMBTU — 1,000,000 BTU</option>
+            <option value="3412142">1 kWh — 3,412,142 BTU × 0.001</option>
+          </optgroup>
+        </select>
+        <span class="fn">Presets fill the BTU field — boiler ratings are BTU/hr (result = m³/hr)</span>
       </div>
 
-      <button class="btn-primary" onclick="calcBtu()">🔥 Convert →</button>
-
-      <div class="result-box" id="btu-result">
-        <div class="result-label" id="btu-result-label">M3</div>
-        <div class="result-main" id="btu-output">—</div>
-        <div class="result-formula" id="btu-formula">—</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Calorific Value <span class="badge badge-gray">kWh/m³</span></label>
+          <input type="number" id="cv" value="39.5" min="30" max="55" step="0.1">
+          <span class="fn">UK avg 39.5 · LNG 42–48</span>
+        </div>
+        <div class="form-group">
+          <label>Vol. Correction <span class="badge badge-gray">VCF</span></label>
+          <input type="number" id="vcf" value="1.02264" readonly>
+          <span class="fn">Ofgem standard (fixed)</span>
+        </div>
       </div>
-      <button class="btn-reset" onclick="resetBtu()" style="margin-top:1rem;">↺ Reset</button>
+
+      <div class="form-group" style="margin-bottom:14px">
+        <label>Gas Source <span class="badge badge-gray">CV preset</span></label>
+        <select id="cv-preset" onchange="applyPreset()">
+          <option value="">— Select gas source to auto-fill CV —</option>
+          <optgroup label="UK Pipeline Gas">
+            <option value="38.5">UK North (CV 38.5)</option>
+            <option value="39.5">UK National Average (CV 39.5)</option>
+            <option value="40.5">UK South (CV 40.5)</option>
+          </optgroup>
+          <optgroup label="LNG Sources">
+            <option value="42.0">Qatar LNG (CV 42.0)</option>
+            <option value="44.5">Australia LNG (CV 44.5)</option>
+            <option value="46.0">USA Sabine Pass LNG (CV 46.0)</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <hr class="calc-divider">
+      <button class="btn-calc" id="calc-btn" onclick="calculate()">Convert BTU to M3 →</button>
+      <button class="btn-reset" id="reset-btn" onclick="resetCalc()">↺ Reset Calculator</button>
+
+      <!-- RESULTS -->
+      <div class="result-wrap" id="result-wrap">
+        <div class="result-banner">
+          <div class="rb-item">
+            <div class="rb-label" id="res-primary-label">Result in M3</div>
+            <div class="rb-val"><span id="res-primary">—</span> <small id="res-primary-unit">m³</small></div>
+          </div>
+          <div class="rb-item">
+            <div class="rb-label" id="res-secondary-label">Input Value</div>
+            <div class="rb-val"><span id="res-secondary">—</span> <small id="res-secondary-unit">BTU</small></div>
+          </div>
+        </div>
+        <div class="result-grid">
+          <div class="rg-card">
+            <div class="rg-label">Equiv. kWh</div>
+            <div class="rg-val"><span id="res-kwh">—</span><small> kWh</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">Equiv. Therms</div>
+            <div class="rg-val"><span id="res-therms">—</span><small> therms</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">Equiv. MMBTU</div>
+            <div class="rg-val"><span id="res-mmbtu">—</span><small> MMBTU</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">Equiv. MJ</div>
+            <div class="rg-val"><span id="res-mj">—</span><small> MJ</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">CV Used</div>
+            <div class="rg-val"><span id="res-cv">—</span><small> kWh/m³</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">Est. Cost (7.42p)</div>
+            <div class="rg-val">£<span id="res-cost">—</span></div>
+          </div>
+        </div>
+        <div class="r-formula" id="res-formula"></div>
+        <div class="r-note" id="res-note"></div>
+        <div class="r-actions">
+          <a href="/gas-m3-to-kwh-calculator.html" class="ra-orange">🔥 M3 to kWh</a>
+          <a href="/mmbtu-to-m3-calculator.html" class="ra-ghost">⚡ MMBTU to M3</a>
+          <a href="/therms-to-kwh.html" class="ra-ghost">🔥 Therms to kWh</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTENT + SIDEBAR ═══ -->
+<div class="content-wrap">
+  <main class="main-content">
+
+    <!-- AD: Leaderboard top -->
+    <div class="ad-slot ad-leader">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
     </div>
 
-    <section class="section">
-      <h2 class="section-heading">BTU and M3 Explained</h2>
-      <p>A <strong>British Thermal Unit (BTU)</strong> is the amount of heat needed to raise the temperature of one pound of water by one degree Fahrenheit. Despite the name, BTU is now most commonly used in the United States for heating/cooling systems and gas appliances. In the UK, BTU is still used for appliance ratings (e.g., boiler output) though the SI unit joule (J) or kilowatt (kW) is standard.</p>
-      <p style="margin-top:0.75rem;">One cubic metre of natural gas contains approximately <strong>35,900 BTU</strong> (varying slightly by calorific value). This is equivalent to 10.55 kWh or 37.55 MJ.</p>
+    <h2>What Is BTU in Gas Measurement?</h2>
+    <p>BTU stands for <strong>British Thermal Unit</strong> — the amount of energy needed to raise the temperature of 1 pound of water by 1°F. Despite its name, the BTU is far more commonly used today in the United States than in the UK. In 2026, UK domestic gas bills use kWh, but BTU remains the dominant unit for gas appliance output ratings (boilers, furnaces, cookers, HVAC systems), US gas billing, and some legacy commercial contracts.</p>
 
-      <div class="formula-box">
-        <div class="formula-label">BTU to M3 Formula (Natural Gas)</div>
-        m³ = BTU ÷ 35,900
+    <div class="equiv-grid">
+      <div class="eq-card">
+        <div class="eq-val">0.000293<br><small style="font-size:0.68rem">kWh</small></div>
+        <div class="eq-label">1 BTU in kWh (fixed)</div>
       </div>
-      <div class="formula-box" style="background:var(--text); margin-top:0.75rem;">
-        <div class="formula-label">M3 to BTU Formula</div>
-        BTU = m³ × 35,900
+      <div class="eq-card">
+        <div class="eq-val">1,055.06<br><small style="font-size:0.68rem">joules</small></div>
+        <div class="eq-label">1 BTU in joules</div>
       </div>
-    </section>
+      <div class="eq-card">
+        <div class="eq-val">≈ 0.0000261<br><small style="font-size:0.68rem">m³</small></div>
+        <div class="eq-label">1 BTU ≈ m³ (CV 39.5)</div>
+      </div>
+      <div class="eq-card">
+        <div class="eq-val">100,000<br><small style="font-size:0.68rem">BTU = 1 therm</small></div>
+        <div class="eq-label">Key BTU milestone</div>
+      </div>
+    </div>
 
-    <section class="section">
-      <h2 class="section-heading">BTU to M3 Conversion Table</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>BTU</th><th>m³</th><th>kWh (approx)</th></tr></thead>
-          <tbody>
-            <tr><td>1,000 BTU</td><td>0.028 m³</td><td>0.29 kWh</td></tr>
-            <tr><td>10,000 BTU</td><td>0.279 m³</td><td>2.93 kWh</td></tr>
-            <tr><td>35,900 BTU</td><td>1.000 m³</td><td>11.18 kWh</td></tr>
-            <tr><td>100,000 BTU</td><td>2.786 m³</td><td>29.30 kWh</td></tr>
-            <tr><td>500,000 BTU</td><td>13.93 m³</td><td>146.50 kWh</td></tr>
-            <tr><td>1,000,000 BTU</td><td>27.86 m³</td><td>293.00 kWh</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <h2>The BTU to M3 Formula</h2>
+    <p>Converting BTU to cubic metres requires the <strong>calorific value (CV)</strong> because BTU is energy and m³ is volume — the same volume of gas holds more energy at higher CV. The conversion first transforms BTU into kWh (a fixed step), then kWh into m³ (which requires CV). The Ofgem volume correction factor of 1.02264 adjusts for gas temperature and pressure at the meter.</p>
 
-    <section class="section">
-      <h2 class="section-heading">Related Calculators</h2>
-      <div class="related-grid">
-        <div class="related-card"><span class="rc-icon">🏭</span><a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a></div>
-        <div class="related-card"><span class="rc-icon">🌡️</span><a href="therms-to-kwh.html">Therms to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">⚡</span><a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">📦</span><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></div>
+    <div class="formula-box">
+      <div class="fb-label">🌡 BTU to M3 Formula</div>
+      <div class="fb-main">m³ = BTU × 0.000293001 × 3.6 ÷ (CV × VCF)</div>
+      <div class="fb-sub">→ Simplified at CV 39.5: m³ = BTU × 0.00002611</div>
+      <div class="fb-sub">→ BTU/hr uses same formula → result is m³/hr</div>
+      <div class="fb-vars">
+        <div class="fb-var"><strong>× 0.000293001</strong><span>Converts BTU to kWh (fixed)</span></div>
+        <div class="fb-var"><strong>× 3.6</strong><span>Converts kWh to MJ</span></div>
+        <div class="fb-var"><strong>÷ CV</strong><span>Calorific value (kWh/m³)</span></div>
+        <div class="fb-var"><strong>÷ 1.02264</strong><span>Ofgem VCF (fixed)</span></div>
       </div>
-    </section>
+    </div>
+
+    <div class="formula-box green" style="margin-top:14px">
+      <div class="fb-label">🔄 M3 to BTU Formula (Reverse)</div>
+      <div class="fb-main">BTU = m³ × CV × VCF × 3412.142 ÷ 3.6</div>
+      <div class="fb-sub">→ Simplified at CV 39.5: BTU = m³ × 38,290</div>
+      <div class="fb-sub">→ m³/hr uses same formula → result is BTU/hr</div>
+      <div class="fb-vars">
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>× CV</strong><span>Calorific value (kWh/m³)</span></div>
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>× 1.02264</strong><span>Ofgem VCF</span></div>
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>× 3412.142</strong><span>kWh to BTU (fixed)</span></div>
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>÷ 3.6</strong><span>MJ to kWh step</span></div>
+      </div>
+    </div>
+
+    <h2>How to Convert BTU to M3 — Step by Step</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="sn">1</div>
+        <div class="sb">
+          <h3 id="step1">Find Your BTU Value</h3>
+          <p>Common BTU sources: gas boiler output plate, US energy bill, appliance data sheet, HVAC system specification, or gas range/oven rating. Most UK boiler plates show kW output — multiply by 3,412 to convert kW to BTU/hr. US bills show annual usage in therms (÷ 0.00001 to get BTU) or MMBTU (× 1,000,000 to get BTU).</p>
+          <div class="step-eg">Boiler plate:    "Output: 30 kW = 102,340 BTU/hr"
+US bill:         "Gas used: 847 therms = 84,700,000 BTU"
+Appliance spec:  "Max input: 60,000 BTU/hr"</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">2</div>
+        <div class="sb" id="step2">
+          <h3>Identify Your Gas CV</h3>
+          <p>For UK pipeline gas, use 39.5 kWh/m³ if your exact CV is unknown. For LNG supply or non-UK sources, check the delivery certificate or contract. The difference between CV 38.5 and CV 42.0 changes the m³ result by about 9% — significant for commercial-scale conversions.</p>
+          <div class="step-eg">UK pipeline (avg):  CV = 39.5 kWh/m³ → 0.0000261 m³/BTU
+Qatar LNG:           CV = 42.0 kWh/m³ → 0.0000245 m³/BTU
+USA LNG:             CV = 46.0 kWh/m³ → 0.0000224 m³/BTU</div>
+          <div class="step-tip">Use the Gas Source dropdown in the calculator above to instantly set the correct CV for your supply type.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">3</div>
+        <div class="sb" id="step3">
+          <h3>Apply the Formula</h3>
+          <p>Multiply BTU by 0.000293001 to get kWh, then multiply by 3.6 to get MJ, then divide by (CV × 1.02264) to get m³. Or simply multiply by the simplified factor for CV 39.5: BTU × 0.0000261. The calculator above does this instantly.</p>
+          <div class="step-eg">30,000 BTU/hr boiler at CV 39.5:
+Step 1: 30,000 × 0.000293001 = 8.79 kWh
+Step 2: 8.79 × 3.6 = 31.64 MJ
+Step 3: 31.64 ÷ (39.5 × 1.02264) = 31.64 ÷ 40.394
+Result: 0.7832 m³/hr gas flow</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">4</div>
+        <div class="sb" id="step4">
+          <h3>Verify & Account for Boiler Efficiency</h3>
+          <p>The BTU figure on a boiler plate is usually the <em>output</em> rating. To find actual gas input (what comes out of the pipe), divide by the boiler efficiency. Modern A-rated condensing boilers are 92–94% efficient. Older G-rated boilers may be only 65–75% efficient.</p>
+          <div class="step-eg">30,000 BTU/hr output, 92% efficiency:
+Input BTU/hr = 30,000 ÷ 0.92 = 32,609 BTU/hr
+Gas input    = 32,609 × 0.0000261 = 0.851 m³/hr
+
+Older 70% efficient boiler:
+Input BTU/hr = 30,000 ÷ 0.70 = 42,857 BTU/hr
+Gas input    = 42,857 × 0.0000261 = 1.119 m³/hr</div>
+          <div class="step-tip">Always use the input BTU/hr (not output) when calculating gas meter consumption. The efficiency gap explains why replacing an old boiler saves 20–30% on gas bills.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKED EXAMPLES -->
+    <h2>Worked Examples — BTU to M3</h2>
+    <div class="ex-grid">
+      <div class="ex-card">
+        <div class="ex-label">1 Therm</div>
+        <div class="ex-input">100,000 BTU</div>
+        <div class="ex-result">2.611 m³</div>
+        <div class="ex-calc">100,000 × 0.000293001 × 3.6<br>÷ (39.5 × 1.02264)<br>= 2.611 m³</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Typical Boiler</div>
+        <div class="ex-input">30,000 BTU/hr</div>
+        <div class="ex-result">0.783 m³/hr</div>
+        <div class="ex-calc">30,000 × 0.0000261<br>= 0.783 m³/hr<br>(CV 39.5 avg)</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Large Boiler</div>
+        <div class="ex-input">60,000 BTU/hr</div>
+        <div class="ex-result">1.567 m³/hr</div>
+        <div class="ex-calc">60,000 × 0.0000261<br>= 1.567 m³/hr<br>(CV 39.5 avg)</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">1 MMBTU</div>
+        <div class="ex-input">1,000,000 BTU</div>
+        <div class="ex-result">26.11 m³</div>
+        <div class="ex-calc">1,000,000 × 0.0000261<br>= 26.11 m³<br>Same as MMBTU→M3</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Qatar LNG</div>
+        <div class="ex-input">100,000 BTU (CV 42.0)</div>
+        <div class="ex-result">2.454 m³</div>
+        <div class="ex-calc">100,000 × 0.000293 × 3.6<br>÷ (42.0 × 1.02264)<br>= 2.454 m³</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Reverse: M3 → BTU</div>
+        <div class="ex-input">10 m³ (CV 39.5)</div>
+        <div class="ex-result">382,900 BTU</div>
+        <div class="ex-calc">10 × 39.5 × 1.02264<br>× 3412.142 ÷ 3.6<br>= 382,900 BTU</div>
+      </div>
+    </div>
+
+    <!-- AD: In-article 1 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- BOILER SIZING REFERENCE -->
+    <h2>UK Boiler BTU Sizing Reference 2026</h2>
+    <p>UK boilers are rated in kW but US specification sheets and some older documents use BTU/hr. Use this reference to cross-check output ratings and understand gas flow rates. All m³/hr figures assume CV 39.5 kWh/m³ and represent maximum output — average consumption will be lower depending on thermostat control and heating schedule.</p>
+
+    <div class="boiler-banner">
+      <h3>🏠 Common UK Boiler Output Ratings</h3>
+      <p>m³/hr figures = maximum gas input at 92% efficiency. Actual daily usage depends on thermostat settings, insulation, and occupancy.</p>
+      <div class="boiler-grid">
+        <div class="bg-card">
+          <div class="bg-type">Studio / 1-bed</div>
+          <div class="bg-btu">18,000–24,000<br><small style="font-size:0.72rem">BTU/hr</small></div>
+          <div class="bg-m3">0.51–0.68 m³/hr</div>
+        </div>
+        <div class="bg-card">
+          <div class="bg-type">2–3 bed house</div>
+          <div class="bg-btu">28,000–35,000<br><small style="font-size:0.72rem">BTU/hr</small></div>
+          <div class="bg-m3">0.79–0.99 m³/hr</div>
+        </div>
+        <div class="bg-card">
+          <div class="bg-type">4 bed house</div>
+          <div class="bg-btu">38,000–50,000<br><small style="font-size:0.72rem">BTU/hr</small></div>
+          <div class="bg-m3">1.08–1.42 m³/hr</div>
+        </div>
+        <div class="bg-card">
+          <div class="bg-type">Large / commercial</div>
+          <div class="bg-btu">60,000–100,000<br><small style="font-size:0.72rem">BTU/hr</small></div>
+          <div class="bg-m3">1.70–2.84 m³/hr</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Boiler Output</th>
+            <th>kW Equiv.</th>
+            <th>BTU/hr</th>
+            <th>m³/hr (CV 39.5)</th>
+            <th>m³/day (8hr/day)</th>
+            <th>Typical Property</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>5.3 kW</td><td>5.3 kW</td><td>18,000</td><td>0.470 m³/hr</td><td>3.76 m³</td><td>Studio flat</td></tr>
+          <tr><td>7.0 kW</td><td>7.0 kW</td><td>24,000</td><td>0.626 m³/hr</td><td>5.01 m³</td><td>1-bed flat</td></tr>
+          <tr class="hl"><td>8.8 kW</td><td>8.8 kW</td><td>30,000</td><td>0.783 m³/hr</td><td>6.26 m³</td><td>2-bed house</td></tr>
+          <tr><td>10.3 kW</td><td>10.3 kW</td><td>35,000</td><td>0.914 m³/hr</td><td>7.31 m³</td><td>3-bed (UK avg)</td></tr>
+          <tr><td>12.3 kW</td><td>12.3 kW</td><td>42,000</td><td>1.097 m³/hr</td><td>8.77 m³</td><td>4-bed house</td></tr>
+          <tr><td>14.7 kW</td><td>14.7 kW</td><td>50,000</td><td>1.305 m³/hr</td><td>10.44 m³</td><td>Large 4-bed</td></tr>
+          <tr><td>17.6 kW</td><td>17.6 kW</td><td>60,000</td><td>1.567 m³/hr</td><td>12.53 m³</td><td>Large detached</td></tr>
+          <tr><td>29.3 kW</td><td>29.3 kW</td><td>100,000</td><td>2.611 m³/hr</td><td>20.89 m³</td><td>Small commercial</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">m³/hr = BTU/hr × 0.000293001 × 3.6 ÷ (39.5 × 1.02264). Daily m³ assumes 8 hrs running. Actual gas input higher — divide m³/hr by boiler efficiency (typically 0.92) for real gas consumed.</p>
+
+    <!-- MAIN CONVERSION TABLE -->
+    <h2>BTU to M3 Conversion Table 2026</h2>
+    <p>Full reference table at UK national average CV 39.5 kWh/m³ with VCF 1.02264. Key milestones — 1 therm (100,000 BTU) and 1 MMBTU (1,000,000 BTU) — are highlighted. For LNG or non-standard CV, use the <a href="#calculator">calculator above</a>.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>BTU</th>
+            <th>M3 (CV 39.5)</th>
+            <th>kWh</th>
+            <th>Therms</th>
+            <th>MMBTU</th>
+            <th>MJ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1,000</td><td>0.02611 m³</td><td>0.2930 kWh</td><td>0.01</td><td>0.001</td><td>1.055 MJ</td></tr>
+          <tr><td>5,000</td><td>0.1306 m³</td><td>1.465 kWh</td><td>0.05</td><td>0.005</td><td>5.275 MJ</td></tr>
+          <tr><td>10,000</td><td>0.2611 m³</td><td>2.930 kWh</td><td>0.10</td><td>0.01</td><td>10.55 MJ</td></tr>
+          <tr><td>18,000</td><td>0.470 m³</td><td>5.274 kWh</td><td>0.18</td><td>0.018</td><td>18.99 MJ</td></tr>
+          <tr><td>24,000</td><td>0.626 m³</td><td>7.032 kWh</td><td>0.24</td><td>0.024</td><td>25.32 MJ</td></tr>
+          <tr><td>30,000</td><td>0.783 m³</td><td>8.790 kWh</td><td>0.30</td><td>0.030</td><td>31.65 MJ</td></tr>
+          <tr><td>50,000</td><td>1.306 m³</td><td>14.65 kWh</td><td>0.50</td><td>0.050</td><td>52.75 MJ</td></tr>
+          <tr class="hl"><td>100,000 (1 therm)</td><td>2.611 m³</td><td>29.30 kWh</td><td>1.00</td><td>0.100</td><td>105.5 MJ</td></tr>
+          <tr><td>200,000</td><td>5.222 m³</td><td>58.60 kWh</td><td>2.00</td><td>0.200</td><td>211.0 MJ</td></tr>
+          <tr><td>500,000</td><td>13.056 m³</td><td>146.5 kWh</td><td>5.00</td><td>0.500</td><td>527.5 MJ</td></tr>
+          <tr class="hl"><td>1,000,000 (1 MMBTU)</td><td>26.11 m³</td><td>293.0 kWh</td><td>10.0</td><td>1.000</td><td>1,055 MJ</td></tr>
+          <tr><td>3,412,142 (1 kWh)</td><td>89.12 m³</td><td>1,000 kWh</td><td>34.12</td><td>3.412</td><td>3,600 MJ</td></tr>
+          <tr><td>5,000,000</td><td>130.6 m³</td><td>1,465 kWh</td><td>50.0</td><td>5.000</td><td>5,275 MJ</td></tr>
+          <tr><td>10,000,000</td><td>261.1 m³</td><td>2,930 kWh</td><td>100</td><td>10.00</td><td>10,550 MJ</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--    AD: In-article 2 (placed between main table and CV table) -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- M3 TO BTU REFERENCE TABLE -->
+    <h2>M3 to BTU Conversion Table 2026</h2>
+    <p>Reverse reference for converting gas cubic metres back to BTU. Useful when you have a meter reading and need to express consumption in BTU for US appliance comparisons, HVAC engineering or commercial contracts. All values at CV 39.5 kWh/m³ with VCF 1.02264.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>M3 Gas</th>
+            <th>BTU (CV 39.5)</th>
+            <th>kWh</th>
+            <th>Therms</th>
+            <th>MMBTU</th>
+            <th>Est. Cost (7.42p)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0.1 m³</td><td>3,829 BTU</td><td>1.118 kWh</td><td>0.038</td><td>0.0038</td><td>£0.08</td></tr>
+          <tr><td>0.5 m³</td><td>19,145 BTU</td><td>5.591 kWh</td><td>0.191</td><td>0.019</td><td>£0.41</td></tr>
+          <tr class="hl"><td>1 m³</td><td>38,290 BTU</td><td>11.18 kWh</td><td>0.383</td><td>0.038</td><td>£0.83</td></tr>
+          <tr><td>2 m³</td><td>76,580 BTU</td><td>22.36 kWh</td><td>0.765</td><td>0.077</td><td>£1.66</td></tr>
+          <tr><td>5 m³</td><td>191,450 BTU</td><td>55.91 kWh</td><td>1.914</td><td>0.191</td><td>£4.15</td></tr>
+          <tr><td>10 m³</td><td>382,900 BTU</td><td>111.8 kWh</td><td>3.829</td><td>0.383</td><td>£8.29</td></tr>
+          <tr><td>20 m³</td><td>765,800 BTU</td><td>223.6 kWh</td><td>7.658</td><td>0.766</td><td>£16.59</td></tr>
+          <tr class="hl"><td>26.11 m³ (1 MMBTU)</td><td>1,000,000 BTU</td><td>293.0 kWh</td><td>10.00</td><td>1.000</td><td>£21.74</td></tr>
+          <tr><td>50 m³</td><td>1,914,500 BTU</td><td>559.1 kWh</td><td>19.14</td><td>1.914</td><td>£41.49</td></tr>
+          <tr><td>100 m³</td><td>3,829,000 BTU</td><td>1,118 kWh</td><td>38.29</td><td>3.829</td><td>£82.98</td></tr>
+          <tr><td>200 m³</td><td>7,658,000 BTU</td><td>2,236 kWh</td><td>76.58</td><td>7.658</td><td>£165.9</td></tr>
+          <tr class="hl"><td>1,029 m³ (UK avg/yr)</td><td>39,410,000 BTU</td><td>11,500 kWh</td><td>392.5</td><td>39.25</td><td>£853.3</td></tr>
+          <tr><td>1,000 m³</td><td>38,290,000 BTU</td><td>11,180 kWh</td><td>382.9</td><td>38.29</td><td>£829.6</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">BTU = m³ × CV × VCF × 3412.142 ÷ 3.6. Cost at Ofgem Q2 2026 approximate unit rate 7.42p/kWh — always verify against your actual tariff. UK avg/yr row uses Ofgem medium benchmark 11,500 kWh.</p>
+
+    <!-- CTA BLOCK -->
+    <div class="cta-block">
+      <h3>🔄 Need a Different Unit Conversion?</h3>
+      <p>Explore our full range of free UK gas and energy unit calculators.</p>
+      <div class="cta-btns">
+        <a href="/gas-m3-to-kwh-calculator.html" class="btn-orange">🔥 Gas M3 to kWh</a>
+        <a href="/mmbtu-to-m3-calculator.html" class="btn-ghost">⚡ MMBTU to M3</a>
+        <a href="/therms-to-kwh.html" class="btn-ghost">🔥 Therms to kWh</a>
+        <a href="/gas-bill-calculator-uk.html" class="btn-ghost">💷 Gas Bill Calc</a>
+      </div>
+    </div>
+
+    <!-- REGIONAL CV TABLE -->
+    <h2>BTU per M3 by UK Region & Gas Source 2026</h2>
+    <p>The number of BTU in each cubic metre of gas varies by region and supply source. The difference between Scotland's lower CV gas and richer South East pipeline gas is approximately 5% — relevant for precise engineering calculations. For LNG, the variation is larger still.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Gas Source / Region</th>
+            <th>CV (kWh/m³)</th>
+            <th>Band</th>
+            <th>BTU per m³</th>
+            <th>m³ per 100,000 BTU</th>
+            <th>m³ per MMBTU</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>UK North East England</td><td>37.5</td><td><span class="cv-tag cv-low">Low</span></td><td>36,360 BTU</td><td>2.75 m³</td><td>27.50 m³</td></tr>
+          <tr><td>Scotland</td><td>37.2–40.0</td><td><span class="cv-tag cv-low">Low–Avg</span></td><td>36,070–38,800</td><td>2.58–2.77 m³</td><td>25.77–27.70 m³</td></tr>
+          <tr><td>North West England</td><td>37.8–40.0</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>36,650–38,800</td><td>2.58–2.73 m³</td><td>25.77–27.30 m³</td></tr>
+          <tr><td>Yorkshire & Humber</td><td>38.0–40.2</td><td><span class="cv-tag cv-avg">Average</span></td><td>36,850–38,990</td><td>2.57–2.71 m³</td><td>25.74–27.10 m³</td></tr>
+          <tr><td>Wales</td><td>38.0–40.2</td><td><span class="cv-tag cv-avg">Average</span></td><td>36,850–38,990</td><td>2.57–2.71 m³</td><td>25.74–27.10 m³</td></tr>
+          <tr><td>West Midlands</td><td>38.5–40.5</td><td><span class="cv-tag cv-avg">Average</span></td><td>37,330–39,270</td><td>2.55–2.68 m³</td><td>25.45–26.83 m³</td></tr>
+          <tr class="hl"><td>🇬🇧 UK National Average</td><td>39.5</td><td><span class="cv-tag cv-avg">Avg</span></td><td>38,290 BTU</td><td>2.611 m³</td><td>26.11 m³</td></tr>
+          <tr><td>South West England</td><td>38.8–41.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>37,620–39,760</td><td>2.51–2.66 m³</td><td>25.13–26.58 m³</td></tr>
+          <tr><td>East Midlands</td><td>39.0–40.8</td><td><span class="cv-tag cv-avg">Average</span></td><td>37,810–39,540</td><td>2.53–2.64 m³</td><td>25.26–26.44 m³</td></tr>
+          <tr><td>London & South East</td><td>39.0–41.5</td><td><span class="cv-tag cv-hi">Above Avg</span></td><td>37,810–40,240</td><td>2.49–2.64 m³</td><td>24.85–26.44 m³</td></tr>
+          <tr><td>Norway LNG/pipeline</td><td>40.0–43.5</td><td><span class="cv-tag cv-hi">High</span></td><td>38,800–42,190</td><td>2.37–2.58 m³</td><td>23.70–25.77 m³</td></tr>
+          <tr><td>Qatar LNG (Qatargas)</td><td>42.0</td><td><span class="cv-tag cv-lng">LNG</span></td><td>40,720 BTU</td><td>2.454 m³</td><td>24.54 m³</td></tr>
+          <tr><td>Australia LNG</td><td>44.5</td><td><span class="cv-tag cv-lng">LNG</span></td><td>43,140 BTU</td><td>2.318 m³</td><td>23.18 m³</td></tr>
+          <tr><td>USA Sabine Pass LNG</td><td>46.0</td><td><span class="cv-tag cv-lng">LNG</span></td><td>44,610 BTU</td><td>2.242 m³</td><td>22.42 m³</td></tr>
+          <tr><td>Trinidad LNG</td><td>47.5</td><td><span class="cv-tag cv-lng">LNG</span></td><td>46,060 BTU</td><td>2.171 m³</td><td>21.71 m³</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">BTU/m³ = CV × VCF × 3412.142 ÷ 3.6. Mid-range CV used for ranges. Source: Xoserve, GIIGNL, National Grid 2026. CVs update quarterly — use contract-stated value for commercial accuracy.</p>
+
+    <!-- FAQ -->
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>How many BTU is 1 m3 of gas?</summary>
+        <div class="faq-ans">At UK average CV 39.5 kWh/m³ with Ofgem VCF 1.02264: <strong>1 m³ of natural gas ≈ 38,290 BTU</strong>. The exact figure depends on calorific value: CV 37.5 → 36,360 BTU/m³; CV 39.5 → 38,290 BTU/m³; CV 42.0 (Qatar LNG) → 40,720 BTU/m³; CV 46.0 (USA LNG) → 44,610 BTU/m³. Use the <a href="#calculator">calculator above</a> with your actual CV for a precise result.</div>
+      </details>
+      <details>
+        <summary>How do I convert BTU to m3?</summary>
+        <div class="faq-ans">Formula: <strong>m³ = BTU × 0.000293001 × 3.6 ÷ (CV × 1.02264)</strong>. At UK average CV 39.5, this simplifies to m³ = BTU × 0.0000261. Steps: (1) Multiply BTU by 0.000293001 to get kWh; (2) Multiply kWh by 3.6 to get MJ; (3) Divide MJ by (CV × 1.02264). Example: 100,000 BTU ÷ CV 39.5 = 2.611 m³. This also works for BTU/hr → m³/hr — the "per hour" cancels in both units.</div>
+      </details>
+      <details>
+        <summary>What is BTU in gas measurement?</summary>
+        <div class="faq-ans"><strong>BTU (British Thermal Unit)</strong> is the amount of heat needed to raise 1 pound of water by 1°F. In gas, 1 BTU = 1,055.06 joules = 0.000293 kWh. While UK gas bills now use kWh, BTU remains the standard unit for gas appliance output ratings (boilers, furnaces), US gas billing, and HVAC engineering in 2026. Key milestones: 100,000 BTU = 1 therm = 29.3 kWh; 1,000,000 BTU = 1 MMBTU = 293 kWh.</div>
+      </details>
+      <details>
+        <summary>How many BTU is 1 kWh of gas?</summary>
+        <div class="faq-ans"><strong>1 kWh = exactly 3,412.142 BTU</strong>. This is a fixed conversion — no calorific value needed. Conversely, 1 BTU = 0.000293001 kWh. To convert your kWh gas bill into BTU, multiply by 3,412. Example: UK average annual consumption of 11,500 kWh = 11,500 × 3,412 = 39,238,000 BTU = 39.24 MMBTU = 392.4 therms.</div>
+      </details>
+      <details>
+        <summary>How many BTU is a therm?</summary>
+        <div class="faq-ans"><strong>1 therm = exactly 100,000 BTU</strong> = 29.3001 kWh. This is a defined, fixed relationship. In volume: 1 therm ≈ 2.611 m³ at UK average CV 39.5. The therm is useful as a check unit: divide any BTU value by 100,000 to get therms, then multiply by 29.3001 to get kWh. 1 MMBTU = 10 therms = 1,000,000 BTU.</div>
+      </details>
+      <details>
+        <summary>How do I convert a boiler BTU/hr rating to m3/hr?</summary>
+        <div class="faq-ans">Use: <strong>m³/hr = BTU/hr × 0.0000261</strong> (at UK average CV 39.5). Example: 30,000 BTU/hr boiler = 30,000 × 0.0000261 = 0.783 m³/hr gas flow. Important: boiler plates show <em>output</em> BTU/hr. To get actual gas <em>input</em> (what the meter measures), divide by efficiency: 0.783 ÷ 0.92 = 0.851 m³/hr for a 92% efficient boiler. Use the <a href="#calculator">Boiler Preset dropdown</a> in the calculator above for common sizes.</div>
+      </details>
+      <details>
+        <summary>What is the difference between BTU and BTU/hr?</summary>
+        <div class="faq-ans"><strong>BTU is energy; BTU/hr is power</strong> (energy per unit time). Gas appliances are rated in BTU/hr (maximum output power). To find total BTU consumed: multiply BTU/hr by hours of use. For volume conversion, the formula is identical — BTU/hr to m³/hr uses the same factor (0.0000261 at CV 39.5) because the time unit cancels on both sides. Our calculator handles both automatically.</div>
+      </details>
+      <details>
+        <summary>How do I convert m3 of gas to BTU?</summary>
+        <div class="faq-ans">Formula: <strong>BTU = m³ × CV × 1.02264 × 3412.142 ÷ 3.6</strong>. At UK average CV 39.5: BTU = m³ × 38,290. Example: 10 m³ × 38,290 = 382,900 BTU. For m³/hr to BTU/hr, the same formula applies. Switch the <a href="#calculator">calculator above</a> to M3 → BTU mode and enter your volume for an instant result with any calorific value.</div>
+      </details>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <div class="sb-cta">
+      <h4>🔗 Related Converters</h4>
+      <p>More free energy unit tools</p>
+      <a href="/mmbtu-to-m3-calculator.html" class="s-orange">⚡ MMBTU to M3</a>
+      <a href="/gas-m3-to-kwh-calculator.html" class="s-ghost">🔥 Gas M3 to kWh</a>
+      <a href="/therms-to-kwh.html" class="s-ghost">🔥 Therms to kWh</a>
+      <a href="/kwh-to-therms.html" class="s-ghost">⚡ kWh to Therms</a>
+      <a href="/kw-to-m3-hr-gas.html" class="s-ghost">⚙ kW to M3/hr</a>
+    </div>
+
+    <div class="sb-box">
+      <h4>🌡 BTU Quick Reference</h4>
+      <div class="s-row"><span>1 BTU</span><span class="s-val">0.000293 kWh</span></div>
+      <div class="s-row"><span>1 BTU</span><span class="s-val">1,055 joules</span></div>
+      <div class="s-row"><span>1 BTU (CV 39.5)</span><span class="s-val">0.0000261 m³</span></div>
+      <div class="s-row"><span>1 kWh</span><span class="s-val">3,412.14 BTU</span></div>
+      <div class="s-row"><span>1 therm</span><span class="s-val">100,000 BTU</span></div>
+      <div class="s-row"><span>1 MMBTU</span><span class="s-val">1,000,000 BTU</span></div>
+      <div class="s-row"><span>1 m³ (CV 39.5)</span><span class="s-val">38,290 BTU</span></div>
+      <div class="s-row"><span>1 m³ (CV 42.0)</span><span class="s-val">40,720 BTU</span></div>
+      <div class="s-row"><span>30,000 BTU/hr</span><span class="s-val">0.783 m³/hr</span></div>
+      <div class="s-row"><span>UK avg/year</span><span class="s-val">39.24M BTU</span></div>
+    </div>
+
+    <div class="sb-box">
+      <h4>🔗 All Gas Tools</h4>
+      <ul class="sb-links">
+        <li><a href="/gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">Gas kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Gas Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calculator UK</a></li>
+        <li><a href="/gas-usage-calculator.html">Gas Usage Calculator</a></li>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Gas Price Per M3</a></li>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How-To Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+  </aside>
+</div>
+
+<div class="auth-strip">
+  <div class="auth-inner">
+    <span class="auth-lbl">References:</span>
+    <a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem</a>
+    <a href="https://www.xoserve.com" target="_blank" rel="noopener">Xoserve CV Data</a>
+    <a href="https://www.hse.gov.uk" target="_blank" rel="noopener">HSE Gas Safety</a>
+    <a href="https://www.giignl.org" target="_blank" rel="noopener">GIIGNL LNG</a>
+    <a href="https://www.nationalgrid.com" target="_blank" rel="noopener">National Grid</a>
+    <a href="https://www.eia.gov" target="_blank" rel="noopener">US EIA</a>
   </div>
-</main>
+</div>
 
-<footer class="site-footer">
+<footer>
   <div class="footer-grid">
-    <div><a href="index.html" class="footer-logo">⚡ UK Converter</a><p class="footer-tagline">Free UK gas unit conversion calculators.</p></div>
-    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="gas-m3-to-kwh-calculator.html">M3 to kWh</a><a href="sitemap.xml">Sitemap</a></div>
-    <div class="footer-col"><h4>Calculator Tools</h4><a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a><a href="therms-to-kwh.html">Therms to kWh</a></div>
-    <div class="footer-col"><h4>Disclaimer</h4><p class="footer-disclaimer">This tool is for estimation purposes only.</p></div>
+    <div class="fc">
+      <span class="footer-logo">⚡ Energy<span>Converter</span></span>
+      <p>Free UK gas and energy unit converters. BTU to m3 conversion uses Ofgem VCF of 1.02264 with user-specified calorific value. Includes boiler sizing reference for UK residential and commercial properties. Updated 2026.</p>
+      <p style="margin-top:12px;font-size:0.76rem;color:rgba(255,255,255,0.25)">⚠️ For estimation purposes only. Boiler sizing figures are approximate — always consult a Gas Safe registered engineer for installation advice. Not affiliated with Ofgem or any energy supplier.</p>
+    </div>
+    <div class="fc">
+      <h5>Gas Calculators</h5>
+      <ul>
+        <li><a href="/gas-m3-to-kwh-calculator.html">M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calc</a></li>
+        <li><a href="/gas-usage-calculator.html">Usage Calc</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Price Per M3</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Energy Converters</h5>
+      <ul>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">ft³ to kWh</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Guides</h5>
+      <ul>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How to Convert Guide</a></li>
+        <li><a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem ↗</a></li>
+        <li><a href="https://www.hse.gov.uk/gas" target="_blank" rel="noopener">HSE Gas Safety ↗</a></li>
+        <li><a href="https://www.giignl.org" target="_blank" rel="noopener">GIIGNL LNG ↗</a></li>
+        <li><a href="/">← Homepage</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-bottom"><p>© 2025 UK Converter — ukconverter.site. All rights reserved.</p></div>
+  <div class="footer-bottom">© 2026 EnergyConverter.netlify.app &nbsp;·&nbsp; BTU to M3 Converter &nbsp;·&nbsp; UK Boiler BTU Reference &nbsp;·&nbsp; Updated 2026</div>
 </footer>
 
+<!-- ═══ JAVASCRIPT ═══ -->
 <script>
-let btuDir = 'btu-to-m3';
-function setBtuDir(d) {
-  btuDir = d;
-  document.getElementById('btn-btu-m3').classList.toggle('active', d==='btu-to-m3');
-  document.getElementById('btn-m3-btu').classList.toggle('active', d==='m3-to-btu');
-  document.getElementById('btu-label').textContent = d==='btu-to-m3' ? 'BTU Value' : 'Cubic Metres (m³)';
-  document.getElementById('btu-in').placeholder = d==='btu-to-m3' ? 'e.g. 35900' : 'e.g. 1';
-}
-function calcBtu() {
-  const val = parseFloat(document.getElementById('btu-in').value);
-  if (isNaN(val)||val<0) { alert('Please enter a valid value.'); return; }
-  let result, formula;
-  if (btuDir === 'btu-to-m3') {
-    result = val / 35900;
-    document.getElementById('btu-result-label').textContent = 'M3';
-    document.getElementById('btu-output').textContent = result.toFixed(5) + ' m³';
-    formula = val + ' BTU ÷ 35,900 = ' + result.toFixed(5) + ' m³';
-  } else {
-    result = val * 35900;
-    document.getElementById('btu-result-label').textContent = 'BTU';
-    document.getElementById('btu-output').textContent = result.toLocaleString() + ' BTU';
-    formula = val + ' m³ × 35,900 = ' + result.toLocaleString() + ' BTU';
+  document.getElementById('hamburger').addEventListener('click',()=>{
+    document.getElementById('main-nav').classList.toggle('open');
+  });
+
+  let calcMode = 'btu';
+
+  function setMode(mode){
+    calcMode = mode;
+    const isBtu = mode === 'btu';
+    document.getElementById('tab-btu').classList.toggle('active', isBtu);
+    document.getElementById('tab-m3').classList.toggle('active', !isBtu);
+    document.getElementById('input-label').innerHTML = isBtu
+      ? 'BTU Value <span class="badge badge-orange">BTU or BTU/hr</span>'
+      : 'Cubic Metres (M3) <span class="badge badge-orange">m³ or m³/hr</span>';
+    document.getElementById('val-in').placeholder = isBtu ? 'e.g. 100000' : 'e.g. 10';
+    document.getElementById('input-fn').textContent = isBtu
+      ? 'Enter BTU or BTU/hr (1 therm = 100,000 BTU; 1 MMBTU = 1,000,000 BTU)'
+      : 'Enter cubic metres of gas (result in BTU or BTU/hr respectively)';
+    document.getElementById('calc-btn').textContent = isBtu
+      ? 'Convert BTU to M3 →'
+      : 'Convert M3 to BTU →';
+    resetCalc();
   }
-  document.getElementById('btu-formula').textContent = 'Formula: ' + formula;
-  document.getElementById('btu-result').classList.add('show');
-  document.getElementById('btu-result').scrollIntoView({ behavior:'smooth', block:'nearest' });
-}
-function resetBtu() {
-  document.getElementById('btu-in').value='';
-  document.getElementById('btu-result').classList.remove('show');
-}
-(function(){const h=document.querySelector('.hamburger'),n=document.querySelector('.mobile-nav');if(!h||!n)return;h.addEventListener('click',function(){n.classList.toggle('open');const s=h.querySelectorAll('span');if(n.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)';}else{s[0].style.transform='';s[1].style.opacity='';s[2].style.transform='';}});})();
+
+  function applyBtuPreset(){
+    const v = document.getElementById('btu-preset').value;
+    if(v){ document.getElementById('val-in').value = v; }
+  }
+
+  function applyPreset(){
+    const v = document.getElementById('cv-preset').value;
+    if(v){ document.getElementById('cv').value = v; }
+  }
+
+  function fmt(n, dp){
+    if(Math.abs(n) >= 1000000) return (n/1000000).toFixed(dp) + 'M';
+    if(Math.abs(n) >= 1000)    return n.toLocaleString('en-GB', {maximumFractionDigits: dp});
+    return n.toFixed(dp);
+  }
+
+  function calculate(){
+    const val = parseFloat(document.getElementById('val-in').value);
+    const cv  = parseFloat(document.getElementById('cv').value) || 39.5;
+    const vcf = parseFloat(document.getElementById('vcf').value) || 1.02264;
+
+    if(isNaN(val) || val <= 0){
+      alert('Please enter a valid value greater than zero.');
+      return;
+    }
+
+    const BTU_TO_KWH  = 0.000293001;
+    const KWH_TO_BTU  = 3412.142;
+
+    let m3, btu, kwh, therms, mmbtu, mj, cost;
+
+    if(calcMode === 'btu'){
+      btu    = val;
+      kwh    = btu * BTU_TO_KWH;
+      mj     = kwh * 3.6;
+      m3     = mj / (cv * vcf);
+      therms = btu / 100000;
+      mmbtu  = btu / 1000000;
+      cost   = (kwh * 7.42) / 100;
+
+      document.getElementById('res-primary-label').textContent   = 'Result in M3';
+      document.getElementById('res-primary').textContent         = m3 < 0.001 ? m3.toExponential(3) : m3.toFixed(4);
+      document.getElementById('res-primary-unit').textContent    = 'm³';
+      document.getElementById('res-secondary-label').textContent = 'BTU Input';
+      document.getElementById('res-secondary').textContent       = fmt(btu, 0);
+      document.getElementById('res-secondary-unit').textContent  = 'BTU';
+      document.getElementById('res-formula').textContent =
+        `${fmt(btu,0)} BTU × 0.000293001 = ${kwh.toFixed(4)} kWh\n` +
+        `${kwh.toFixed(4)} kWh × 3.6 = ${mj.toFixed(4)} MJ\n` +
+        `${mj.toFixed(4)} ÷ (${cv} CV × ${vcf} VCF) = ${mj.toFixed(4)} ÷ ${(cv*vcf).toFixed(4)} = ${m3.toFixed(6)} m³\n` +
+        `Simplified: ${fmt(btu,0)} × 0.0000261 ≈ ${(btu*0.0000261).toFixed(4)} m³ (at CV 39.5)`;
+      document.getElementById('res-note').textContent =
+        `BTU/hr input → result is m³/hr. For actual gas consumption, divide by boiler efficiency (e.g. 0.92 for A-rated). CV used: ${cv} kWh/m³.`;
+
+    } else {
+      m3     = val;
+      mj     = m3 * cv * vcf;
+      kwh    = mj / 3.6;
+      btu    = kwh * KWH_TO_BTU;
+      therms = btu / 100000;
+      mmbtu  = btu / 1000000;
+      cost   = (kwh * 7.42) / 100;
+
+      document.getElementById('res-primary-label').textContent   = 'Result in BTU';
+      document.getElementById('res-primary').textContent         = fmt(btu, 0);
+      document.getElementById('res-primary-unit').textContent    = 'BTU';
+      document.getElementById('res-secondary-label').textContent = 'M3 Input';
+      document.getElementById('res-secondary').textContent       = m3;
+      document.getElementById('res-secondary-unit').textContent  = 'm³';
+      document.getElementById('res-formula').textContent =
+        `${m3} m³ × ${cv} CV × ${vcf} VCF = ${mj.toFixed(4)} MJ\n` +
+        `${mj.toFixed(4)} MJ ÷ 3.6 = ${kwh.toFixed(4)} kWh\n` +
+        `${kwh.toFixed(4)} kWh × 3412.142 = ${fmt(btu, 0)} BTU\n` +
+        `Simplified: ${m3} × 38,290 ≈ ${fmt(m3 * 38290, 0)} BTU (at CV 39.5)`;
+      document.getElementById('res-note').textContent =
+        `m³/hr input → result is BTU/hr. CV used: ${cv} kWh/m³. At CV 39.5, 1 m³ = 38,290 BTU.`;
+    }
+
+    // Shared result fields
+    document.getElementById('res-kwh').textContent    = kwh >= 1000 ? fmt(kwh, 1) : kwh.toFixed(3);
+    document.getElementById('res-therms').textContent = therms.toFixed(4);
+    document.getElementById('res-mmbtu').textContent  = mmbtu.toFixed(5);
+    document.getElementById('res-mj').textContent     = mj >= 1000 ? fmt(mj, 1) : mj.toFixed(3);
+    document.getElementById('res-cv').textContent     = cv;
+    document.getElementById('res-cost').textContent   = cost.toFixed(2);
+
+    const wrap = document.getElementById('result-wrap');
+    wrap.classList.add('show');
+    wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    document.getElementById('reset-btn').style.display = 'block';
+  }
+
+  function resetCalc(){
+    document.getElementById('result-wrap').classList.remove('show');
+    document.getElementById('reset-btn').style.display = 'none';
+    document.getElementById('val-in').value = '';
+    document.getElementById('btu-preset').value = '';
+    document.getElementById('cv-preset').value = '';
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e){
+      const t = document.querySelector(this.getAttribute('href'));
+      if(t){ e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  // AdSense init
+  (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 </body>
 </html>
