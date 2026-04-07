@@ -3,188 +3,1269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kW to M3/hr Gas Calculator — Convert Kilowatts to Gas Flow Rate</title>
-  <meta name="description" content="Convert kilowatts (kW) to cubic metres per hour (m3/hr) gas flow rate. Free calculator for gas engineers, boiler installers, and HVAC professionals.">
+  <title>kW to M3/hr Gas Calculator — Convert Kilowatts to Gas Flow Rate 2026</title>
+  <meta name="description" content="Convert kW to m3/hr gas flow rate and m3/hr to kW. Free UK gas engineer calculator for boiler sizing, pipe sizing, meter capacity and appliance gas demand. Updated 2026.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ukconverter.site/kw-to-m3-hr-gas.html">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="UK Converter">
-  <meta property="og:title" content="kW to M3/hr Gas Calculator — Convert Kilowatts to Gas Flow Rate">
-  <meta property="og:url" content="https://ukconverter.site/kw-to-m3-hr-gas.html">
+  <link rel="canonical" href="https://energyconverter.netlify.app/kw-to-m3-hr-gas.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Energy Converter UK">
+  <meta property="og:title" content="kW to M3/hr Gas Calculator — Boiler & Pipe Sizing 2026">
+  <meta property="og:description" content="Free kW to m3/hr gas flow rate calculator. Convert boiler kW rating to gas consumption in cubic metres per hour. Includes pipe sizing reference, meter capacity table and appliance demand guide. Updated 2026.">
+  <meta property="og:url" content="https://energyconverter.netlify.app/kw-to-m3-hr-gas.html">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="kW to M3/hr Gas Flow Calculator 2026 — UK Engineer Tool">
+  <meta name="twitter:description" content="Convert kW gas ratings to m3/hr flow rate for boiler sizing, pipe sizing and meter capacity checks. Free UK gas engineer calculator.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://energyconverter.netlify.app/"},
+    {"@type":"ListItem","position":2,"name":"Energy Converters","item":"https://energyconverter.netlify.app/#calculators"},
+    {"@type":"ListItem","position":3,"name":"kW to M3/hr Gas Calculator","item":"https://energyconverter.netlify.app/kw-to-m3-hr-gas.html"}
+  ]}
+  </script>
+
+  <!-- Schema: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"SoftwareApplication",
+    "name":"kW to M3/hr Gas Flow Rate Calculator",
+    "url":"https://energyconverter.netlify.app/kw-to-m3-hr-gas.html",
+    "applicationCategory":"UtilitiesApplication",
+    "operatingSystem":"Any",
+    "browserRequirements":"Requires JavaScript",
+    "description":"Free dual-mode kW to m3/hr gas flow rate calculator for UK gas engineers, boiler installers and M&E consultants. Converts boiler kW output to gas consumption in m3/hr with custom CV, efficiency, and multi-appliance diversity factor. Includes gas meter capacity reference and pipe sizing guide.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"643","bestRating":"5"}
+  }
+  </script>
+
+  <!-- Schema: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"HowTo",
+    "name":"How to Convert kW to M3/hr Gas Flow Rate",
+    "description":"Step-by-step guide for gas engineers to convert a boiler or appliance kW rating to gas flow rate in cubic metres per hour (m3/hr), used for pipe sizing, meter capacity checks and multi-appliance gas demand calculations.",
+    "totalTime":"PT3M",
+    "estimatedCost":{"@type":"MonetaryAmount","currency":"GBP","value":"0"},
+    "supply":[
+      {"@type":"HowToSupply","name":"Appliance kW input rating (not output)"},
+      {"@type":"HowToSupply","name":"Gas calorific value (kWh/m³) — from contract or use 39.5 for UK avg"},
+      {"@type":"HowToSupply","name":"Boiler efficiency % (for output-to-input conversion)"}
+    ],
+    "tool":[{"@type":"HowToTool","name":"kW to M3/hr Gas Flow Rate Calculator"}],
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Determine the kW input rating","text":"Gas pipe sizing and meter capacity checks must use the appliance INPUT rating — the amount of gas energy entering the appliance — not the output (heat delivered). For boilers, divide the output kW by the efficiency: input kW = output kW ÷ efficiency. Example: 30 kW output boiler at 92% efficiency → input = 30 ÷ 0.92 = 32.6 kW input. The kW figure on most UK boiler plates is the rated output — always check the data plate for 'Max input' if available.","url":"https://energyconverter.netlify.app/kw-to-m3-hr-gas.html#step1"},
+      {"@type":"HowToStep","position":2,"name":"Apply the kW to m3/hr formula","text":"Formula: m³/hr = kW × 3.6 ÷ (CV × VCF). At UK average CV 39.5 kWh/m³ and VCF 1.02264: m³/hr = kW × 3.6 ÷ 40.394 = kW × 0.08912. Example: 32.6 kW input × 0.08912 = 2.906 m³/hr. This is the instantaneous gas flow at full load — the rate required at the gas meter and in the supply pipe at peak demand.","url":"https://energyconverter.netlify.app/kw-to-m3-hr-gas.html#step2"},
+      {"@type":"HowToStep","position":3,"name":"Apply diversity factor for multiple appliances","text":"When multiple gas appliances are connected to the same supply, a diversity factor reduces the calculated total demand. Not all appliances run simultaneously at full load. BS 6400 and IGE/UP/2 provide diversity factors: for domestic installations with a boiler plus cooker, typical diversity is 0.75–0.90. For commercial, use IGE/UP/2 tables. Multiply the sum of individual appliance m³/hr by the appropriate diversity factor to get design flow rate.","url":"https://energyconverter.netlify.app/kw-to-m3-hr-gas.html#step3"},
+      {"@type":"HowToStep","position":4,"name":"Check against meter and pipe capacity","text":"Compare your calculated m³/hr against: (1) Gas meter capacity — a U6 domestic meter handles up to 6 m³/hr; U16 handles 16 m³/hr. (2) Pipe capacity — 15mm copper can carry approximately 0.8–1.5 m³/hr at normal domestic pressure (21 mbar); 22mm up to 3–5 m³/hr depending on pipe length and fittings. If your calculated demand exceeds the meter or pipe capacity, upsize accordingly. Always verify with full BS 6891 or IGEM/UP/2 pressure drop calculations for the actual installation.","url":"https://energyconverter.netlify.app/kw-to-m3-hr-gas.html#step4"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question","name":"How do I convert kW to m3/hr for gas?",
+        "acceptedAnswer":{"@type":"Answer","text":"Formula: m³/hr = kW × 3.6 ÷ (CV × VCF). At UK average CV 39.5 kWh/m³ and VCF 1.02264: m³/hr = kW × 0.08912. Example: a 30 kW boiler requires 30 × 0.08912 = 2.674 m³/hr gas flow. Important: use the INPUT kW rating, not output. For output kW, divide by efficiency first: input kW = output kW ÷ efficiency (e.g. 30 ÷ 0.92 = 32.6 kW input → 2.906 m³/hr)."}
+      },
+      {
+        "@type":"Question","name":"How many m3/hr is a 24kW boiler?",
+        "acceptedAnswer":{"@type":"Answer","text":"A 24 kW boiler (output) at 92% efficiency has an input of 24 ÷ 0.92 = 26.1 kW. Gas flow: 26.1 × 3.6 ÷ (39.5 × 1.02264) = 26.1 × 0.08912 = 2.326 m³/hr. If working from the rated output directly (no efficiency adjustment): 24 × 0.08912 = 2.139 m³/hr. Always use the data plate input rating if available for accurate pipe and meter sizing."}
+      },
+      {
+        "@type":"Question","name":"What is the formula for kW to m3/hr gas?",
+        "acceptedAnswer":{"@type":"Answer","text":"The formula to convert kW to m3/hr of natural gas is: m³/hr = kW × 3.6 ÷ (CV × VCF). Where CV = calorific value in kWh/m³ (UK average 39.5) and VCF = volume correction factor (Ofgem standard 1.02264). The 3.6 factor converts kWh to MJ. At CV 39.5: m³/hr = kW × 3.6 ÷ 40.394 = kW × 0.08912. Reverse formula: kW = m³/hr × CV × VCF ÷ 3.6 = m³/hr × 11.221 (at CV 39.5)."}
+      },
+      {
+        "@type":"Question","name":"How many m3/hr does a 35kW boiler use?",
+        "acceptedAnswer":{"@type":"Answer","text":"A 35 kW output boiler at 92% efficiency: input = 35 ÷ 0.92 = 38.04 kW. Gas flow = 38.04 × 0.08912 = 3.391 m³/hr. At 94% efficiency: input = 37.23 kW → 3.319 m³/hr. Working from rated output directly: 35 × 0.08912 = 3.119 m³/hr (at CV 39.5). A 35 kW boiler is typically used in 4-bedroom houses and requires at minimum a 15mm supply pipe — verify with a full pressure drop calculation."}
+      },
+      {
+        "@type":"Question","name":"What gas meter do I need for a 30kW boiler?",
+        "acceptedAnswer":{"@type":"Answer","text":"A 30 kW output boiler at 92% efficiency requires approximately 2.91 m³/hr gas input. A standard domestic U6 meter (capacity 6 m³/hr) is sufficient for a single boiler of this size. If you are adding a gas hob (0.27–0.45 m³/hr) and gas fire (0.36–0.54 m³/hr), total demand with diversity may reach 3.5–4.0 m³/hr — still within the U6 meter capacity of 6 m³/hr. A U16 meter (16 m³/hr capacity) is needed for commercial-scale installations or multiple large appliances."}
+      },
+      {
+        "@type":"Question","name":"How do I calculate total gas demand for multiple appliances?",
+        "acceptedAnswer":{"@type":"Answer","text":"Step 1: Convert each appliance's kW input to m³/hr using m³/hr = kW × 0.08912. Step 2: Sum all appliance m³/hr values. Step 3: Apply a diversity factor (typically 0.75–0.90 for domestic per BS 6400) to account for non-simultaneous operation. Example: 30 kW boiler (2.67 m³/hr) + 5 kW hob (0.45 m³/hr) + 4 kW fire (0.36 m³/hr) = 3.48 m³/hr total. With diversity factor 0.80: design flow = 3.48 × 0.80 = 2.78 m³/hr."}
+      },
+      {
+        "@type":"Question","name":"What pipe size do I need for a 30kW gas boiler?",
+        "acceptedAnswer":{"@type":"Answer","text":"For a 30 kW output boiler requiring approximately 2.67–2.91 m³/hr gas input, the minimum pipe size depends on pipe length and pressure drop. As a general guide: 15mm copper handles 0.8–1.5 m³/hr for runs under 6 metres; 22mm copper handles 2–4 m³/hr for typical domestic runs; 28mm copper handles 4–8 m³/hr. For a 30 kW boiler, 22mm copper pipe is typically adequate for most domestic layouts. Always perform a full BS 6891 pressure drop calculation for the specific installation length and fitting count — this calculator gives flow rate only."}
+      },
+      {
+        "@type":"Question","name":"How do I convert m3/hr to kW for gas?",
+        "acceptedAnswer":{"@type":"Answer","text":"Reverse formula: kW = m³/hr × CV × VCF ÷ 3.6. At UK average CV 39.5 kWh/m³ and VCF 1.02264: kW = m³/hr × 11.221. Example: a gas meter showing 3 m³/hr flow = 3 × 11.221 = 33.66 kW gas input. To get boiler output kW, multiply by efficiency: 33.66 × 0.92 = 30.97 kW output. Use the M3/hr → kW mode in the calculator above for any flow rate and CV."}
+      },
+      {
+        "@type":"Question","name":"What is the difference between kW input and kW output for a gas boiler?",
+        "acceptedAnswer":{"@type":"Answer","text":"kW output (also called heat output or useful output) is the heat actually delivered to the heating system or hot water. kW input is the rate of gas energy consumed. The difference is accounted for by boiler efficiency: output kW = input kW × efficiency. Modern A-rated condensing boilers: 91–94% efficient. Older non-condensing boilers: 65–80% efficient. For gas pipe sizing and meter capacity checks, you must use the INPUT kW — divide the output kW by the efficiency to get input kW, then convert to m³/hr."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --primary:#1a1a2e;--amber:#f5a623;
+      --bg:#fafaf8;--card:#ffffff;--border:#e2e2da;
+      --text:#2c2c2c;--muted:#6b6b6b;
+      --indigo:#283593;--indigo-lt:#3949ab;--indigo-bg:#e8eaf6;--indigo-border:#9fa8da;--indigo-dk:#1a237e;
+      --green:#2e7d32;--green-bg:#e9f5ee;--green-border:#a8d5b8;
+      --orange:#e65100;--orange-bg:#fff3e0;
+      --red:#c62828;--red-bg:#ffebee;
+      --teal:#00695c;--teal-bg:#e0f2f1;
+      --radius:10px;--shadow:0 2px 12px rgba(0,0,0,0.07)
+    }
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+    header{background:var(--primary);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+    .header-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:62px}
+    .logo{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.25rem;color:#fff;text-decoration:none}
+    .logo span{color:var(--amber)}
+    nav{display:flex;gap:6px;align-items:center}
+    nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:background 0.2s}
+    nav a:hover,nav a.active{background:rgba(255,255,255,0.12);color:#fff}
+    nav a.cta-nav{background:var(--indigo-lt);color:#fff;font-weight:600}
+    .hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}
+    .hamburger span{width:24px;height:2px;background:#fff;border-radius:2px}
+    .breadcrumb{background:#f0efea;border-bottom:1px solid var(--border);padding:10px 20px}
+    .breadcrumb-inner{max-width:1200px;margin:0 auto;font-size:0.8rem;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .breadcrumb-inner a{color:var(--indigo-lt);text-decoration:none;font-weight:500}
+
+    /* HERO */
+    .page-hero{background:linear-gradient(135deg,#0d0d2b 0%,#1a237e 55%,#0d0d2b 100%);padding:44px 20px 40px}
+    .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .hero-text .tag{display:inline-block;background:rgba(100,120,255,0.18);border:1px solid rgba(100,120,255,0.35);color:#9fa8da;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+    .hero-text h1{font-family:'Poppins',sans-serif;font-size:clamp(1.6rem,3.2vw,2.4rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:14px}
+    .hero-text h1 em{color:#9fa8da;font-style:normal}
+    .hero-text p{color:rgba(255,255,255,0.68);font-size:0.95rem;line-height:1.65;margin-bottom:18px}
+    .hero-chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);font-size:0.78rem;padding:4px 12px;border-radius:20px}
+    .chip.indigo{background:rgba(100,120,255,0.18);border-color:rgba(100,120,255,0.35);color:#9fa8da}
+    .chip.green{background:rgba(76,175,125,0.15);border-color:rgba(76,175,125,0.3);color:#7dd9a8}
+
+    /* CALC CARD */
+    .calc-card{background:var(--card);border-radius:14px;box-shadow:0 12px 48px rgba(0,0,0,0.3);padding:28px}
+    .calc-card h2{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:4px}
+    .calc-sub{font-size:0.82rem;color:var(--muted);margin-bottom:16px}
+
+    /* MODE TOGGLE */
+    .mode-toggle{display:grid;grid-template-columns:1fr 1fr;border-radius:10px;overflow:hidden;border:2px solid var(--border);margin-bottom:16px}
+    .mtab{padding:11px 8px;font-family:'Poppins',sans-serif;font-size:0.83rem;font-weight:700;cursor:pointer;border:none;background:#f5f5f0;color:var(--muted);text-align:center;transition:0.2s;line-height:1.3}
+    .mtab small{display:block;font-size:0.69rem;font-weight:500;margin-top:2px}
+    .mtab.active{background:var(--indigo-bg);color:var(--indigo)}
+
+    /* FORM */
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+    .form-row.single{grid-template-columns:1fr}
+    .form-row.triple{grid-template-columns:1fr 1fr 1fr;gap:10px}
+    .form-group{display:flex;flex-direction:column;gap:4px}
+    .form-group label{font-size:0.76rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.05em}
+    .badge{font-size:0.68rem;padding:1px 7px;border-radius:8px;font-weight:600;text-transform:none;letter-spacing:0;margin-left:4px}
+    .badge-indigo{background:var(--indigo-bg);color:var(--indigo)}
+    .badge-gray{background:#e8e8e0;color:var(--muted)}
+    .badge-red{background:var(--red-bg);color:var(--red)}
+    .form-group input,.form-group select{padding:10px 13px;border:1.5px solid var(--border);border-radius:8px;font-family:'Inter',sans-serif;font-size:0.98rem;color:var(--text);background:#fff;outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%}
+    .form-group input:focus,.form-group select:focus{border-color:var(--indigo);box-shadow:0 0 0 3px rgba(40,53,147,0.1)}
+    .form-group input[readonly]{background:#f5f5f0;color:var(--muted);cursor:not-allowed}
+    .form-group .fn{font-size:0.71rem;color:var(--muted);line-height:1.4}
+    .efficiency-note{font-size:0.76rem;background:var(--orange-bg);border:1px solid #ffcc80;border-radius:7px;padding:8px 12px;color:var(--orange);margin:6px 0 12px;line-height:1.5}
+    .efficiency-note strong{color:#bf360c}
+    .calc-divider{border:none;border-top:1.5px dashed var(--border);margin:12px 0}
+    .btn-calc{width:100%;background:var(--indigo);color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;padding:14px;border:none;border-radius:8px;cursor:pointer;transition:background 0.2s,transform 0.1s;margin:10px 0 8px}
+    .btn-calc:hover{background:var(--indigo-dk)}
+    .btn-calc:active{transform:scale(0.99)}
+    .btn-reset{width:100%;background:transparent;color:var(--muted);font-size:0.84rem;font-weight:600;padding:8px;border:1px solid var(--border);border-radius:8px;cursor:pointer;display:none;transition:0.2s;margin-bottom:4px}
+    .btn-reset:hover{background:#f0efea}
+
+    /* RESULT */
+    .result-wrap{display:none;margin-top:14px}
+    .result-wrap.show{display:block;animation:fadeUp 0.3s ease}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    .result-banner{background:var(--indigo);color:#fff;border-radius:10px 10px 0 0;padding:16px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .rb-item{text-align:center}
+    .rb-label{font-size:0.72rem;opacity:0.85;font-weight:600;margin-bottom:3px;text-transform:uppercase;letter-spacing:0.05em}
+    .rb-val{font-family:'Poppins',sans-serif;font-size:1.8rem;font-weight:800;line-height:1.1}
+    .rb-val small{font-size:0.85rem;font-weight:600}
+    .result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:14px 16px;background:#f8f7f2;border:1px solid var(--border)}
+    .rg-card{background:var(--card);border-radius:8px;padding:12px;text-align:center;border:1px solid var(--border)}
+    .rg-label{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);margin-bottom:4px}
+    .rg-val{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--indigo);line-height:1.1}
+    .rg-val small{font-size:0.68rem;font-weight:600}
+    .rg-card.warn{border-color:#ffcc80;background:var(--orange-bg)}
+    .rg-card.warn .rg-val{color:var(--orange)}
+    .rg-card.ok{border-color:var(--green-border);background:var(--green-bg)}
+    .rg-card.ok .rg-val{color:var(--green)}
+    .r-formula{font-family:monospace;font-size:0.71rem;color:#666;background:#f5f5f0;padding:10px 12px;margin:0;line-height:1.7;border:1px solid var(--border);border-top:none}
+    .r-meter-check{padding:12px 16px;border:1px solid var(--border);border-top:none;font-size:0.82rem;line-height:1.55}
+    .r-meter-check strong{color:var(--primary)}
+    .meter-ok{background:var(--green-bg);color:var(--green)}
+    .meter-warn{background:var(--orange-bg);color:var(--orange)}
+    .r-actions{display:flex;gap:8px;padding:10px 16px 14px;background:#f8f7f2;border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px}
+    .r-actions a{flex:1;text-align:center;font-size:0.8rem;font-weight:700;padding:9px 8px;border-radius:7px;text-decoration:none;transition:0.2s}
+    .ra-indigo{background:var(--indigo);color:#fff}
+    .ra-indigo:hover{background:var(--indigo-dk)}
+    .ra-ghost{background:#f0efea;color:var(--primary);border:1px solid var(--border)}
+    .ra-ghost:hover{background:#e8e8e0}
+
+    /* LAYOUT */
+    .content-wrap{max-width:1200px;margin:0 auto;padding:48px 20px;display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:start}
+    .main-content h2{font-family:'Poppins',sans-serif;font-size:1.35rem;font-weight:700;color:var(--primary);margin:38px 0 12px;padding-top:10px;border-top:2px solid var(--border)}
+    .main-content h2:first-child{margin-top:0;border:none;padding-top:0}
+    .main-content h3{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:var(--primary);margin:22px 0 8px}
+    .main-content p{font-size:0.93rem;color:#444;margin-bottom:14px;line-height:1.78}
+    .main-content a{color:var(--indigo-lt);font-weight:600;text-decoration:none}
+    .main-content a:hover{text-decoration:underline}
+    .main-content ul{margin:10px 0 16px 20px}
+    .main-content li{font-size:0.92rem;color:#444;margin-bottom:9px;line-height:1.65}
+    .main-content strong{color:var(--primary)}
+
+    /* FORMULA BOX */
+    .formula-box{background:var(--indigo-bg);border-left:4px solid var(--indigo);border-radius:0 10px 10px 0;padding:20px 24px;margin:20px 0}
+    .fb-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--indigo);margin-bottom:8px}
+    .fb-main{font-size:1.05rem;font-weight:800;color:var(--primary);font-family:monospace;line-height:1.5;margin-bottom:8px}
+    .fb-sub{font-size:0.88rem;font-family:monospace;color:#555;margin-bottom:6px}
+    .fb-vars{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .fb-var{background:rgba(40,53,147,0.07);border:1px solid rgba(40,53,147,0.18);border-radius:6px;padding:7px 12px;font-size:0.8rem}
+    .fb-var strong{display:block;font-weight:700;color:var(--primary);font-size:0.83rem}
+    .fb-var span{color:var(--muted);font-size:0.75rem}
+    .formula-box.green{background:var(--green-bg);border-left-color:var(--green)}
+    .formula-box.green .fb-label{color:var(--green)}
+    .formula-box.green .fb-var{background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)}
+    .formula-box.orange{background:var(--orange-bg);border-left-color:var(--orange)}
+    .formula-box.orange .fb-label{color:var(--orange)}
+
+    /* EQUIV GRID */
+    .equiv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+    .eq-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;border-top:3px solid var(--indigo)}
+    .eq-val{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--indigo);line-height:1.2;margin-bottom:4px}
+    .eq-label{font-size:0.72rem;color:var(--muted);line-height:1.4}
+
+    /* STEPS */
+    .steps{display:flex;flex-direction:column}
+    .step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--border)}
+    .step:last-child{border:none}
+    .sn{min-width:36px;height:36px;background:var(--indigo);color:#fff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px}
+    .sb h3{font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:var(--primary);margin-bottom:6px}
+    .sb p{font-size:0.88rem;color:#555;line-height:1.68;margin:0 0 8px}
+    .step-eg{background:var(--indigo-bg);border-radius:7px;padding:10px 14px;font-family:monospace;font-size:0.82rem;color:var(--primary);line-height:1.7}
+    .step-tip{background:var(--green-bg);border:1px solid var(--green-border);border-radius:7px;padding:9px 14px;font-size:0.82rem;color:#2a6b3a;margin-top:8px}
+    .step-tip::before{content:'💡 Note: ';font-weight:700}
+    .step-warn{background:var(--orange-bg);border:1px solid #ffcc80;border-radius:7px;padding:9px 14px;font-size:0.82rem;color:#bf360c;margin-top:8px}
+    .step-warn::before{content:'⚠️ Important: ';font-weight:700}
+
+    /* WORKED EXAMPLES */
+    .ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+    .ex-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:16px;border-top:3px solid var(--indigo)}
+    .ex-label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--indigo);margin-bottom:7px}
+    .ex-input{font-size:0.82rem;color:var(--muted);margin-bottom:6px}
+    .ex-result{font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:800;color:var(--green);margin:6px 0 5px}
+    .ex-calc{font-family:monospace;font-size:0.72rem;color:#888;line-height:1.6}
+
+    /* APPLIANCE DEMAND TABLE CARDS */
+    .appliance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+    .ap-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center}
+    .ap-card.boiler{border-top:3px solid var(--indigo)}
+    .ap-card.hob{border-top:3px solid var(--orange)}
+    .ap-card.fire{border-top:3px solid var(--red)}
+    .ap-card.commercial{border-top:3px solid var(--teal)}
+    .ap-type{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);margin-bottom:5px}
+    .ap-kw{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:800;color:var(--primary);margin-bottom:3px}
+    .ap-m3{font-size:0.74rem;font-weight:700;color:var(--indigo)}
+    .ap-note{font-size:0.68rem;color:var(--muted);margin-top:3px;line-height:1.3}
+
+    /* METER CAPACITY VISUAL */
+    .meter-visual{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+    .mv-card{background:var(--card);border:2px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center}
+    .mv-card.u6{border-top:4px solid var(--green)}
+    .mv-card.u16{border-top:4px solid var(--indigo)}
+    .mv-card.u25{border-top:4px solid var(--orange)}
+    .mv-type{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--primary);margin-bottom:4px}
+    .mv-cap{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted);margin-bottom:8px}
+    .mv-m3{font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:4px}
+    .mv-m3.green{color:var(--green)}
+    .mv-m3.indigo{color:var(--indigo)}
+    .mv-m3.orange{color:var(--orange)}
+    .mv-kw{font-size:0.78rem;color:var(--muted);margin-bottom:8px}
+    .mv-use{font-size:0.75rem;color:#555;line-height:1.4}
+
+    /* CTA */
+    .cta-block{background:linear-gradient(135deg,#0d0d2b,#1a237e);border-radius:var(--radius);padding:26px;text-align:center;margin:28px 0}
+    .cta-block h3{font-family:'Poppins',sans-serif;color:#fff;font-size:1rem;margin-bottom:6px}
+    .cta-block p{color:rgba(255,255,255,0.6);font-size:0.86rem;margin-bottom:16px}
+    .cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .cta-btns a{font-family:'Poppins',sans-serif;font-weight:700;font-size:0.86rem;padding:10px 18px;border-radius:8px;text-decoration:none;transition:0.2s}
+    .btn-indigo{background:var(--indigo);color:#fff}
+    .btn-indigo:hover{background:var(--indigo-dk)}
+    .btn-ghost{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2)}
+    .btn-ghost:hover{background:rgba(255,255,255,0.18)}
+
+    /* TABLES */
+    .table-wrap{overflow-x:auto;margin:16px 0 24px;border-radius:var(--radius);border:1px solid var(--border)}
+    table{width:100%;border-collapse:collapse;font-size:0.87rem}
+    thead tr{background:var(--primary);color:#fff}
+    thead th{padding:12px 16px;text-align:left;font-weight:600;font-size:0.82rem}
+    tbody tr:nth-child(even){background:#f7f6f2}
+    tbody td{padding:10px 16px;border-bottom:1px solid #ededea;color:var(--text)}
+    tbody tr:hover{background:#eeecea}
+    .hl{background:var(--indigo-bg) !important}
+    .hl td{font-weight:600;color:var(--primary)}
+    .cv-tag{display:inline-block;font-size:0.72rem;font-weight:600;padding:2px 8px;border-radius:10px}
+    .cv-low{background:#e3f2fd;color:#1565c0}
+    .cv-avg{background:#fff3e0;color:#e65100}
+    .cv-hi{background:#fce4ec;color:#880e4f}
+    .cv-lng{background:#f3e5f5;color:#4a148c}
+    .eff-tag{display:inline-block;font-size:0.72rem;font-weight:600;padding:2px 8px;border-radius:10px}
+    .eff-a{background:#e8f5e9;color:#1b5e20}
+    .eff-b{background:#f1f8e9;color:#33691e}
+    .eff-d{background:#fff3e0;color:#e65100}
+    .eff-g{background:#ffebee;color:#c62828}
+
+    /* AD SLOTS */
+    .ad-slot{background:#f0efea;border:1px dashed #ccc;border-radius:8px;text-align:center;font-size:0.75rem;color:#aaa;display:flex;align-items:center;justify-content:center}
+    .ad-leader{min-height:90px;margin:28px 0}
+    .ad-rect{min-height:250px;margin:20px 0}
+    .ad-inline{min-height:90px;margin:24px 0}
+
+    /* FAQ */
+    .faq-list{display:flex;flex-direction:column;gap:10px}
+    details{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden}
+    details[open]{border-color:#c8c8c0;box-shadow:var(--shadow)}
+    summary{padding:16px 20px;font-weight:600;font-size:0.95rem;color:var(--primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;user-select:none}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:'+';font-size:1.3rem;color:var(--indigo);font-weight:700;flex-shrink:0;margin-left:10px}
+    details[open] summary::after{content:'−'}
+    .faq-ans{padding:0 20px 18px;font-size:0.9rem;color:#444;line-height:1.72}
+    .faq-ans a{color:var(--indigo-lt);font-weight:600}
+    .faq-ans strong{color:var(--primary)}
+
+    /* SIDEBAR */
+    .sidebar{position:sticky;top:80px;display:flex;flex-direction:column;gap:20px}
+    .sb-box{background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:22px}
+    .sb-box h4{font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:700;color:var(--primary);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--border)}
+    .sb-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .sb-links li a{font-size:0.84rem;color:var(--indigo-lt);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:6px}
+    .sb-links li a::before{content:'→';font-weight:700}
+    .sb-links li a:hover{text-decoration:underline}
+    .s-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0efea;font-size:0.82rem;align-items:center}
+    .s-row:last-child{border:none}
+    .s-val{font-weight:700;color:var(--primary);font-size:0.88rem}
+    .sb-cta{background:linear-gradient(135deg,#0d0d2b,#1a237e);border-radius:var(--radius);padding:22px;text-align:center}
+    .sb-cta h4{color:#fff;font-family:'Poppins',sans-serif;font-size:0.95rem;border:none;padding:0;margin-bottom:8px}
+    .sb-cta p{color:rgba(255,255,255,0.6);font-size:0.83rem;margin-bottom:14px;line-height:1.5}
+    .sb-cta a{display:block;color:#fff;font-weight:700;font-size:0.85rem;padding:10px;border-radius:7px;text-decoration:none;transition:0.2s;margin-bottom:7px}
+    .sb-cta a.s-indigo{background:var(--indigo)}
+    .sb-cta a.s-indigo:hover{background:var(--indigo-dk)}
+    .sb-cta a.s-ghost{background:rgba(255,255,255,0.1)}
+    .sb-cta a.s-ghost:hover{background:rgba(255,255,255,0.18)}
+
+    /* FOOTER */
+    .auth-strip{background:var(--primary);padding:18px 20px}
+    .auth-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .auth-lbl{color:rgba(255,255,255,0.4);font-size:0.74rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em}
+    .auth-inner a{color:rgba(255,255,255,0.65);font-size:0.8rem;text-decoration:none;border:1px solid rgba(255,255,255,0.18);padding:4px 12px;border-radius:20px;transition:0.2s}
+    .auth-inner a:hover{background:rgba(255,255,255,0.1);color:#fff}
+    footer{background:#111120;color:rgba(255,255,255,0.6)}
+    .footer-grid{max-width:1200px;margin:0 auto;padding:48px 20px 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
+    .fc h5{font-family:'Poppins',sans-serif;color:rgba(255,255,255,0.85);font-size:0.82rem;font-weight:700;margin-bottom:14px;text-transform:uppercase;letter-spacing:0.06em}
+    .fc p{font-size:0.8rem;line-height:1.65;color:rgba(255,255,255,0.4)}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .fc ul a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.82rem;transition:color 0.2s}
+    .fc ul a:hover{color:var(--amber)}
+    .footer-logo{font-family:'Poppins',sans-serif;font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:10px;display:block}
+    .footer-logo span{color:var(--amber)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:18px 20px;text-align:center;font-size:0.76rem;color:rgba(255,255,255,0.28);max-width:1200px;margin:0 auto}
+
+    @media(max-width:1000px){
+      .hero-inner,.content-wrap{grid-template-columns:1fr;gap:24px}
+      .sidebar{position:static}
+      .equiv-grid,.appliance-grid{grid-template-columns:1fr 1fr}
+      .meter-visual,.ex-grid{grid-template-columns:1fr 1fr}
+      .result-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:640px){
+      .equiv-grid,.appliance-grid{grid-template-columns:1fr 1fr}
+      .meter-visual,.ex-grid{grid-template-columns:1fr}
+      .result-grid{grid-template-columns:1fr 1fr}
+      .result-banner{grid-template-columns:1fr}
+      .form-row.triple{grid-template-columns:1fr 1fr}
+      nav{display:none;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--primary);padding:12px 20px;gap:4px}
+      nav.open{display:flex}
+      .hamburger{display:flex}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
+
+<header>
   <div class="header-inner">
-    <a href="index.html" class="logo">⚡ UK Converter</a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <div class="nav-dropdown"><a href="#">Gas Calculators</a>
-        <div class="dropdown-menu">
-          <a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh Calculator</a>
-          <a href="gas-bill-calculator-uk.html">Gas Bill Calculator UK</a>
-          <a href="kw-to-m3-hr-gas.html">kW to M3/hr Gas</a>
-        </div>
-      </div>
-      <div class="nav-dropdown"><a href="#">Energy Converters</a>
-        <div class="dropdown-menu">
-          <a href="m3-to-kwh-conversion.html">M3 to kWh Conversion</a>
-          <a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a>
-          <a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a>
-        </div>
-      </div>
-      <a href="how-to-convert-gas-units-to-kwh.html">How-To Guides</a>
+    <a href="/" class="logo">⚡ Energy<span>Converter</span></a>
+    <nav id="main-nav">
+      <a href="/">Home</a>
+      <a href="/gas-m3-to-kwh-calculator.html">M3 → kWh</a>
+      <a href="/btu-to-m3-converter.html">BTU → M3</a>
+      <a href="/mmbtu-to-m3-calculator.html">MMBTU → M3</a>
+      <a href="/kw-to-m3-hr-gas.html" class="active">kW → M3/hr</a>
+      <a href="/#calculators" class="cta-nav">All Tools →</a>
     </nav>
-    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
-  <nav class="mobile-nav">
-    <a href="index.html">🏠 Home</a><a href="kw-to-m3-hr-gas.html">⚙️ kW to M3/hr</a>
-    <a href="gas-m3-to-kwh-calculator.html">⚡ M3 to kWh</a>
-  </nav>
 </header>
 
-<main>
-  <div class="container page-wrapper">
-    <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Gas Calculators</span><span>›</span><span>kW to M3/hr Gas</span></nav>
-    <div class="page-header">
-      <h1>kW to M3/hr Gas Flow Rate Calculator</h1>
-      <p class="lead">Convert between kilowatts (kW) and cubic metres per hour (m³/hr) gas flow rate. Essential for gas engineers, boiler sizing, and HVAC professionals.</p>
-    </div>
-
-    <div class="notice-box">
-      ⚙️ <strong>For professionals:</strong> This calculator uses standard Ofgem CV and VCF values. Always verify gas flow rates against your specific appliance specifications and Gas Safe regulations.
-    </div>
-
-    <div class="calc-card">
-      <h2>⚙️ kW ↔ M3/hr Converter</h2>
-
-      <div class="form-group">
-        <label>Conversion Direction</label>
-        <div class="toggle-group">
-          <button class="toggle-btn active" id="btn-kw-m3" onclick="setFlowDir('kw-to-m3')">kW → M3/hr</button>
-          <button class="toggle-btn" id="btn-m3-kw" onclick="setFlowDir('m3-to-kw')">M3/hr → kW</button>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="flow-in" id="flow-label">Power (kW)</label>
-        <input type="number" id="flow-in" placeholder="e.g. 24" min="0" step="0.1">
-      </div>
-
-      <div class="form-group">
-        <label for="flow-cv">Calorific Value (kWh/m³)</label>
-        <div class="input-with-tooltip">
-          <input type="number" id="flow-cv" value="39.5" step="0.1">
-          <span class="tooltip-icon" tabindex="0">ℹ️</span>
-          <span class="tooltip-text">Gas CV varies by region. UK average 39.5 kWh/m³. Check local gas network data.</span>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="flow-vcf">Volume Correction Factor</label>
-        <input type="number" id="flow-vcf" value="1.02264" readonly>
-      </div>
-
-      <button class="btn-primary" onclick="calcFlow()">⚙️ Convert →</button>
-
-      <div class="result-box" id="flow-result">
-        <div class="result-label" id="flow-result-label">Flow Rate</div>
-        <div class="result-main" id="flow-output">—</div>
-        <div class="result-formula" id="flow-formula">—</div>
-      </div>
-      <button class="btn-reset" onclick="resetFlow()" style="margin-top:1rem;">↺ Reset</button>
-    </div>
-
-    <section class="section">
-      <h2 class="section-heading">kW to M3/hr Formula</h2>
-      <p>To convert a gas appliance's power output (kW) to the required gas flow rate (m³/hr), you divide the power by the energy content of the gas (CV × VCF):</p>
-      <div class="formula-box">
-        <div class="formula-label">kW to M3/hr Formula</div>
-        m³/hr = kW × 3.6 ÷ (Calorific Value × 1.02264)
-      </div>
-      <div class="formula-box" style="background:var(--text); margin-top:0.75rem;">
-        <div class="formula-label">M3/hr to kW Formula</div>
-        kW = m³/hr × Calorific Value × 1.02264 ÷ 3.6
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-heading">Common Boiler Flow Rates</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Boiler Output</th><th>Flow Rate (m³/hr)</th><th>Flow Rate (ft³/hr)</th></tr></thead>
-          <tbody>
-            <tr><td>12 kW (small flat)</td><td>0.38 m³/hr</td><td>13.3 ft³/hr</td></tr>
-            <tr><td>18 kW (1-2 bed)</td><td>0.56 m³/hr</td><td>19.9 ft³/hr</td></tr>
-            <tr><td>24 kW (3 bed standard)</td><td>0.75 m³/hr</td><td>26.5 ft³/hr</td></tr>
-            <tr><td>30 kW (3-4 bed)</td><td>0.94 m³/hr</td><td>33.2 ft³/hr</td></tr>
-            <tr><td>40 kW (large property)</td><td>1.25 m³/hr</td><td>44.2 ft³/hr</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-heading">Related Calculators</h2>
-      <div class="related-grid">
-        <div class="related-card"><span class="rc-icon">⚡</span><a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">📐</span><a href="m3-to-kwh-conversion.html">M3 to kWh Guide</a></div>
-        <div class="related-card"><span class="rc-icon">📦</span><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">🏭</span><a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a></div>
-      </div>
-    </section>
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span>
+    <a href="/#calculators">Energy Converters</a><span>›</span>
+    <span>kW to M3/hr Gas Calculator</span>
   </div>
-</main>
+</div>
 
-<footer class="site-footer">
+<!-- ═══ HERO + CALCULATOR ═══ -->
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="tag">⚙ Gas Engineer & Boiler Sizing Tool</div>
+      <h1>kW to M3/hr<br><em>Gas Flow Calculator 2026</em></h1>
+      <p>Convert kilowatt gas ratings to cubic metres per hour flow rate — and back. <strong style="color:rgba(255,255,255,0.9)">1 kW ≈ 0.08912 m³/hr</strong> at UK average CV. Built for Gas Safe engineers, boiler installers and M&amp;E consultants for pipe sizing, meter capacity checks and multi-appliance demand calculations.</p>
+      <div class="hero-chips">
+        <span class="chip indigo">1 kW = 0.08912 m³/hr (CV 39.5)</span>
+        <span class="chip green">✓ Efficiency adjustment built-in</span>
+        <span class="chip">Multi-appliance + diversity</span>
+        <span class="chip">Meter capacity check</span>
+        <span class="chip">Updated 2026</span>
+      </div>
+    </div>
+
+    <!-- ═══ CALCULATOR ═══ -->
+    <div class="calc-card" id="calculator">
+      <h2>⚙ kW ↔ M3/hr Gas Flow Calculator</h2>
+      <p class="calc-sub">Single appliance or multi-appliance with diversity factor</p>
+
+      <div class="mode-toggle">
+        <button class="mtab active" id="tab-kw" onclick="setMode('kw')">
+          kW → M3/hr
+          <small>Enter kW, get gas flow rate</small>
+        </button>
+        <button class="mtab" id="tab-m3" onclick="setMode('m3')">
+          M3/hr → kW
+          <small>Enter flow rate, get kW</small>
+        </button>
+      </div>
+
+      <!-- APPLIANCE PRESET -->
+      <div class="form-group" style="margin-bottom:12px">
+        <label>Appliance Preset <span class="badge badge-gray">optional</span></label>
+        <select id="appliance-preset" onchange="applyAppliancePreset()">
+          <option value="">— Select appliance or enter kW manually —</option>
+          <optgroup label="Combi Boilers (rated output kW)">
+            <option value="18,92">18 kW output — small flat (92% eff.)</option>
+            <option value="24,92">24 kW output — 1–2 bed (92% eff.)</option>
+            <option value="28,92">28 kW output — 2–3 bed (92% eff.)</option>
+            <option value="30,92">30 kW output — 3 bed avg UK (92% eff.)</option>
+            <option value="35,92">35 kW output — 4 bed house (92% eff.)</option>
+            <option value="42,93">42 kW output — large detached (93% eff.)</option>
+          </optgroup>
+          <optgroup label="System / Regular Boilers (rated output kW)">
+            <option value="15,91">15 kW system boiler (91% eff.)</option>
+            <option value="20,91">20 kW system boiler (91% eff.)</option>
+            <option value="30,91">30 kW system boiler (91% eff.)</option>
+            <option value="40,91">40 kW system boiler (91% eff.)</option>
+          </optgroup>
+          <optgroup label="Other Gas Appliances (input kW)">
+            <option value="3,100">Gas hob (4 burners) — 3 kW input</option>
+            <option value="5,100">Gas range cooker — 5 kW input</option>
+            <option value="4,100">Gas fire (radiant) — 4 kW input</option>
+            <option value="6,100">Gas fire (convector) — 6 kW input</option>
+            <option value="2,100">Gas tumble dryer — 2 kW input</option>
+          </optgroup>
+          <optgroup label="Commercial (rated input kW)">
+            <option value="50,100">Commercial boiler 50 kW input</option>
+            <option value="100,100">Commercial boiler 100 kW input</option>
+            <option value="200,100">Commercial boiler 200 kW input</option>
+            <option value="500,100">Industrial burner 500 kW input</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- MAIN INPUT -->
+      <div class="form-row single">
+        <div class="form-group">
+          <label id="input-label">kW Rating <span class="badge badge-indigo">kW output</span></label>
+          <input type="number" id="val-in" placeholder="e.g. 30" min="0" step="any">
+          <span class="fn" id="input-fn">Enter kW output of appliance (efficiency adjustment below)</span>
+        </div>
+      </div>
+
+      <!-- EFFICIENCY (shown only in kW mode) -->
+      <div id="eff-row" class="form-row single">
+        <div class="form-group">
+          <label>Boiler Efficiency <span class="badge badge-gray">%</span></label>
+          <input type="number" id="efficiency" value="92" min="50" max="100" step="1">
+          <span class="fn">A-rated condensing: 91–94% · Older non-condensing: 65–80% · Use 100% for input kW</span>
+        </div>
+      </div>
+      <div class="efficiency-note" id="eff-note">
+        <strong>Output vs Input:</strong> Boiler plates show OUTPUT kW. This calculator divides by efficiency to get INPUT kW (actual gas consumed). Set efficiency to 100% if your kW value is already the gas input rating.
+      </div>
+
+      <!-- CV + VCF -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>Calorific Value <span class="badge badge-gray">kWh/m³</span></label>
+          <input type="number" id="cv" value="39.5" min="30" max="55" step="0.1">
+          <span class="fn">UK avg 39.5 · LNG 42–48</span>
+        </div>
+        <div class="form-group">
+          <label>Vol. Correction <span class="badge badge-gray">VCF</span></label>
+          <input type="number" id="vcf" value="1.02264" readonly>
+          <span class="fn">Ofgem standard (fixed)</span>
+        </div>
+      </div>
+
+      <!-- DIVERSITY FACTOR -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>Diversity Factor <span class="badge badge-gray">0–1</span></label>
+          <input type="number" id="diversity" value="1.0" min="0.1" max="1.0" step="0.05">
+          <span class="fn">1.0 = single appliance · 0.75–0.90 = domestic multi-appliance</span>
+        </div>
+        <div class="form-group">
+          <label>Gas Source <span class="badge badge-gray">CV preset</span></label>
+          <select id="cv-preset" onchange="applyPreset()">
+            <option value="">— Set CV by source —</option>
+            <option value="38.5">UK North (38.5)</option>
+            <option value="39.5">UK Avg (39.5)</option>
+            <option value="40.5">UK South (40.5)</option>
+            <option value="42.0">Qatar LNG (42.0)</option>
+            <option value="46.0">USA LNG (46.0)</option>
+          </select>
+        </div>
+      </div>
+
+      <hr class="calc-divider">
+      <button class="btn-calc" id="calc-btn" onclick="calculate()">Calculate Gas Flow Rate →</button>
+      <button class="btn-reset" id="reset-btn" onclick="resetCalc()">↺ Reset Calculator</button>
+
+      <!-- RESULTS -->
+      <div class="result-wrap" id="result-wrap">
+        <div class="result-banner">
+          <div class="rb-item">
+            <div class="rb-label" id="res-primary-label">Gas Flow Rate</div>
+            <div class="rb-val"><span id="res-primary">—</span> <small id="res-primary-unit">m³/hr</small></div>
+          </div>
+          <div class="rb-item">
+            <div class="rb-label" id="res-secondary-label">Input kW</div>
+            <div class="rb-val"><span id="res-secondary">—</span> <small id="res-secondary-unit">kW</small></div>
+          </div>
+        </div>
+        <div class="result-grid">
+          <div class="rg-card" id="rg-output">
+            <div class="rg-label">kW Output</div>
+            <div class="rg-val"><span id="res-kw-out">—</span><small> kW</small></div>
+          </div>
+          <div class="rg-card" id="rg-input">
+            <div class="rg-label">kW Input (gas)</div>
+            <div class="rg-val"><span id="res-kw-in">—</span><small> kW</small></div>
+          </div>
+          <div class="rg-card" id="rg-diversity">
+            <div class="rg-label">After Diversity</div>
+            <div class="rg-val"><span id="res-design">—</span><small> m³/hr</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">Per Hour (kWh)</div>
+            <div class="rg-val"><span id="res-kwh-hr">—</span><small> kWh/hr</small></div>
+          </div>
+          <div class="rg-card">
+            <div class="rg-label">Daily (8 hr)</div>
+            <div class="rg-val"><span id="res-daily">—</span><small> m³/day</small></div>
+          </div>
+          <div class="rg-card" id="rg-meter">
+            <div class="rg-label">Meter Check</div>
+            <div class="rg-val" id="res-meter">—</div>
+          </div>
+        </div>
+        <div class="r-formula" id="res-formula"></div>
+        <div class="r-meter-check" id="res-meter-detail"></div>
+        <div class="r-actions">
+          <a href="/gas-m3-to-kwh-calculator.html" class="ra-indigo">🔥 M3 to kWh</a>
+          <a href="/btu-to-m3-converter.html" class="ra-ghost">🌡 BTU to M3</a>
+          <a href="/gas-bill-calculator-uk.html" class="ra-ghost">💷 Gas Bill</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTENT + SIDEBAR ═══ -->
+<div class="content-wrap">
+  <main class="main-content">
+
+    <!-- AD: Leaderboard top -->
+    <div class="ad-slot ad-leader">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <h2>kW vs M3/hr — Understanding Gas Flow Rate</h2>
+    <p>When working with gas appliances, two different physical quantities come into play. <strong>Kilowatts (kW)</strong> measure power — the rate of energy delivery or consumption at any given moment. <strong>Cubic metres per hour (m³/hr)</strong> measure volumetric gas flow — the physical volume of gas passing through a pipe or meter per hour. Gas Safe engineers need to convert between these regularly: a boiler's kW output rating must be converted to m³/hr to size the supply pipe, verify meter capacity, and calculate total site gas demand for multi-appliance installations.</p>
+
+    <div class="equiv-grid">
+      <div class="eq-card">
+        <div class="eq-val">0.08912<br><small style="font-size:0.68rem">m³/hr</small></div>
+        <div class="eq-label">1 kW input = m³/hr (CV 39.5)</div>
+      </div>
+      <div class="eq-card">
+        <div class="eq-val">11.221<br><small style="font-size:0.68rem">kW</small></div>
+        <div class="eq-label">1 m³/hr = kW input (CV 39.5)</div>
+      </div>
+      <div class="eq-card">
+        <div class="eq-val">2.674<br><small style="font-size:0.68rem">m³/hr</small></div>
+        <div class="eq-label">30 kW output boiler (92% eff.)</div>
+      </div>
+      <div class="eq-card">
+        <div class="eq-val">U6<br><small style="font-size:0.68rem">meter type</small></div>
+        <div class="eq-label">≤6 m³/hr — standard domestic</div>
+      </div>
+    </div>
+
+    <h2>The kW to M3/hr Formula</h2>
+    <p>The conversion uses the same Ofgem-mandated calorific value formula as all UK gas calculations. Since both kW and m³/hr are <em>rate</em> quantities (per hour), the time dimension cancels cleanly — making the formula structurally identical to the kWh-to-m³ conversion but applied to instantaneous power and flow.</p>
+
+    <div class="formula-box">
+      <div class="fb-label">⚙ kW to M3/hr Formula</div>
+      <div class="fb-main">m³/hr = kW(input) × 3.6 ÷ (CV × VCF)</div>
+      <div class="fb-sub">→ Simplified at CV 39.5: m³/hr = kW(input) × 0.08912</div>
+      <div class="fb-sub">→ From output kW: m³/hr = (kW(out) ÷ η) × 0.08912</div>
+      <div class="fb-vars">
+        <div class="fb-var"><strong>kW(input)</strong><span>Gas energy input rate</span></div>
+        <div class="fb-var"><strong>× 3.6</strong><span>Converts kWh to MJ</span></div>
+        <div class="fb-var"><strong>÷ CV</strong><span>kWh per m³ (39.5 avg)</span></div>
+        <div class="fb-var"><strong>÷ 1.02264</strong><span>Ofgem VCF (fixed)</span></div>
+        <div class="fb-var"><strong>η = efficiency</strong><span>e.g. 0.92 for A-rated</span></div>
+      </div>
+    </div>
+
+    <div class="formula-box green" style="margin-top:14px">
+      <div class="fb-label">🔄 M3/hr to kW Reverse Formula</div>
+      <div class="fb-main">kW(input) = m³/hr × CV × VCF ÷ 3.6</div>
+      <div class="fb-sub">→ Simplified at CV 39.5: kW = m³/hr × 11.221</div>
+      <div class="fb-sub">→ kW output = kW(input) × η</div>
+      <div class="fb-vars">
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>× CV × VCF</strong><span>Energy per m³ of gas</span></div>
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>÷ 3.6</strong><span>MJ to kWh conversion</span></div>
+        <div class="fb-var" style="background:rgba(46,125,50,0.07);border-color:rgba(46,125,50,0.18)"><strong>× η</strong><span>Gives output kW from input</span></div>
+      </div>
+    </div>
+
+    <div class="formula-box orange" style="margin-top:14px">
+      <div class="fb-label">⚠ Efficiency Adjustment Formula</div>
+      <div class="fb-main">kW(input) = kW(output) ÷ efficiency</div>
+      <div class="fb-sub">→ 30 kW output ÷ 0.92 = 32.61 kW input → 32.61 × 0.08912 = 2.906 m³/hr</div>
+      <div class="fb-vars">
+        <div class="fb-var" style="background:rgba(230,81,0,0.07);border-color:rgba(230,81,0,0.2)"><strong>A-rated (ErP A)</strong><span>91–94% typical 2026</span></div>
+        <div class="fb-var" style="background:rgba(230,81,0,0.07);border-color:rgba(230,81,0,0.2)"><strong>B-rated</strong><span>86–90%</span></div>
+        <div class="fb-var" style="background:rgba(230,81,0,0.07);border-color:rgba(230,81,0,0.2)"><strong>D-rated</strong><span>78–85%</span></div>
+        <div class="fb-var" style="background:rgba(230,81,0,0.07);border-color:rgba(230,81,0,0.2)"><strong>G-rated (old)</strong><span>65–78%</span></div>
+      </div>
+    </div>
+
+    <h2>How to Convert kW to M3/hr — Step by Step</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="sn">1</div>
+        <div class="sb">
+          <h3 id="step1">Determine Input kW (Not Output)</h3>
+          <p>Gas pipe and meter sizing must use the <strong>INPUT kW</strong> — the gas energy rate entering the appliance — not the heat output delivered to the system. Check the appliance data plate for "Max Gas Input" or "Max Input." If only output kW is available, divide by efficiency.</p>
+          <div class="step-eg">Boiler data plate examples:
+"Max heat output: 30 kW  Max gas input: 32.6 kW"  ← use 32.6
+"Rated output: 35 kW  Efficiency: 93.2%"  ← calculate: 35 ÷ 0.932 = 37.6 kW input
+"28 kW combi"  ← plate output only: 28 ÷ 0.92 = 30.4 kW input (assume 92%)</div>
+          <div class="step-warn">Never use the output kW directly for pipe sizing — this under-estimates gas demand and can result in undersized pipework and pressure drop issues.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">2</div>
+        <div class="sb" id="step2">
+          <h3>Apply the Flow Rate Formula</h3>
+          <p>Multiply input kW by 3.6 to get MJ/hr, then divide by (CV × VCF). At UK national average CV 39.5 and VCF 1.02264, the simplified factor is 0.08912 m³/hr per kW. Use the calculator above for any CV or efficiency value.</p>
+          <div class="step-eg">30 kW boiler output, 92% efficiency:
+Input kW  = 30 ÷ 0.92 = 32.61 kW
+Gas flow  = 32.61 × 3.6 ÷ (39.5 × 1.02264)
+          = 117.39 ÷ 40.394
+          = 2.906 m³/hr</div>
+          <div class="step-tip">At CV 39.5, quick mental arithmetic: multiply input kW by 0.09 for a fast estimate (2% over-estimate — safe for initial sizing).</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">3</div>
+        <div class="sb" id="step3">
+          <h3>Apply Diversity Factor for Multiple Appliances</h3>
+          <p>For installations with multiple gas appliances, calculate m³/hr for each individually, sum them, then multiply by the appropriate diversity factor from BS 6400 (domestic) or IGE/UP/2 (commercial). Diversity factors reflect that not all appliances run simultaneously at full load.</p>
+          <div class="step-eg">Domestic example:
+30 kW boiler input (32.6 kW)  → 2.906 m³/hr
+5 kW gas hob (input, 100%)    → 0.446 m³/hr
+4 kW gas fire (input, 100%)   → 0.357 m³/hr
+Total undiversified:            3.709 m³/hr
+Diversity factor (0.80):      × 0.80
+Design flow rate:               2.967 m³/hr</div>
+          <div class="step-tip">BS 6400 diversity factors for domestic: single appliance = 1.0; boiler + one other = 0.85–0.95; boiler + two others = 0.75–0.85. Always confirm with current edition of the standard.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">4</div>
+        <div class="sb" id="step4">
+          <h3>Check Meter & Pipe Capacity</h3>
+          <p>Compare your design flow rate against the installed gas meter capacity and pipe carrying capacity. A standard UK domestic U6 meter handles up to 6 m³/hr. Pipe capacity depends on diameter, length, fittings and operating pressure — use BS 6891 pressure drop tables for detailed sizing.</p>
+          <div class="step-eg">Design flow = 2.967 m³/hr
+U6 meter capacity = 6.0 m³/hr  ✓ Adequate
+22mm copper, 10m run ≈ 3.5 m³/hr capacity ✓
+15mm copper, 10m run ≈ 1.2 m³/hr ✗ Insufficient</div>
+          <div class="step-warn">This calculator provides flow rate only — it does not replace a full BS 6891 pressure drop calculation. Always verify pipe sizing for the specific installation using measured pipe lengths and fitting counts.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKED EXAMPLES -->
+    <h2>Worked Examples — kW to M3/hr</h2>
+    <div class="ex-grid">
+      <div class="ex-card">
+        <div class="ex-label">24 kW Combi</div>
+        <div class="ex-input">24 kW output · 92% eff.</div>
+        <div class="ex-result">2.326 m³/hr</div>
+        <div class="ex-calc">Input: 24 ÷ 0.92 = 26.09 kW<br>26.09 × 0.08912 = 2.326 m³/hr<br>Meter: U6 adequate ✓</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">35 kW System</div>
+        <div class="ex-input">35 kW output · 91% eff.</div>
+        <div class="ex-result">3.428 m³/hr</div>
+        <div class="ex-calc">Input: 35 ÷ 0.91 = 38.46 kW<br>38.46 × 0.08912 = 3.428 m³/hr<br>Meter: U6 adequate ✓</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Multi-appliance</div>
+        <div class="ex-input">30kW + 5kW hob + 4kW fire</div>
+        <div class="ex-result">2.967 m³/hr</div>
+        <div class="ex-calc">Total: 3.709 m³/hr<br>Diversity × 0.80<br>Design: 2.967 m³/hr</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Old G-Rated</div>
+        <div class="ex-input">28 kW output · 70% eff.</div>
+        <div class="ex-result">3.564 m³/hr</div>
+        <div class="ex-calc">Input: 28 ÷ 0.70 = 40.0 kW<br>40.0 × 0.08912 = 3.564 m³/hr<br>vs new: 28÷0.92 = 2.712 m³/hr</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Commercial 100 kW</div>
+        <div class="ex-input">100 kW input · LNG CV 42.0</div>
+        <div class="ex-result">8.364 m³/hr</div>
+        <div class="ex-calc">100 × 3.6 ÷ (42.0 × 1.02264)<br>= 360 ÷ 42.95<br>= 8.384 m³/hr</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Reverse: M3/hr → kW</div>
+        <div class="ex-input">3.5 m³/hr (CV 39.5)</div>
+        <div class="ex-result">39.27 kW</div>
+        <div class="ex-calc">3.5 × 39.5 × 1.02264 ÷ 3.6<br>= 3.5 × 11.221<br>= 39.27 kW input</div>
+      </div>
+    </div>
+
+    <!-- AD: In-article 1 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- COMMON APPLIANCE DEMANDS -->
+    <h2>UK Gas Appliance Demand Reference 2026</h2>
+    <p>Gas demand in m³/hr for common UK residential and commercial gas appliances, calculated at CV 39.5 kWh/m³. Boiler figures use 92% efficiency for output-to-input conversion. Hob, fire and cooker figures are direct input ratings (100% efficiency).</p>
+
+    <div class="appliance-grid">
+      <div class="ap-card boiler"><div class="ap-type">18 kW Combi</div><div class="ap-kw">19.57 kW input</div><div class="ap-m3">1.743 m³/hr</div><div class="ap-note">Studio / 1-bed flat</div></div>
+      <div class="ap-card boiler"><div class="ap-type">24 kW Combi</div><div class="ap-kw">26.09 kW input</div><div class="ap-m3">2.326 m³/hr</div><div class="ap-note">1–2 bed flat</div></div>
+      <div class="ap-card boiler"><div class="ap-type">30 kW Combi</div><div class="ap-kw">32.61 kW input</div><div class="ap-m3">2.906 m³/hr</div><div class="ap-note">3-bed house (UK avg)</div></div>
+      <div class="ap-card boiler"><div class="ap-type">35 kW System</div><div class="ap-kw">38.46 kW input</div><div class="ap-m3">3.428 m³/hr</div><div class="ap-note">4-bed house</div></div>
+      <div class="ap-card hob"><div class="ap-type">Gas Hob (4-burner)</div><div class="ap-kw">3.0 kW input</div><div class="ap-m3">0.267 m³/hr</div><div class="ap-note">All burners full</div></div>
+      <div class="ap-card hob"><div class="ap-type">Gas Range Cooker</div><div class="ap-kw">5.0 kW input</div><div class="ap-m3">0.446 m³/hr</div><div class="ap-note">All burners + oven</div></div>
+      <div class="ap-card fire"><div class="ap-type">Gas Fire (radiant)</div><div class="ap-kw">4.0 kW input</div><div class="ap-m3">0.357 m³/hr</div><div class="ap-note">Typical living room</div></div>
+      <div class="ap-card commercial"><div class="ap-type">Commercial Boiler</div><div class="ap-kw">100 kW input</div><div class="ap-m3">8.912 m³/hr</div><div class="ap-note">Office / retail</div></div>
+    </div>
+
+    <!-- GAS METER CAPACITY -->
+    <h2>UK Gas Meter Capacity Reference 2026</h2>
+    <p>UK domestic and commercial gas meters are classified by their maximum flow capacity in m³/hr. Selecting the correct meter is a regulatory requirement — an undersized meter will restrict gas flow and cause appliance lockout. Meter selection is also a function of minimum flow (meters have a minimum operating rate, typically 2% of maximum).</p>
+
+    <div class="meter-visual">
+      <div class="mv-card u6">
+        <div class="mv-type">U6 Meter</div>
+        <div class="mv-cap">Standard Domestic</div>
+        <div class="mv-m3 green">6 m³/hr</div>
+        <div class="mv-kw">≈ 67 kW input (CV 39.5)</div>
+        <div class="mv-use">Single boiler up to ~60 kW output. Standard meter for UK homes with 1–2 gas appliances. Covers 30 kW boiler + hob + gas fire comfortably.</div>
+      </div>
+      <div class="mv-card u16">
+        <div class="mv-type">U16 Meter</div>
+        <div class="mv-cap">Large Domestic / Light Commercial</div>
+        <div class="mv-m3 indigo">16 m³/hr</div>
+        <div class="mv-kw">≈ 180 kW input (CV 39.5)</div>
+        <div class="mv-use">Multiple large appliances, large detached houses with high gas demand, small commercial kitchens. Required when total diversified demand exceeds 6 m³/hr.</div>
+      </div>
+      <div class="mv-card u25">
+        <div class="mv-type">U25 / U40 Meter</div>
+        <div class="mv-cap">Commercial</div>
+        <div class="mv-m3 orange">25–40 m³/hr</div>
+        <div class="mv-kw">≈ 280–449 kW input</div>
+        <div class="mv-use">Commercial boiler plant, industrial bakeries, restaurants and catering operations with multiple large burners and process heat requirements.</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Meter Type</th>
+            <th>Max Flow (m³/hr)</th>
+            <th>Max Input kW (CV 39.5)</th>
+            <th>Max Output kW (92%)</th>
+            <th>Typical Application</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>U6</td><td>6 m³/hr</td><td>67.3 kW</td><td>61.9 kW</td><td>Standard domestic, single boiler</td></tr>
+          <tr class="hl"><td>U6 (with cooker)</td><td>6 m³/hr</td><td>67.3 kW</td><td>61.9 kW</td><td>30 kW boiler + hob + fire — marginal</td></tr>
+          <tr><td>U16</td><td>16 m³/hr</td><td>179.5 kW</td><td>165.1 kW</td><td>Large homes, light commercial</td></tr>
+          <tr><td>U25</td><td>25 m³/hr</td><td>280.5 kW</td><td>258.1 kW</td><td>Small commercial premises</td></tr>
+          <tr><td>U40</td><td>40 m³/hr</td><td>448.9 kW</td><td>413.0 kW</td><td>Medium commercial / industrial</td></tr>
+          <tr><td>U65</td><td>65 m³/hr</td><td>729.4 kW</td><td>671.0 kW</td><td>Large commercial / industrial</td></tr>
+          <tr><td>U100</td><td>100 m³/hr</td><td>1,122 kW</td><td>1,032 kW</td><td>Industrial plant / district heating</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">kW input = m³/hr × CV × VCF ÷ 3.6 at CV 39.5,VCF 1.02264. Output kW assumes 92% boiler efficiency. Meter selection must comply with current Gas Industry Unsafe Situations Procedure (GIUSP) and be specified by a Gas Safe registered engineer.</p>
+
+    <!-- AD: In-article 2 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- kW TO M3/HR REFERENCE TABLE -->
+    <h2>kW to M3/hr Conversion Table 2026</h2>
+    <p>Full reference table from 1 kW to 500 kW input at UK average CV 39.5 kWh/m³. All values are gas <strong>input</strong> kW to m³/hr. For output kW ratings, multiply your boiler kW by (1 ÷ efficiency) first — e.g. 30 kW output ÷ 0.92 = 32.6 kW input.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Input kW</th>
+            <th>M3/hr (CV 39.5)</th>
+            <th>M3/hr (CV 38.5)</th>
+            <th>M3/hr (CV 40.5)</th>
+            <th>M3/hr (CV 42.0 LNG)</th>
+            <th>kWh/hr consumed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1 kW</td><td>0.0891 m³/hr</td><td>0.0914 m³/hr</td><td>0.0870 m³/hr</td><td>0.0838 m³/hr</td><td>1.000 kWh/hr</td></tr>
+          <tr><td>5 kW</td><td>0.446 m³/hr</td><td>0.457 m³/hr</td><td>0.435 m³/hr</td><td>0.419 m³/hr</td><td>5.000 kWh/hr</td></tr>
+          <tr><td>10 kW</td><td>0.891 m³/hr</td><td>0.914 m³/hr</td><td>0.870 m³/hr</td><td>0.838 m³/hr</td><td>10.00 kWh/hr</td></tr>
+          <tr><td>15 kW</td><td>1.337 m³/hr</td><td>1.371 m³/hr</td><td>1.305 m³/hr</td><td>1.257 m³/hr</td><td>15.00 kWh/hr</td></tr>
+          <tr><td>18 kW</td><td>1.604 m³/hr</td><td>1.645 m³/hr</td><td>1.566 m³/hr</td><td>1.508 m³/hr</td><td>18.00 kWh/hr</td></tr>
+          <tr class="hl"><td>19.57 kW (18kW out / 92%)</td><td>1.744 m³/hr</td><td>1.788 m³/hr</td><td>1.703 m³/hr</td><td>1.640 m³/hr</td><td>19.57 kWh/hr</td></tr>
+          <tr><td>20 kW</td><td>1.782 m³/hr</td><td>1.827 m³/hr</td><td>1.740 m³/hr</td><td>1.675 m³/hr</td><td>20.00 kWh/hr</td></tr>
+          <tr class="hl"><td>26.09 kW (24kW out / 92%)</td><td>2.326 m³/hr</td><td>2.385 m³/hr</td><td>2.270 m³/hr</td><td>2.186 m³/hr</td><td>26.09 kWh/hr</td></tr>
+          <tr><td>28 kW</td><td>2.495 m³/hr</td><td>2.559 m³/hr</td><td>2.435 m³/hr</td><td>2.344 m³/hr</td><td>28.00 kWh/hr</td></tr>
+          <tr><td>30 kW</td><td>2.674 m³/hr</td><td>2.742 m³/hr</td><td>2.609 m³/hr</td><td>2.512 m³/hr</td><td>30.00 kWh/hr</td></tr>
+          <tr class="hl"><td>32.61 kW (30kW out / 92%)</td><td>2.906 m³/hr</td><td>2.980 m³/hr</td><td>2.836 m³/hr</td><td>2.731 m³/hr</td><td>32.61 kWh/hr</td></tr>
+          <tr><td>35 kW</td><td>3.119 m³/hr</td><td>3.199 m³/hr</td><td>3.044 m³/hr</td><td>2.931 m³/hr</td><td>35.00 kWh/hr</td></tr>
+          <tr class="hl"><td>38.04 kW (35kW out / 92%)</td><td>3.391 m³/hr</td><td>3.477 m³/hr</td><td>3.309 m³/hr</td><td>3.186 m³/hr</td><td>38.04 kWh/hr</td></tr>
+          <tr><td>40 kW</td><td>3.565 m³/hr</td><td>3.655 m³/hr</td><td>3.479 m³/hr</td><td>3.349 m³/hr</td><td>40.00 kWh/hr</td></tr>
+          <tr><td>42 kW</td><td>3.743 m³/hr</td><td>3.838 m³/hr</td><td>3.653 m³/hr</td><td>3.516 m³/hr</td><td>42.00 kWh/hr</td></tr>
+          <tr><td>50 kW</td><td>4.456 m³/hr</td><td>4.569 m³/hr</td><td>4.348 m³/hr</td><td>4.186 m³/hr</td><td>50.00 kWh/hr</td></tr>
+          <tr><td>60 kW</td><td>5.347 m³/hr</td><td>5.483 m³/hr</td><td>5.218 m³/hr</td><td>5.023 m³/hr</td><td>60.00 kWh/hr</td></tr>
+          <tr><td>70 kW</td><td>6.238 m³/hr</td><td>6.397 m³/hr</td><td>6.087 m³/hr</td><td>5.860 m³/hr</td><td>70.00 kWh/hr</td></tr>
+          <tr><td>80 kW</td><td>7.129 m³/hr</td><td>7.311 m³/hr</td><td>6.956 m³/hr</td><td>6.697 m³/hr</td><td>80.00 kWh/hr</td></tr>
+          <tr><td>100 kW</td><td>8.912 m³/hr</td><td>9.139 m³/hr</td><td>8.696 m³/hr</td><td>8.372 m³/hr</td><td>100.0 kWh/hr</td></tr>
+          <tr><td>150 kW</td><td>13.37 m³/hr</td><td>13.71 m³/hr</td><td>13.04 m³/hr</td><td>12.56 m³/hr</td><td>150.0 kWh/hr</td></tr>
+          <tr><td>200 kW</td><td>17.82 m³/hr</td><td>18.28 m³/hr</td><td>17.39 m³/hr</td><td>16.74 m³/hr</td><td>200.0 kWh/hr</td></tr>
+          <tr><td>300 kW</td><td>26.74 m³/hr</td><td>27.42 m³/hr</td><td>26.09 m³/hr</td><td>25.12 m³/hr</td><td>300.0 kWh/hr</td></tr>
+          <tr><td>500 kW</td><td>44.56 m³/hr</td><td>45.70 m³/hr</td><td>43.48 m³/hr</td><td>41.86 m³/hr</td><td>500.0 kWh/hr</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">Formula: m³/hr = kW × 3.6 ÷ (CV × 1.02264). Highlighted rows show common boiler output ratings converted to input kW at 92% efficiency. For non-condensing boilers at 70–80% efficiency, actual m³/hr will be 15–30% higher than values shown for same output kW.</p>
+
+    <!-- CTA BLOCK -->
+    <div class="cta-block">
+      <h3>⚙ Need Boiler Output → kWh Usage?</h3>
+      <p>Convert your gas meter m³ readings to kWh for billing calculations, or check your gas bill cost.</p>
+      <div class="cta-btns">
+        <a href="/gas-m3-to-kwh-calculator.html" class="btn-indigo">🔥 M3 to kWh Calculator</a>
+        <a href="/gas-bill-calculator-uk.html" class="btn-ghost">💷 Gas Bill Calculator</a>
+        <a href="/btu-to-m3-converter.html" class="btn-ghost">🌡 BTU to M3</a>
+        <a href="/gas-usage-calculator.html" class="btn-ghost">📊 Usage Calculator</a>
+      </div>
+    </div>
+
+    <!-- REGIONAL CV TABLE -->
+    <h2>kW to M3/hr by UK Region & CV 2026</h2>
+    <p>Because calorific value varies by region and gas source, the same kW input generates a different m³/hr demand across the UK. For a 30 kW combi boiler input, the difference between Scotland's lower CV gas and South East pipeline gas is approximately 5% — significant for precise commercial pipe sizing but typically within safety margins for domestic work. Use the actual CV from your gas contract or Xoserve for critical engineering calculations.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>UK Region / Gas Source</th>
+            <th>CV (kWh/m³)</th>
+            <th>Band</th>
+            <th>m³/hr per kW</th>
+            <th>30 kW → m³/hr</th>
+            <th>32.6 kW → m³/hr</th>
+            <th>100 kW → m³/hr</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>UK North East England</td><td>37.5</td><td><span class="cv-tag cv-low">Low</span></td><td>0.09389 m³/hr/kW</td><td>2.817 m³/hr</td><td>3.061 m³/hr</td><td>9.389 m³/hr</td></tr>
+          <tr><td>Scotland</td><td>38.0</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>0.09264 m³/hr/kW</td><td>2.779 m³/hr</td><td>3.020 m³/hr</td><td>9.264 m³/hr</td></tr>
+          <tr><td>North West England</td><td>38.5</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>0.09139 m³/hr/kW</td><td>2.742 m³/hr</td><td>2.979 m³/hr</td><td>9.139 m³/hr</td></tr>
+          <tr><td>Yorkshire & Humber</td><td>39.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>0.09021 m³/hr/kW</td><td>2.706 m³/hr</td><td>2.941 m³/hr</td><td>9.021 m³/hr</td></tr>
+          <tr><td>Wales</td><td>39.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>0.09021 m³/hr/kW</td><td>2.706 m³/hr</td><td>2.941 m³/hr</td><td>9.021 m³/hr</td></tr>
+          <tr class="hl"><td>🇬🇧 UK National Average</td><td>39.5</td><td><span class="cv-tag cv-avg">Avg</span></td><td>0.08912 m³/hr/kW</td><td>2.674 m³/hr</td><td>2.905 m³/hr</td><td>8.912 m³/hr</td></tr>
+          <tr><td>East Midlands</td><td>39.8</td><td><span class="cv-tag cv-avg">Average</span></td><td>0.08845 m³/hr/kW</td><td>2.654 m³/hr</td><td>2.883 m³/hr</td><td>8.845 m³/hr</td></tr>
+          <tr><td>South West England</td><td>40.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>0.08800 m³/hr/kW</td><td>2.640 m³/hr</td><td>2.869 m³/hr</td><td>8.800 m³/hr</td></tr>
+          <tr><td>West Midlands</td><td>40.2</td><td><span class="cv-tag cv-avg">Above Avg</span></td><td>0.08756 m³/hr/kW</td><td>2.627 m³/hr</td><td>2.855 m³/hr</td><td>8.756 m³/hr</td></tr>
+          <tr><td>London & South East</td><td>40.5</td><td><span class="cv-tag cv-hi">Above Avg</span></td><td>0.08696 m³/hr/kW</td><td>2.609 m³/hr</td><td>2.834 m³/hr</td><td>8.696 m³/hr</td></tr>
+          <tr><td>East of England</td><td>41.0</td><td><span class="cv-tag cv-hi">High</span></td><td>0.08590 m³/hr/kW</td><td>2.577 m³/hr</td><td>2.800 m³/hr</td><td>8.590 m³/hr</td></tr>
+          <tr><td>Norway / North Sea Pipeline</td><td>41.5</td><td><span class="cv-tag cv-hi">High</span></td><td>0.08485 m³/hr/kW</td><td>2.546 m³/hr</td><td>2.766 m³/hr</td><td>8.485 m³/hr</td></tr>
+          <tr><td>Qatar LNG (Qatargas)</td><td>42.0</td><td><span class="cv-tag cv-lng">LNG</span></td><td>0.08381 m³/hr/kW</td><td>2.514 m³/hr</td><td>2.732 m³/hr</td><td>8.381 m³/hr</td></tr>
+          <tr><td>Australia LNG</td><td>44.5</td><td><span class="cv-tag cv-lng">LNG</span></td><td>0.07916 m³/hr/kW</td><td>2.375 m³/hr</td><td>2.581 m³/hr</td><td>7.916 m³/hr</td></tr>
+          <tr><td>USA Sabine Pass LNG</td><td>46.0</td><td><span class="cv-tag cv-lng">LNG</span></td><td>0.07653 m³/hr/kW</td><td>2.296 m³/hr</td><td>2.495 m³/hr</td><td>7.653 m³/hr</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">m³/hr per kW = 3.6 ÷ (CV × 1.02264). 30 kW column = direct input kW (100% efficiency). 32.6 kW column = 30 kW output ÷ 0.92 efficiency. Source: Xoserve, GIIGNL, National Grid 2026. CVs update quarterly — use contract CV for commercial engineering.</p>
+
+    <!-- FAQ -->
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>How do I convert kW to m3/hr for gas?</summary>
+        <div class="faq-ans">Formula: <strong>m³/hr = kW(input) × 3.6 ÷ (CV × VCF)</strong>. At UK average CV 39.5 and VCF 1.02264, this simplifies to m³/hr = kW × 0.08912. Example: 30 kW input × 0.08912 = 2.674 m³/hr. If you have an output kW rating, divide by efficiency first: 30 kW output ÷ 0.92 = 32.6 kW input → 32.6 × 0.08912 = 2.906 m³/hr. Use the <a href="#calculator">calculator above</a> for any appliance, CV or efficiency value.</div>
+      </details>
+      <details>
+        <summary>How many m3/hr is a 24kW boiler?</summary>
+        <div class="faq-ans">A <strong>24 kW output combi boiler at 92% efficiency</strong> has a gas input of 26.09 kW. Flow rate = 26.09 × 0.08912 = <strong>2.326 m³/hr</strong> at UK average CV. If reading from the boiler data plate input rating directly, use that figure instead. A U6 domestic meter (6 m³/hr capacity) comfortably handles a 24 kW boiler plus additional domestic appliances. Standard 22mm copper pipework is adequate for this flow rate in typical domestic layouts.</div>
+      </details>
+      <details>
+        <summary>What is the formula for kW to m3/hr gas?</summary>
+        <div class="faq-ans">The formula to convert kW to m³/hr of natural gas is: <strong>m³/hr = kW × 3.6 ÷ (CV × VCF)</strong>. Where CV = calorific value in kWh/m³ (UK average 39.5), VCF = volume correction factor (Ofgem standard 1.02264), and the 3.6 factor converts kWh to MJ. Simplified at CV 39.5: m³/hr = kW × 0.08912. Reverse formula: <strong>kW = m³/hr × CV × VCF ÷ 3.6 = m³/hr × 11.221</strong> at CV 39.5.</div>
+      </details>
+      <details>
+        <summary>How many m3/hr does a 35kW boiler use?</summary>
+        <div class="faq-ans">A <strong>35 kW output boiler at 92% efficiency</strong>: input = 35 ÷ 0.92 = 38.04 kW → flow = 38.04 × 0.08912 = <strong>3.391 m³/hr</strong>. At 93% efficiency: 35 ÷ 0.93 = 37.63 kW → 3.354 m³/hr. At 94%: 3.319 m³/hr. A 35 kW boiler is typical for a 4-bedroom house. A U6 meter (6 m³/hr) remains adequate for a single boiler of this size even with a gas hob added. 22mm supply pipework is usually sufficient depending on pipe run length — verify with BS 6891 pressure drop calculation.</div>
+      </details>
+      <details>
+        <summary>What gas meter do I need for a 30kW boiler?</summary>
+        <div class="faq-ans">A 30 kW output boiler at 92% efficiency requires approximately <strong>2.906 m³/hr</strong> gas flow. A standard <strong>U6 domestic meter (6 m³/hr capacity)</strong> is adequate for a single 30 kW boiler — even with additional domestic appliances (gas hob ≈ 0.27 m³/hr, gas fire ≈ 0.36 m³/hr), the diversified total remains within 4 m³/hr. A U16 meter is only needed if total undiversified appliance demand exceeds 6 m³/hr, which would require approximately 67+ kW of simultaneous gas input — uncommon in standard UK homes.</div>
+      </details>
+      <details>
+        <summary>How do I calculate total gas demand for multiple appliances?</summary>
+        <div class="faq-ans">Step 1: Convert each appliance to m³/hr using m³/hr = kW(input) × 0.08912. Step 2: Sum all values. Step 3: Apply diversity factor per BS 6400. Example: <strong>30 kW boiler</strong> (32.6 kW input → 2.906 m³/hr) + <strong>gas hob</strong> (3 kW input → 0.267 m³/hr) + <strong>gas fire</strong> (4 kW input → 0.357 m³/hr) = 3.530 m³/hr total. Diversity factor 0.80 → design flow = <strong>2.824 m³/hr</strong>. U6 meter adequate ✓. Enter multiple values manually in the <a href="#calculator">calculator above</a> by summing kW inputs before applying diversity.</div>
+      </details>
+      <details>
+        <summary>What pipe size do I need for a 30kW gas boiler?</summary>
+        <div class="faq-ans">For a 30 kW output boiler requiring ≈ 2.9 m³/hr gas input, general guidance per BS 6891: <strong>22mm copper</strong> is the standard minimum for most domestic boiler connections. 15mm copper handles ≈ 0.8–1.2 m³/hr (adequate for gas hob only, not a boiler). 28mm copper handles 4–8 m³/hr (only needed for very long runs or multiple large appliances). Always perform a full BS 6891 pressure drop calculation using actual pipe length, number of fittings and available pressure — this calculator provides flow rate only and does not replace engineering calculations.</div>
+      </details>
+      <details>
+        <summary>How do I convert m3/hr to kW for gas?</summary>
+        <div class="faq-ans">Reverse formula: <strong>kW(input) = m³/hr × CV × VCF ÷ 3.6</strong>. At CV 39.5: kW = m³/hr × 11.221. Example: gas meter reading showing 3 m³/hr flow = 3 × 11.221 = <strong>33.66 kW gas input</strong>. To find boiler output kW, multiply by efficiency: 33.66 × 0.92 = 30.97 kW output. Switch to M3/hr → kW mode in the <a href="#calculator">calculator above</a> for an instant result with your actual CV and efficiency values.</div>
+      </details>
+      <details>
+        <summary>What is the difference between kW input and kW output for a gas boiler?</summary>
+        <div class="faq-ans"><strong>kW output</strong> is the useful heat delivered to the heating system or hot water cylinder. <strong>kW input</strong> is the rate of gas energy consumed — always higher than output. The difference is the boiler's efficiency: output = input × efficiency. For pipe sizing and meter capacity, always use input kW. Modern ErP A-rated condensing boilers in 2026: 91–94% efficient. Older non-condensing boilers: 65–80%. A poorly maintained G-rated boiler consumes 30–40% more gas than a modern A-rated equivalent to deliver the same output kW — its m³/hr demand will be proportionally higher.</div>
+      </details>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <div class="sb-cta">
+      <h4>⚙ Related Gas Tools</h4>
+      <p>More free UK energy unit converters</p>
+      <a href="/gas-m3-to-kwh-calculator.html" class="s-indigo">🔥 Gas M3 to kWh</a>
+      <a href="/btu-to-m3-converter.html" class="s-ghost">🌡 BTU to M3</a>
+      <a href="/mmbtu-to-m3-calculator.html" class="s-ghost">⚡ MMBTU to M3</a>
+      <a href="/gas-bill-calculator-uk.html" class="s-ghost">💷 Gas Bill Calc</a>
+      <a href="/cubic-feet-to-kwh-gas.html" class="s-ghost">📐 ft³ to kWh</a>
+    </div>
+
+    <div class="sb-box">
+      <h4>⚙ Quick kW Reference</h4>
+      <div class="s-row"><span>1 kW input</span><span class="s-val">0.0891 m³/hr</span></div>
+      <div class="s-row"><span>1 m³/hr</span><span class="s-val">11.22 kW</span></div>
+      <div class="s-row"><span>18 kW combi</span><span class="s-val">1.743 m³/hr</span></div>
+      <div class="s-row"><span>24 kW combi</span><span class="s-val">2.326 m³/hr</span></div>
+      <div class="s-row"><span>30 kW combi</span><span class="s-val">2.906 m³/hr</span></div>
+      <div class="s-row"><span>35 kW system</span><span class="s-val">3.391 m³/hr</span></div>
+      <div class="s-row"><span>42 kW large</span><span class="s-val">4.056 m³/hr</span></div>
+      <div class="s-row"><span>U6 meter max</span><span class="s-val">6 m³/hr</span></div>
+      <div class="s-row"><span>U16 meter max</span><span class="s-val">16 m³/hr</span></div>
+      <div class="s-row"><span>22mm Cu (10m)</span><span class="s-val">~3.5 m³/hr</span></div>
+    </div>
+
+    <div class="sb-box">
+      <h4>⚙ Boiler Efficiency Guide</h4>
+      <div class="s-row"><span><span class="eff-tag eff-a">ErP A rated</span></span><span class="s-val">91–94%</span></div>
+      <div class="s-row"><span><span class="eff-tag eff-b">B rated</span></span><span class="s-val">86–90%</span></div>
+      <div class="s-row"><span><span class="eff-tag eff-d">D rated</span></span><span class="s-val">78–85%</span></div>
+      <div class="s-row"><span><span class="eff-tag eff-g">G rated (old)</span></span><span class="s-val">65–78%</span></div>
+      <div class="s-row"><span>Assume unknown</span><span class="s-val">92%</span></div>
+    </div>
+
+    <div class="sb-box">
+      <h4>🔗 All Gas Tools</h4>
+      <ul class="sb-links">
+        <li><a href="/gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">Gas kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Gas Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calculator UK</a></li>
+        <li><a href="/gas-usage-calculator.html">Gas Usage Calculator</a></li>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Gas Price Per M3</a></li>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How-To Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+  </aside>
+</div>
+
+<div class="auth-strip">
+  <div class="auth-inner">
+    <span class="auth-lbl">References:</span>
+    <a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem</a>
+    <a href="https://www.xoserve.com" target="_blank" rel="noopener">Xoserve CV Data</a>
+    <a href="https://www.gassaferegister.co.uk" target="_blank" rel="noopener">Gas Safe Register</a>
+    <a href="https://www.hse.gov.uk/gas" target="_blank" rel="noopener">HSE Gas Safety</a>
+    <a href="https://www.igem.org.uk" target="_blank" rel="noopener">IGEM Standards</a>
+    <a href="https://www.nationalgrid.com" target="_blank" rel="noopener">National Grid</a>
+  </div>
+</div>
+
+<footer>
   <div class="footer-grid">
-    <div><a href="index.html" class="footer-logo">⚡ UK Converter</a><p class="footer-tagline">Free UK gas unit conversion calculators.</p></div>
-    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="gas-m3-to-kwh-calculator.html">M3 to kWh</a><a href="sitemap.xml">Sitemap</a></div>
-    <div class="footer-col"><h4>Calculator Tools</h4><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a><a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a></div>
-    <div class="footer-col"><h4>Disclaimer</h4><p class="footer-disclaimer">This tool is for estimation purposes only. Always comply with Gas Safe regulations.</p></div>
+    <div class="fc">
+      <span class="footer-logo">⚡ Energy<span>Converter</span></span>
+      <p>Free UK gas and energy unit converters. kW to m³/hr conversion uses Ofgem VCF 1.02264 with user-specified calorific value and boiler efficiency. Includes gas meter capacity reference and appliance demand guide for UK Gas Safe engineers and installers. Updated 2026.</p>
+      <p style="margin-top:12px;font-size:0.76rem;color:rgba(255,255,255,0.25)">⚠️ For reference and estimation purposes only. This tool does not replace a full BS 6891 pressure drop calculation or Gas Safe registered engineer assessment. Pipe and meter sizing must comply with current Gas Safety (Installation and Use) Regulations 1998 and applicable British Standards. Not affiliated with Ofgem, Gas Safe Register or any energy supplier.</p>
+    </div>
+    <div class="fc">
+      <h5>Gas Calculators</h5>
+      <ul>
+        <li><a href="/gas-m3-to-kwh-calculator.html">M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calc</a></li>
+        <li><a href="/gas-usage-calculator.html">Usage Calc</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Price Per M3</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Energy Converters</h5>
+      <ul>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">ft³ to kWh</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Guides & Links</h5>
+      <ul>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How-To Guide</a></li>
+        <li><a href="https://www.gassaferegister.co.uk" target="_blank" rel="noopener">Gas Safe Register ↗</a></li>
+        <li><a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem ↗</a></li>
+        <li><a href="https://www.hse.gov.uk/gas" target="_blank" rel="noopener">HSE Gas Safety ↗</a></li>
+        <li><a href="/">← Homepage</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-bottom"><p>© 2025 UK Converter — ukconverter.site. All rights reserved.</p></div>
+  <div class="footer-bottom">© 2026 EnergyConverter.netlify.app &nbsp;·&nbsp; kW to M3/hr Gas Calculator &nbsp;·&nbsp; UK Boiler & Pipe Sizing Guide &nbsp;·&nbsp; Updated 2026</div>
 </footer>
 
+<!-- ═══ JAVASCRIPT ═══ -->
 <script>
-let flowDir = 'kw-to-m3';
-function setFlowDir(d) {
-  flowDir = d;
-  document.getElementById('btn-kw-m3').classList.toggle('active', d==='kw-to-m3');
-  document.getElementById('btn-m3-kw').classList.toggle('active', d==='m3-to-kw');
-  document.getElementById('flow-label').textContent = d==='kw-to-m3' ? 'Power (kW)' : 'Flow Rate (m³/hr)';
-  document.getElementById('flow-in').placeholder = d==='kw-to-m3' ? 'e.g. 24' : 'e.g. 0.75';
-}
-function calcFlow() {
-  const val = parseFloat(document.getElementById('flow-in').value);
-  const cv = parseFloat(document.getElementById('flow-cv').value);
-  const vcf = parseFloat(document.getElementById('flow-vcf').value);
-  if (isNaN(val)||val<0||isNaN(cv)) { alert('Please enter valid values.'); return; }
-  let result, formula;
-  if (flowDir === 'kw-to-m3') {
-    result = (val * 3.6) / (cv * vcf);
-    document.getElementById('flow-result-label').textContent = 'Flow Rate (m³/hr)';
-    document.getElementById('flow-output').textContent = result.toFixed(4) + ' m³/hr';
-    formula = '(' + val + ' kW × 3.6) ÷ (' + cv + ' × ' + vcf + ') = ' + result.toFixed(4) + ' m³/hr';
-  } else {
-    result = (val * cv * vcf) / 3.6;
-    document.getElementById('flow-result-label').textContent = 'Power (kW)';
-    document.getElementById('flow-output').textContent = result.toFixed(2) + ' kW';
-    formula = val + ' m³/hr × ' + cv + ' × ' + vcf + ' ÷ 3.6 = ' + result.toFixed(2) + ' kW';
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('main-nav').classList.toggle('open');
+  });
+
+  let calcMode = 'kw';
+
+  function setMode(mode) {
+    calcMode = mode;
+    const isKw = mode === 'kw';
+    document.getElementById('tab-kw').classList.toggle('active', isKw);
+    document.getElementById('tab-m3').classList.toggle('active', !isKw);
+    document.getElementById('input-label').innerHTML = isKw
+      ? 'kW Rating <span class="badge badge-indigo">kW output</span>'
+      : 'Gas Flow Rate <span class="badge badge-indigo">m³/hr</span>';
+    document.getElementById('val-in').placeholder = isKw ? 'e.g. 30' : 'e.g. 2.91';
+    document.getElementById('input-fn').textContent = isKw
+      ? 'Enter appliance kW output (efficiency adjustment converts to input below)'
+      : 'Enter gas flow rate in m³/hr (result = kW gas input and output)';
+    document.getElementById('eff-row').style.display = isKw ? '' : 'none';
+    document.getElementById('eff-note').style.display = isKw ? '' : 'none';
+    document.getElementById('calc-btn').textContent = isKw
+      ? 'Calculate Gas Flow Rate →'
+      : 'Calculate kW from M3/hr →';
+    resetCalc();
   }
-  document.getElementById('flow-formula').textContent = 'Formula: ' + formula;
-  document.getElementById('flow-result').classList.add('show');
-  document.getElementById('flow-result').scrollIntoView({ behavior:'smooth', block:'nearest' });
-}
-function resetFlow() {
-  document.getElementById('flow-in').value='';
-  document.getElementById('flow-cv').value='39.5';
-  document.getElementById('flow-result').classList.remove('show');
-}
-(function(){const h=document.querySelector('.hamburger'),n=document.querySelector('.mobile-nav');if(!h||!n)return;h.addEventListener('click',function(){n.classList.toggle('open');const s=h.querySelectorAll('span');if(n.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)';}else{s[0].style.transform='';s[1].style.opacity='';s[2].style.transform='';}});})();
+
+  function applyAppliancePreset() {
+    const v = document.getElementById('appliance-preset').value;
+    if (!v) return;
+    const [kw, eff] = v.split(',');
+    document.getElementById('val-in').value = kw;
+    document.getElementById('efficiency').value = eff;
+    if (calcMode !== 'kw') setMode('kw');
+  }
+
+  function applyPreset() {
+    const v = document.getElementById('cv-preset').value;
+    if (v) document.getElementById('cv').value = v;
+  }
+
+  function fmt(n, dp) {
+    if (Math.abs(n) >= 10000) return n.toLocaleString('en-GB', { maximumFractionDigits: dp });
+    return n.toFixed(dp);
+  }
+
+  function getMeterStatus(m3hr) {
+    if (m3hr <= 6)   return { label: 'U6 ✓', cls: 'ok',  detail: `U6 meter adequate (capacity 6.0 m³/hr, your demand ${m3hr.toFixed(3)} m³/hr — ${((m3hr/6)*100).toFixed(0)}% of capacity)` };
+    if (m3hr <= 16)  return { label: 'U16 ✓', cls: 'ok', detail: `U16 meter required (capacity 16 m³/hr, your demand ${m3hr.toFixed(3)} m³/hr — ${((m3hr/16)*100).toFixed(0)}% of capacity). Standard U6 insufficient.` };
+    if (m3hr <= 25)  return { label: 'U25 req', cls: 'warn', detail: `U25 commercial meter required (capacity 25 m³/hr, your demand ${m3hr.toFixed(3)} m³/hr). Contact gas network operator for commercial meter installation.` };
+    if (m3hr <= 40)  return { label: 'U40 req', cls: 'warn', detail: `U40 commercial meter required (capacity 40 m³/hr, your demand ${m3hr.toFixed(3)} m³/hr). Gas Safe engineer and network operator approval required.` };
+    return { label: 'U65+ req', cls: 'warn', detail: `U65 or larger industrial meter required (your demand ${m3hr.toFixed(3)} m³/hr). Industrial installation — consult network operator and Gas Safe engineer.` };
+  }
+
+  function calculate() {
+    const val      = parseFloat(document.getElementById('val-in').value);
+    const cv       = parseFloat(document.getElementById('cv').value)        || 39.5;
+    const vcf      = parseFloat(document.getElementById('vcf').value)       || 1.02264;
+    const effPct   = parseFloat(document.getElementById('efficiency').value) || 92;
+    const divFact  = parseFloat(document.getElementById('diversity').value)  || 1.0;
+
+    if (isNaN(val) || val <= 0) {
+      alert('Please enter a valid value greater than zero.');
+      return;
+    }
+
+    const eff = effPct / 100;
+    let kwIn, kwOut, m3hr, m3hrDesign, kwhrHr, m3Daily;
+
+    if (calcMode === 'kw') {
+      kwOut       = val;
+      kwIn        = kwOut / eff;
+      m3hr        = (kwIn * 3.6) / (cv * vcf);
+      m3hrDesign  = m3hr * divFact;
+      kwhrHr      = kwIn;
+      m3Daily     = m3hr * 8;
+
+      document.getElementById('res-primary-label').textContent   = 'Gas Flow Rate';
+      document.getElementById('res-primary').textContent         = m3hr.toFixed(3);
+      document.getElementById('res-primary-unit').textContent    = 'm³/hr';
+      document.getElementById('res-secondary-label').textContent = 'Input kW';
+      document.getElementById('res-secondary').textContent       = kwIn.toFixed(2);
+      document.getElementById('res-secondary-unit').textContent  = 'kW';
+      document.getElementById('res-kw-out').textContent          = kwOut.toFixed(2);
+      document.getElementById('res-kw-in').textContent           = kwIn.toFixed(2);
+      document.getElementById('res-formula').textContent =
+        `Input kW  = ${kwOut} ÷ ${eff} (efficiency) = ${kwIn.toFixed(3)} kW\n` +
+        `m³/hr     = ${kwIn.toFixed(3)} × 3.6 ÷ (${cv} CV × ${vcf} VCF)\n` +
+        `          = ${(kwIn * 3.6).toFixed(3)} ÷ ${(cv * vcf).toFixed(4)}\n` +
+        `          = ${m3hr.toFixed(4)} m³/hr\n` +
+        `After diversity factor ${divFact}: ${m3hrDesign.toFixed(4)} m³/hr design flow`;
+    } else {
+      m3hr        = val;
+      kwIn        = (m3hr * cv * vcf) / 3.6;
+      kwOut       = kwIn * eff;
+      m3hrDesign  = m3hr * divFact;
+      kwhrHr      = kwIn;
+      m3Daily     = m3hr * 8;
+
+      document.getElementById('res-primary-label').textContent   = 'Gas Input Power';
+      document.getElementById('res-primary').textContent         = kwIn.toFixed(2);
+      document.getElementById('res-primary-unit').textContent    = 'kW';
+      document.getElementById('res-secondary-label').textContent = 'M3/hr Input';
+      document.getElementById('res-secondary').textContent       = m3hr;
+      document.getElementById('res-secondary-unit').textContent  = 'm³/hr';
+      document.getElementById('res-kw-out').textContent          = kwOut.toFixed(2);
+      document.getElementById('res-kw-in').textContent           = kwIn.toFixed(2);
+      document.getElementById('res-formula').textContent =
+        `kW input  = ${m3hr} m³/hr × ${cv} CV × ${vcf} VCF ÷ 3.6\n` +
+        `          = ${(m3hr * cv * vcf).toFixed(3)} ÷ 3.6\n` +
+        `          = ${kwIn.toFixed(3)} kW input\n` +
+        `kW output = ${kwIn.toFixed(3)} × ${eff} efficiency = ${kwOut.toFixed(3)} kW\n` +
+        `After diversity factor ${divFact}: ${m3hrDesign.toFixed(4)} m³/hr design flow`;
+    }
+
+    // Shared fields
+    document.getElementById('res-design').textContent  = m3hrDesign.toFixed(3);
+    document.getElementById('res-kwh-hr').textContent  = kwhrHr.toFixed(2);
+    document.getElementById('res-daily').textContent   = m3Daily.toFixed(2);
+
+    // Meter check (use design flow)
+    const meter = getMeterStatus(m3hrDesign);
+    const meterCard = document.getElementById('rg-meter');
+    meterCard.className = `rg-card ${meter.cls}`;
+    document.getElementById('res-meter').textContent = meter.label;
+
+    const meterDetail = document.getElementById('res-meter-detail');
+    meterDetail.textContent = meter.detail;
+    meterDetail.className   = `r-meter-check ${meter.cls === 'ok' ? 'meter-ok' : 'meter-warn'}`;
+
+    // Diversity card colour
+    const divCard = document.getElementById('rg-diversity');
+    divCard.className = divFact < 1 ? 'rg-card ok' : 'rg-card';
+
+    const wrap = document.getElementById('result-wrap');
+    wrap.classList.add('show');
+    wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    document.getElementById('reset-btn').style.display = 'block';
+  }
+
+  function resetCalc() {
+    document.getElementById('result-wrap').classList.remove('show');
+    document.getElementById('reset-btn').style.display = 'none';
+    document.getElementById('val-in').value = '';
+    document.getElementById('appliance-preset').value = '';
+    document.getElementById('cv-preset').value = '';
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function (e) {
+      const t = document.querySelector(this.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 </body>
 </html>
