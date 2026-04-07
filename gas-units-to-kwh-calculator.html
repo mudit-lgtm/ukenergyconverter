@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas Units to kWh Calculator — Imperial &amp; Metric Gas Meters UK</title>
+  <meta name="description" content="Convert gas units to kWh for both imperial (cubic feet) and metric (cubic metres) gas meters. Free UK gas unit conversion calculator with Ofgem formula.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ukconverter.site/gas-units-to-kwh-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UK Converter">
+  <meta property="og:title" content="Gas Units to kWh Calculator — Imperial &amp; Metric Gas Meters UK">
+  <meta property="og:description" content="Convert gas units to kWh for both imperial (cubic feet) and metric (cubic metres) meters.">
+  <meta property="og:url" content="https://ukconverter.site/gas-units-to-kwh-calculator.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gas Units to kWh Calculator — Imperial &amp; Metric Gas Meters UK">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">⚡ UK Converter</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown"><a href="#">Gas Calculators</a>
+        <div class="dropdown-menu">
+          <a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh Calculator</a>
+          <a href="gas-kwh-to-m3-calculator.html">Gas kWh to M3 Calculator</a>
+          <a href="gas-units-to-kwh-calculator.html">Gas Units to kWh Calculator</a>
+          <a href="gas-bill-calculator-uk.html">Gas Bill Calculator UK</a>
+          <a href="gas-usage-calculator.html">Gas Usage Calculator</a>
+          <a href="gas-price-per-m3-uk.html">Gas Price Per M3 UK</a>
+        </div>
+      </div>
+      <div class="nav-dropdown"><a href="#">Energy Converters</a>
+        <div class="dropdown-menu">
+          <a href="m3-to-kwh-conversion.html">M3 to kWh Conversion</a>
+          <a href="therms-to-kwh.html">Therms to kWh</a>
+          <a href="kwh-to-therms.html">kWh to Therms</a>
+          <a href="mmbtu-to-m3-calculator.html">MMBTU to M3 Calculator</a>
+          <a href="btu-to-m3-converter.html">BTU to M3 Converter</a>
+          <a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a>
+          <a href="kw-to-m3-hr-gas.html">kW to M3/hr Gas</a>
+        </div>
+      </div>
+      <a href="how-to-convert-gas-units-to-kwh.html">How-To Guides</a>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html">🏠 Home</a><a href="gas-m3-to-kwh-calculator.html">⚡ Gas M3 to kWh</a>
+    <a href="gas-kwh-to-m3-calculator.html">🔄 Gas kWh to M3</a><a href="gas-units-to-kwh-calculator.html">📊 Gas Units to kWh</a>
+    <a href="gas-bill-calculator-uk.html">💷 Gas Bill Calculator</a><a href="gas-usage-calculator.html">📈 Gas Usage Calculator</a>
+    <a href="m3-to-kwh-conversion.html">📐 M3 to kWh Conversion</a><a href="therms-to-kwh.html">🌡️ Therms to kWh</a>
+    <a href="cubic-feet-to-kwh-gas.html">📦 Cubic Feet to kWh</a><a href="how-to-convert-gas-units-to-kwh.html">📖 How-To Guides</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container page-wrapper">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a><span>›</span><span>Gas Calculators</span><span>›</span><span>Gas Units to kWh Calculator</span>
+    </nav>
+    <div class="page-header">
+      <h1>Gas Units to kWh Calculator</h1>
+      <p class="lead">Convert gas units to kWh for both imperial (cubic feet) and metric (cubic metres) gas meters. Select your meter type below.</p>
+    </div>
+
+    <!-- METER TYPE IDENTIFIER -->
+    <div style="background:#fff; border-radius:var(--radius-lg); padding:1.75rem; margin-bottom:2rem; box-shadow:var(--shadow); border:1px solid var(--border);">
+      <h3 style="color:var(--primary); margin-bottom:1rem;">🔍 How to Identify Your Meter Type</h3>
+      <div class="meter-info">
+        <div class="meter-type">
+          <div class="mt-icon">📏</div>
+          <h4>Metric Meter (m³)</h4>
+          <p>Displays reading followed by <strong>m³</strong> or shows the letter <strong>M</strong>. Numbers typically read 0000–9999. Most meters installed after 1994.</p>
+        </div>
+        <div class="meter-type">
+          <div class="mt-icon">📐</div>
+          <h4>Imperial Meter (ft³)</h4>
+          <p>Shows reading in <strong>ft³</strong> or <strong>CF</strong>. Often has 4 dials with numbers reading higher (e.g. 50000). Common in older UK properties.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div class="calc-card">
+      <h2>📊 Gas Units to kWh Calculator</h2>
+
+      <div class="form-group">
+        <label>Meter Type</label>
+        <div class="toggle-group">
+          <button class="toggle-btn active" id="btn-metric" onclick="setMeterType('metric')">📏 Metric (m³)</button>
+          <button class="toggle-btn" id="btn-imperial" onclick="setMeterType('imperial')">📐 Imperial (ft³)</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="units-input" id="units-label">Units Used (m³)</label>
+        <input type="number" id="units-input" placeholder="e.g. 20" min="0" step="0.001">
+      </div>
+
+      <div class="form-group">
+        <label for="cv3">Calorific Value (kWh/m³)</label>
+        <div class="input-with-tooltip">
+          <input type="number" id="cv3" value="39.5" step="0.1" min="35" max="45">
+          <span class="tooltip-icon" tabindex="0">ℹ️</span>
+          <span class="tooltip-text">UK average 39.5 kWh/m³. Check your gas bill for the exact value.</span>
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="calculateUnitsToKwh()">📊 Calculate kWh →</button>
+
+      <div class="result-box" id="result-box3">
+        <div class="result-row">
+          <span class="label">Meter Type</span>
+          <span class="value" id="r-mtype">—</span>
+        </div>
+        <div class="result-row">
+          <span class="label">Units Entered</span>
+          <span class="value" id="r-units3">—</span>
+        </div>
+        <div class="result-row">
+          <span class="label" id="r-m3-label">Volume (m³)</span>
+          <span class="value" id="r-m3-val">—</span>
+        </div>
+        <div class="result-row">
+          <span class="label">Energy Used</span>
+          <span style="font-size:1.6rem; font-weight:800; color:var(--success-text); font-family:'Poppins',sans-serif;" id="r-kwh3">—</span>
+        </div>
+        <div class="result-formula" id="r-formula3">—</div>
+        <div class="result-detail">Based on standard Ofgem calculation method</div>
+      </div>
+      <button class="btn-reset" onclick="resetCalc3()" style="margin-top:1rem;">↺ Reset</button>
+    </div>
+
+    <!-- FORMULAS -->
+    <section class="section">
+      <h2 class="section-heading">Conversion Formulas Explained</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1.25rem 0;">
+        <div>
+          <h3 style="color:var(--primary); font-size:1rem; margin-bottom:0.75rem;">📏 Metric (m³) Formula</h3>
+          <div class="formula-box" style="font-size:0.95rem; padding:1rem;">
+            kWh = m³ × CV × 1.02264 ÷ 3.6
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted);">Direct application of Ofgem formula. Most modern UK meters.</p>
+        </div>
+        <div>
+          <h3 style="color:var(--primary); font-size:1rem; margin-bottom:0.75rem;">📐 Imperial (ft³) Formula</h3>
+          <div class="formula-box" style="font-size:0.95rem; padding:1rem;">
+            kWh = ft³ × 0.02832 × CV × 1.02264 ÷ 3.6
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted);">First converts ft³ to m³ (1 ft³ = 0.028317 m³), then applies Ofgem formula.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is a gas unit?</summary>
+        <div class="faq-answer">A gas unit is simply the measurement your gas meter counts in. For metric meters, 1 unit = 1 cubic metre (m³) of gas. For imperial meters, 1 unit = 1 cubic foot (ft³) of gas. Your energy bill converts these units to kilowatt hours (kWh) for billing purposes using the Ofgem formula.</div>
+      </details>
+      <details>
+        <summary>Do I have an imperial or metric gas meter?</summary>
+        <div class="faq-answer">Check the unit label on your meter display. Metric meters show <strong>m³</strong> or the letter M after the reading. Imperial meters show <strong>ft³</strong> or CF. If you're unsure, check your gas bill — it will state the meter type and the conversion factor used. Most meters installed after 1994 are metric.</div>
+      </details>
+      <details>
+        <summary>What does 1 unit of gas cost in the UK?</summary>
+        <div class="faq-answer">Gas is billed in pence per kWh. Under the Ofgem price cap (as of 2025), the typical unit rate is approximately 6–8p per kWh. Since 1 m³ ≈ 11.18 kWh, each cubic metre of gas costs approximately 67–89p at current rates. Use our <a href="gas-bill-calculator-uk.html">Gas Bill Calculator</a> for exact cost estimates.</div>
+      </details>
+      <details>
+        <summary>How many kWh does a typical UK home use per year?</summary>
+        <div class="faq-answer">According to Ofgem, average annual gas usage in the UK is approximately: 1-bed flat: 8,000 kWh; 2-bed house: 11,500 kWh; 3-bed house: 14,000 kWh; 4+ bed house: 18,000+ kWh. Usage varies significantly by property size, insulation, and household behaviour.</div>
+      </details>
+    </section>
+
+    <!-- RELATED -->
+    <section class="section">
+      <h2 class="section-heading">Related Calculators</h2>
+      <div class="related-grid">
+        <div class="related-card"><span class="rc-icon">⚡</span><a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></div>
+        <div class="related-card"><span class="rc-icon">📐</span><a href="m3-to-kwh-conversion.html">M3 to kWh Guide</a></div>
+        <div class="related-card"><span class="rc-icon">💷</span><a href="gas-bill-calculator-uk.html">Gas Bill Calculator</a></div>
+        <div class="related-card"><span class="rc-icon">📦</span><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><a href="index.html" class="footer-logo">⚡ UK Converter</a><p class="footer-tagline">Free UK gas unit conversion calculators. Accurate Ofgem-compliant formulas.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="how-to-convert-gas-units-to-kwh.html">How-To Guide</a><a href="gas-m3-to-kwh-calculator.html">M3 to kWh</a><a href="sitemap.xml">Sitemap</a></div>
+    <div class="footer-col"><h4>Calculator Tools</h4><a href="gas-m3-to-kwh-calculator.html">M3 to kWh</a><a href="therms-to-kwh.html">Therms to kWh</a><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></div>
+    <div class="footer-col"><h4>Disclaimer</h4><p class="footer-disclaimer">This tool is for estimation purposes only. Always check your energy bill for exact figures.</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 UK Converter — ukconverter.site. All rights reserved.</p></div>
+</footer>
+
+<script>
+let meterType = 'metric';
+function setMeterType(type) {
+  meterType = type;
+  document.getElementById('btn-metric').classList.toggle('active', type === 'metric');
+  document.getElementById('btn-imperial').classList.toggle('active', type === 'imperial');
+  document.getElementById('units-label').textContent = type === 'metric' ? 'Units Used (m³)' : 'Units Used (ft³)';
+  document.getElementById('units-input').placeholder = type === 'metric' ? 'e.g. 20' : 'e.g. 705';
+}
+
+function calculateUnitsToKwh() {
+  const units = parseFloat(document.getElementById('units-input').value);
+  const cv = parseFloat(document.getElementById('cv3').value);
+  const vcf = 1.02264;
+  if (isNaN(units) || isNaN(cv)) { alert('Please enter valid numbers.'); return; }
+  if (units < 0) { alert('Units must be a positive number.'); return; }
+
+  let m3, kwh, formulaStr;
+  if (meterType === 'metric') {
+    m3 = units;
+    kwh = (units * cv * vcf) / 3.6;
+    formulaStr = 'Formula: ' + units + ' m³ × ' + cv + ' × ' + vcf + ' ÷ 3.6 = ' + kwh.toFixed(2) + ' kWh';
+  } else {
+    m3 = units * 0.028317;
+    kwh = (m3 * cv * vcf) / 3.6;
+    formulaStr = 'Formula: ' + units + ' ft³ × 0.028317 × ' + cv + ' × ' + vcf + ' ÷ 3.6 = ' + kwh.toFixed(2) + ' kWh';
+  }
+
+  document.getElementById('r-mtype').textContent = meterType === 'metric' ? 'Metric (m³)' : 'Imperial (ft³)';
+  document.getElementById('r-units3').textContent = units + (meterType === 'metric' ? ' m³' : ' ft³');
+  document.getElementById('r-m3-label').textContent = meterType === 'imperial' ? 'Converted to m³' : 'Volume (m³)';
+  document.getElementById('r-m3-val').textContent = m3.toFixed(4) + ' m³';
+  document.getElementById('r-kwh3').textContent = kwh.toFixed(2) + ' kWh';
+  document.getElementById('r-formula3').textContent = formulaStr;
+
+  const box = document.getElementById('result-box3');
+  box.classList.add('show');
+  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function resetCalc3() {
+  document.getElementById('units-input').value = '';
+  document.getElementById('cv3').value = '39.5';
+  document.getElementById('result-box3').classList.remove('show');
+}
+(function() {
+  const h = document.querySelector('.hamburger'), n = document.querySelector('.mobile-nav');
+  if (!h||!n) return;
+  h.addEventListener('click', function() {
+    n.classList.toggle('open');
+    const s = h.querySelectorAll('span');
+    if (n.classList.contains('open')) { s[0].style.transform='rotate(45deg) translate(5px,5px)'; s[1].style.opacity='0'; s[2].style.transform='rotate(-45deg) translate(5px,-5px)'; }
+    else { s[0].style.transform=''; s[1].style.opacity=''; s[2].style.transform=''; }
+  });
+})();
+</script>
+</body>
+</html>
