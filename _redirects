@@ -1,0 +1,4 @@
+# Redirect duplicate m3-to-kwh-conversion page → primary calculator page
+/m3-to-kwh-conversion          /gas-m3-to-kwh-calculator.html   301
+/m3-to-kwh-conversion.html     /gas-m3-to-kwh-calculator.html   301
+/m3-to-kwh-conversion/         /gas-m3-to-kwh-calculator.html   301
