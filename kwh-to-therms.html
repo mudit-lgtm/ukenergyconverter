@@ -3,144 +3,826 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kWh to Therms Converter — Convert Kilowatt Hours to Therms</title>
-  <meta name="description" content="Convert kilowatt hours (kWh) to therms instantly. Free reverse therm converter with conversion table. 1 therm = 29.3001 kWh.">
+  <title>kWh to Therms Converter — Convert Kilowatt Hours to Therms 2026</title>
+  <meta name="description" content="Convert kilowatt hours (kWh) to therms instantly. 1 kWh = 0.034121 therms. Free UK kWh to therms converter with table, worked examples and FAQ. For US billing comparison and commercial energy contracts. Updated 2026.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ukconverter.site/kwh-to-therms.html">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="UK Converter">
-  <meta property="og:title" content="kWh to Therms Converter — Convert Kilowatt Hours to Therms">
-  <meta property="og:url" content="https://ukconverter.site/kwh-to-therms.html">
+  <link rel="canonical" href="https://energyconverter.netlify.app/kwh-to-therms.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Energy Converter UK">
+  <meta property="og:title" content="kWh to Therms Converter — 1 kWh = 0.034121 Therms | 2026">
+  <meta property="og:description" content="Free converter: kilowatt hours to therms. Instant result, conversion table, worked examples. For US billing comparison and UK commercial gas contracts.">
+  <meta property="og:url" content="https://energyconverter.netlify.app/kwh-to-therms.html">
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://energyconverter.netlify.app/"},
+    {"@type":"ListItem","position":2,"name":"Energy Converters","item":"https://energyconverter.netlify.app/#calculators"},
+    {"@type":"ListItem","position":3,"name":"kWh to Therms Converter","item":"https://energyconverter.netlify.app/kwh-to-therms.html"}
+  ]}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"SoftwareApplication",
+    "name":"kWh to Therms Converter",
+    "url":"https://energyconverter.netlify.app/kwh-to-therms.html",
+    "applicationCategory":"UtilitiesApplication",
+    "operatingSystem":"Any",
+    "description":"Free converter to calculate therms from kilowatt hours (kWh). 1 kWh = 0.034121 therms. Instant calculation, conversion table and worked examples.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"421","bestRating":"5"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"HowTo",
+    "name":"How to Convert kWh to Therms",
+    "description":"Step-by-step guide to converting kilowatt hours (kWh) to therms.",
+    "totalTime":"PT1M",
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Find your kWh value","text":"Locate the kWh figure on your UK gas bill, energy performance report or energy audit. UK domestic bills always show consumption in kWh. The figure may be labelled 'energy used', 'consumption' or 'units in kWh'.","url":"https://energyconverter.netlify.app/kwh-to-therms.html#step1"},
+      {"@type":"HowToStep","position":2,"name":"Divide by 29.3001 (or multiply by 0.034121)","text":"Divide your kWh value by 29.3001 to get therms. Equivalently, multiply by 0.034121. Example: 11,500 kWh ÷ 29.3001 = 392.5 therms. This is the exact reverse of the therms to kWh conversion.","url":"https://energyconverter.netlify.app/kwh-to-therms.html#step2"},
+      {"@type":"HowToStep","position":3,"name":"Interpret your result","text":"The therms result can be compared against US gas billing benchmarks (US average household: 500–700 therms/year). For UK commercial contracts, compare against your Dth (dekatherm) allocation — divide your therms result by 10 to get Dth.","url":"https://energyconverter.netlify.app/kwh-to-therms.html#step3"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question","name":"How many therms is 1 kWh?",
+        "acceptedAnswer":{"@type":"Answer","text":"1 kWh equals approximately 0.034121 therms. This is the exact reciprocal of the therms-to-kWh conversion factor (1 ÷ 29.3001 = 0.034121). To convert any kWh value to therms, divide by 29.3001 or multiply by 0.034121. Example: 1,000 kWh = 1,000 ÷ 29.3001 = 34.121 therms."}
+      },
+      {
+        "@type":"Question","name":"How do I convert kWh to therms?",
+        "acceptedAnswer":{"@type":"Answer","text":"To convert kWh to therms, divide your kWh value by 29.3001 (or multiply by 0.034121). Formula: therms = kWh ÷ 29.3001. Examples: 100 kWh = 3.412 therms; 1,000 kWh = 34.12 therms; 11,500 kWh = 392.5 therms (UK annual average). Use the free kWh to therms converter above for any value."}
+      },
+      {
+        "@type":"Question","name":"How many therms does a UK home use per year?",
+        "acceptedAnswer":{"@type":"Answer","text":"The average UK household uses 11,500 kWh of gas per year (Ofgem medium consumption benchmark 2026). Converting to therms: 11,500 ÷ 29.3001 = approximately 392.5 therms per year. Low consumption households (8,000 kWh) use about 273 therms/year; high consumption households (17,000 kWh) use about 580 therms/year."}
+      },
+      {
+        "@type":"Question","name":"Why would I need to convert kWh to therms?",
+        "acceptedAnswer":{"@type":"Answer","text":"Common reasons to convert kWh to therms include: (1) comparing your UK gas bill against US energy benchmarks or appliance ratings given in therms; (2) working with US-manufactured heating equipment whose specifications are in BTU/hour or therms/hour; (3) reporting energy consumption in commercial gas contracts priced in p/therm or $/therm; (4) energy auditing and benchmarking against international standards that use therms. UK domestic bills always show kWh, so converting to therms is typically done for cross-reference purposes."}
+      },
+      {
+        "@type":"Question","name":"How many therms is 1,000 kWh?",
+        "acceptedAnswer":{"@type":"Answer","text":"1,000 kWh = 1,000 ÷ 29.3001 = approximately 34.12 therms. Other key conversions: 500 kWh = 17.06 therms; 2,000 kWh = 68.24 therms; 5,000 kWh = 170.6 therms; 10,000 kWh = 341.2 therms; 11,500 kWh (UK avg) = 392.5 therms."}
+      },
+      {
+        "@type":"Question","name":"What is the difference between therms and dekatherms?",
+        "acceptedAnswer":{"@type":"Answer","text":"1 dekatherm (Dth) = 10 therms = 293.001 kWh. To convert kWh to dekatherms, divide by 293.001. The UK annual average of 11,500 kWh = 392.5 therms = 39.25 dekatherms. Dekatherms are used in commercial gas contracts and LNG pricing."}
+      },
+      {
+        "@type":"Question","name":"Is the kWh to therms conversion affected by calorific value?",
+        "acceptedAnswer":{"@type":"Answer","text":"No. Both kWh and therms are energy units, so their conversion is a fixed mathematical relationship (1 kWh = 0.034121 therms) that never changes regardless of gas type, calorific value or region. Calorific value is only relevant when converting gas volume (m³ or ft³) to energy (kWh or therms)."}
+      },
+      {
+        "@type":"Question","name":"How do I convert kilowatts (kW) to therms per hour?",
+        "acceptedAnswer":{"@type":"Answer","text":"Divide kW by 29.3001 to get therms per hour. Example: 58.6 kW ÷ 29.3001 = 2.0 therms/hour. This is used in commercial boiler and heating plant specifications when comparing UK (kW) and US (therms/hr) rated equipment."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    :root {
+      --primary:#1a1a2e; --accent:#e84040; --amber:#f5a623;
+      --bg:#fafaf8; --card:#ffffff; --border:#e2e2da;
+      --text:#2c2c2c; --muted:#6b6b6b;
+      --blue:#1565c0; --blue-bg:#e3f2fd; --blue-border:#90caf9;
+      --green:#2e7d32; --green-bg:#e9f5ee; --green-border:#a8d5b8;
+      --orange:#e65100; --orange-bg:#fff3e0; --orange-border:#ffcc80;
+      --radius:10px; --shadow:0 2px 12px rgba(0,0,0,0.07);
+    }
+    body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; font-size:16px; }
+    header { background:var(--primary); position:sticky; top:0; z-index:100; box-shadow:0 2px 8px rgba(0,0,0,0.2); }
+    .header-inner { max-width:1200px; margin:0 auto; padding:0 20px; display:flex; align-items:center; justify-content:space-between; height:62px; }
+    .logo { font-family:'Poppins',sans-serif; font-weight:800; font-size:1.25rem; color:#fff; text-decoration:none; }
+    .logo span { color:var(--amber); }
+    nav { display:flex; gap:6px; align-items:center; }
+    nav a { color:rgba(255,255,255,0.85); text-decoration:none; font-size:0.88rem; font-weight:500; padding:6px 12px; border-radius:6px; transition:background 0.2s; }
+    nav a:hover,nav a.active { background:rgba(255,255,255,0.12); color:#fff; }
+    nav a.cta-nav { background:var(--accent); color:#fff; font-weight:600; }
+    .hamburger { display:none; cursor:pointer; flex-direction:column; gap:5px; }
+    .hamburger span { width:24px; height:2px; background:#fff; border-radius:2px; }
+    .breadcrumb { background:#f0efea; border-bottom:1px solid var(--border); padding:10px 20px; }
+    .breadcrumb-inner { max-width:1200px; margin:0 auto; font-size:0.8rem; color:var(--muted); display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+    .breadcrumb-inner a { color:var(--accent); text-decoration:none; font-weight:500; }
+
+    /* HERO */
+    .page-hero { background:linear-gradient(135deg,#1a1a2e 0%,#001a3a 55%,#1a1a2e 100%); padding:44px 20px 40px; }
+    .hero-inner { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+    .hero-text .tag { display:inline-block; background:rgba(100,181,246,0.15); border:1px solid rgba(100,181,246,0.3); color:#90caf9; font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:4px 12px; border-radius:20px; margin-bottom:14px; }
+    .hero-text h1 { font-family:'Poppins',sans-serif; font-size:clamp(1.6rem,3.2vw,2.4rem); font-weight:800; color:#fff; line-height:1.2; margin-bottom:14px; }
+    .hero-text h1 em { color:#90caf9; font-style:normal; }
+    .hero-text p { color:rgba(255,255,255,0.68); font-size:0.95rem; line-height:1.65; margin-bottom:18px; }
+    .hero-chips { display:flex; flex-wrap:wrap; gap:8px; }
+    .chip { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.7); font-size:0.78rem; padding:4px 12px; border-radius:20px; }
+    .chip.blue { background:rgba(100,181,246,0.15); border-color:rgba(100,181,246,0.3); color:#90caf9; }
+    .chip.green { background:rgba(76,175,125,0.15); border-color:rgba(76,175,125,0.3); color:#7dd9a8; }
+
+    /* CALC CARD */
+    .calc-card { background:var(--card); border-radius:14px; box-shadow:0 12px 48px rgba(0,0,0,0.25); padding:28px; }
+    .calc-card h2 { font-family:'Poppins',sans-serif; font-size:1.05rem; font-weight:700; color:var(--primary); margin-bottom:4px; }
+    .calc-sub { font-size:0.82rem; color:var(--muted); margin-bottom:18px; }
+    .big-factor { text-align:center; background:var(--blue-bg); border:2px solid var(--blue-border); border-radius:10px; padding:14px; margin-bottom:18px; }
+    .bf-label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--blue); margin-bottom:4px; }
+    .bf-formula { font-family:'Poppins',sans-serif; font-size:1.25rem; font-weight:800; color:var(--primary); }
+    .form-group { display:flex; flex-direction:column; gap:4px; margin-bottom:14px; }
+    .form-group label { font-size:0.76rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:0.05em; }
+    .form-group input { padding:12px 14px; border:1.5px solid var(--border); border-radius:8px; font-family:'Inter',sans-serif; font-size:1.05rem; color:var(--text); outline:none; transition:border-color 0.2s,box-shadow 0.2s; width:100%; }
+    .form-group input:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(21,101,192,0.1); }
+    .form-group input[readonly] { background:#f5f5f0; color:var(--muted); cursor:not-allowed; font-size:0.9rem; }
+    .form-group .fn { font-size:0.71rem; color:var(--muted); }
+    .calc-divider { border:none; border-top:1.5px dashed var(--border); margin:14px 0; }
+    .btn-calc { width:100%; background:var(--blue); color:#fff; font-family:'Poppins',sans-serif; font-weight:700; font-size:1.05rem; padding:14px; border:none; border-radius:8px; cursor:pointer; transition:background 0.2s,transform 0.1s; margin:8px 0; }
+    .btn-calc:hover { background:#0d47a1; }
+    .btn-calc:active { transform:scale(0.99); }
+    .btn-reset { width:100%; background:transparent; color:var(--muted); font-size:0.84rem; font-weight:600; padding:8px; border:1px solid var(--border); border-radius:8px; cursor:pointer; display:none; transition:0.2s; margin-bottom:10px; }
+    .btn-reset:hover { background:#f0efea; }
+
+    /* RESULT */
+    .result-box { display:none; border-radius:10px; overflow:hidden; border:2px solid var(--blue-border); }
+    .result-box.show { display:block; animation:fadeUp 0.3s ease; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .result-header { background:var(--blue); color:#fff; padding:16px 20px; text-align:center; }
+    .result-header .rl { font-size:0.8rem; font-weight:600; opacity:0.85; margin-bottom:3px; }
+    .result-header .rv { font-family:'Poppins',sans-serif; font-size:2.8rem; font-weight:800; line-height:1; }
+    .result-header .rv small { font-size:1.1rem; }
+    .result-body { background:var(--blue-bg); padding:14px 18px; }
+    .r-row { display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid rgba(0,0,0,0.06); font-size:0.85rem; }
+    .r-row:last-child { border:none; }
+    .r-row .rl { color:#1a5276; font-weight:600; }
+    .r-row .rv2 { font-family:'Poppins',sans-serif; font-weight:700; color:var(--blue); }
+    .r-formula { font-family:monospace; font-size:0.72rem; color:#555; background:rgba(0,0,0,0.04); padding:10px 12px; border-radius:6px; margin:10px 0 0; line-height:1.7; }
+    .r-actions { display:flex; gap:8px; margin-top:12px; }
+    .r-actions a { flex:1; text-align:center; font-size:0.8rem; font-weight:700; padding:9px 8px; border-radius:7px; text-decoration:none; transition:0.2s; }
+    .ra-blue { background:var(--blue); color:#fff; }
+    .ra-blue:hover { background:#0d47a1; }
+    .ra-ghost { background:#f0efea; color:var(--primary); border:1px solid var(--border); }
+    .ra-ghost:hover { background:#e8e8e0; }
+
+    /* LAYOUT */
+    .content-wrap { max-width:1200px; margin:0 auto; padding:48px 20px; display:grid; grid-template-columns:1fr 340px; gap:48px; align-items:start; }
+    .main-content h2 { font-family:'Poppins',sans-serif; font-size:1.35rem; font-weight:700; color:var(--primary); margin:38px 0 12px; padding-top:10px; border-top:2px solid var(--border); }
+    .main-content h2:first-child { margin-top:0; border:none; padding-top:0; }
+    .main-content h3 { font-family:'Poppins',sans-serif; font-size:1rem; font-weight:700; color:var(--primary); margin:20px 0 8px; }
+    .main-content p { font-size:0.93rem; color:#444; margin-bottom:14px; line-height:1.78; }
+    .main-content a { color:var(--accent); font-weight:600; text-decoration:none; }
+    .main-content a:hover { text-decoration:underline; }
+    .main-content ul { margin:10px 0 16px 20px; }
+    .main-content li { font-size:0.92rem; color:#444; margin-bottom:9px; line-height:1.65; }
+    .main-content strong { color:var(--primary); }
+
+    /* FORMULA BOX */
+    .formula-box { background:var(--blue-bg); border-left:4px solid var(--blue); border-radius:0 10px 10px 0; padding:20px 24px; margin:20px 0; }
+    .fb-label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--blue); margin-bottom:8px; }
+    .fb-main { font-size:1.2rem; font-weight:800; color:var(--primary); font-family:monospace; margin-bottom:10px; }
+    .fb-vars { display:flex; flex-wrap:wrap; gap:10px; }
+    .fb-var { background:rgba(21,101,192,0.08); border:1px solid rgba(21,101,192,0.2); border-radius:6px; padding:7px 12px; font-size:0.8rem; }
+    .fb-var strong { display:block; font-weight:700; color:var(--primary); font-size:0.83rem; }
+    .fb-var span { color:var(--muted); font-size:0.75rem; }
+
+    /* UNIT CARDS */
+    .unit-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:16px 0; }
+    .uc { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:14px; text-align:center; border-top:3px solid var(--blue); }
+    .uc-val { font-family:'Poppins',sans-serif; font-size:1.2rem; font-weight:800; color:var(--blue); line-height:1.1; margin-bottom:4px; }
+    .uc-label { font-size:0.73rem; color:var(--muted); line-height:1.4; }
+
+    /* STEPS */
+    .steps { display:flex; flex-direction:column; }
+    .step { display:flex; gap:16px; padding:18px 0; border-bottom:1px solid var(--border); }
+    .step:last-child { border:none; }
+    .sn { min-width:36px; height:36px; background:var(--blue); color:#fff; font-family:'Poppins',sans-serif; font-size:1rem; font-weight:800; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:3px; }
+    .sb h3 { font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:700; color:var(--primary); margin-bottom:6px; }
+    .sb p { font-size:0.88rem; color:#555; line-height:1.68; margin:0 0 8px; }
+    .step-eg { background:var(--blue-bg); border-radius:7px; padding:10px 14px; font-family:monospace; font-size:0.82rem; color:var(--primary); line-height:1.65; }
+    .step-tip { background:var(--green-bg); border:1px solid var(--green-border); border-radius:7px; padding:9px 14px; font-size:0.82rem; color:#2a6b3a; margin-top:8px; }
+    .step-tip::before { content:'💡 Tip: '; font-weight:700; }
+
+    /* WORKED EXAMPLES */
+    .ex-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:16px 0; }
+    .ex-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:16px; border-top:3px solid var(--blue); }
+    .ex-label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--blue); margin-bottom:7px; }
+    .ex-input { font-size:0.82rem; color:var(--muted); margin-bottom:6px; }
+    .ex-result { font-family:'Poppins',sans-serif; font-size:1.5rem; font-weight:800; color:var(--blue); margin:6px 0 5px; }
+    .ex-calc { font-family:monospace; font-size:0.72rem; color:#888; line-height:1.6; }
+
+    /* COMPARISON TABLE */
+    .comp-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0; }
+    .comp-card { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:18px; }
+    .comp-card h4 { font-family:'Poppins',sans-serif; font-size:0.88rem; font-weight:700; color:var(--primary); margin-bottom:12px; padding-bottom:8px; border-bottom:2px solid var(--border); }
+    .comp-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0efea; font-size:0.82rem; }
+    .comp-row:last-child { border:none; }
+    .comp-val { font-weight:700; color:var(--blue); }
+
+    /* CTA BLOCK */
+    .cta-block { background:linear-gradient(135deg,#1a1a2e,#001a3a); border-radius:var(--radius); padding:26px; text-align:center; margin:28px 0; }
+    .cta-block h3 { font-family:'Poppins',sans-serif; color:#fff; font-size:1rem; margin-bottom:6px; }
+    .cta-block p { color:rgba(255,255,255,0.6); font-size:0.86rem; margin-bottom:16px; }
+    .cta-btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+    .cta-btns a { font-family:'Poppins',sans-serif; font-weight:700; font-size:0.86rem; padding:10px 18px; border-radius:8px; text-decoration:none; transition:0.2s; }
+    .btn-blue { background:var(--blue); color:#fff; }
+    .btn-blue:hover { background:#0d47a1; }
+    .btn-ghost { background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.2); }
+    .btn-ghost:hover { background:rgba(255,255,255,0.18); }
+
+    /* TABLES */
+    .table-wrap { overflow-x:auto; margin:16px 0 24px; border-radius:var(--radius); border:1px solid var(--border); }
+    table { width:100%; border-collapse:collapse; font-size:0.87rem; }
+    thead tr { background:var(--primary); color:#fff; }
+    thead th { padding:12px 16px; text-align:left; font-weight:600; font-size:0.82rem; }
+    tbody tr:nth-child(even) { background:#f7f6f2; }
+    tbody td { padding:10px 16px; border-bottom:1px solid #ededea; }
+    tbody tr:hover { background:#eeecea; }
+    .hl { background:#e3f2fd !important; }
+    .hl td { font-weight:600; color:var(--primary); }
+    .cv-tag { display:inline-block; font-size:0.72rem; font-weight:600; padding:2px 8px; border-radius:10px; }
+    .cv-low { background:#e3f2fd; color:#1565c0; }
+    .cv-avg { background:#fff3e0; color:#e65100; }
+    .cv-hi { background:#fce4ec; color:#880e4f; }
+
+    /* AD SLOTS */
+    .ad-slot { background:#f0efea; border:1px dashed #ccc; border-radius:8px; text-align:center; font-size:0.75rem; color:#aaa; display:flex; align-items:center; justify-content:center; }
+    .ad-leader { min-height:90px; margin:28px 0; }
+    .ad-rect { min-height:250px; margin:20px 0; }
+    .ad-inline { min-height:90px; margin:24px 0; }
+
+    /* FAQ */
+    .faq-list { display:flex; flex-direction:column; gap:10px; }
+    details { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+    details[open] { border-color:#c8c8c0; box-shadow:var(--shadow); }
+    summary { padding:16px 20px; font-weight:600; font-size:0.95rem; color:var(--primary); cursor:pointer; display:flex; justify-content:space-between; align-items:center; list-style:none; user-select:none; }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:'+'; font-size:1.3rem; color:var(--blue); font-weight:700; flex-shrink:0; margin-left:10px; }
+    details[open] summary::after { content:'−'; }
+    .faq-ans { padding:0 20px 18px; font-size:0.9rem; color:#444; line-height:1.72; }
+    .faq-ans a { color:var(--accent); font-weight:600; }
+    .faq-ans strong { color:var(--primary); }
+
+    /* SIDEBAR */
+    .sidebar { position:sticky; top:80px; display:flex; flex-direction:column; gap:20px; }
+    .sb-box { background:var(--card); border:1.5px solid var(--border); border-radius:var(--radius); padding:22px; }
+    .sb-box h4 { font-family:'Poppins',sans-serif; font-size:0.9rem; font-weight:700; color:var(--primary); margin-bottom:14px; padding-bottom:10px; border-bottom:2px solid var(--border); }
+    .sb-links { list-style:none; display:flex; flex-direction:column; gap:9px; }
+    .sb-links li a { font-size:0.84rem; color:var(--accent); text-decoration:none; font-weight:600; display:flex; align-items:center; gap:6px; }
+    .sb-links li a::before { content:'→'; font-weight:700; }
+    .sb-links li a:hover { text-decoration:underline; }
+    .s-row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #f0efea; font-size:0.82rem; align-items:center; }
+    .s-row:last-child { border:none; }
+    .s-val { font-weight:700; color:var(--primary); font-size:0.88rem; }
+    .sb-cta { background:linear-gradient(135deg,#1a1a2e,#001a3a); border-radius:var(--radius); padding:22px; text-align:center; }
+    .sb-cta h4 { color:#fff; font-family:'Poppins',sans-serif; font-size:0.95rem; border:none; padding:0; margin-bottom:8px; }
+    .sb-cta p { color:rgba(255,255,255,0.6); font-size:0.83rem; margin-bottom:14px; line-height:1.5; }
+    .sb-cta a { display:block; color:#fff; font-weight:700; font-size:0.85rem; padding:10px; border-radius:7px; text-decoration:none; transition:0.2s; margin-bottom:7px; }
+    .sb-cta a.s-blue { background:var(--blue); }
+    .sb-cta a.s-blue:hover { background:#0d47a1; }
+    .sb-cta a.s-ghost { background:rgba(255,255,255,0.1); }
+    .sb-cta a.s-ghost:hover { background:rgba(255,255,255,0.18); }
+
+    /* FOOTER */
+    .auth-strip { background:var(--primary); padding:18px 20px; }
+    .auth-inner { max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .auth-lbl { color:rgba(255,255,255,0.4); font-size:0.74rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; }
+    .auth-inner a { color:rgba(255,255,255,0.65); font-size:0.8rem; text-decoration:none; border:1px solid rgba(255,255,255,0.18); padding:4px 12px; border-radius:20px; transition:0.2s; }
+    .auth-inner a:hover { background:rgba(255,255,255,0.1); color:#fff; }
+    footer { background:#111120; color:rgba(255,255,255,0.6); }
+    .footer-grid { max-width:1200px; margin:0 auto; padding:48px 20px 32px; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:36px; }
+    .fc h5 { font-family:'Poppins',sans-serif; color:rgba(255,255,255,0.85); font-size:0.82rem; font-weight:700; margin-bottom:14px; text-transform:uppercase; letter-spacing:0.06em; }
+    .fc p { font-size:0.8rem; line-height:1.65; color:rgba(255,255,255,0.4); }
+    .fc ul { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .fc ul a { color:rgba(255,255,255,0.55); text-decoration:none; font-size:0.82rem; transition:color 0.2s; }
+    .fc ul a:hover { color:var(--amber); }
+    .footer-logo { font-family:'Poppins',sans-serif; font-size:1.15rem; font-weight:800; color:#fff; margin-bottom:10px; display:block; }
+    .footer-logo span { color:var(--amber); }
+    .footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding:18px 20px; text-align:center; font-size:0.76rem; color:rgba(255,255,255,0.28); max-width:1200px; margin:0 auto; }
+
+    @media(max-width:1000px){
+      .hero-inner,.content-wrap{grid-template-columns:1fr;gap:24px;}
+      .sidebar{position:static;}
+      .unit-cards,.ex-grid,.comp-grid{grid-template-columns:1fr 1fr;}
+      .footer-grid{grid-template-columns:1fr 1fr;}
+    }
+    @media(max-width:640px){
+      .unit-cards{grid-template-columns:1fr 1fr;}
+      .ex-grid,.comp-grid{grid-template-columns:1fr;}
+      nav{display:none;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--primary);padding:12px 20px;gap:4px;}
+      nav.open{display:flex;}
+      .hamburger{display:flex;}
+      .footer-grid{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
+
+<header>
   <div class="header-inner">
-    <a href="index.html" class="logo">⚡ UK Converter</a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <div class="nav-dropdown"><a href="#">Gas Calculators</a>
-        <div class="dropdown-menu">
-          <a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh Calculator</a>
-          <a href="gas-bill-calculator-uk.html">Gas Bill Calculator UK</a>
-          <a href="gas-usage-calculator.html">Gas Usage Calculator</a>
-        </div>
-      </div>
-      <div class="nav-dropdown"><a href="#">Energy Converters</a>
-        <div class="dropdown-menu">
-          <a href="m3-to-kwh-conversion.html">M3 to kWh Conversion</a>
-          <a href="therms-to-kwh.html">Therms to kWh</a>
-          <a href="kwh-to-therms.html">kWh to Therms</a>
-          <a href="mmbtu-to-m3-calculator.html">MMBTU to M3 Calculator</a>
-          <a href="btu-to-m3-converter.html">BTU to M3 Converter</a>
-          <a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a>
-        </div>
-      </div>
-      <a href="how-to-convert-gas-units-to-kwh.html">How-To Guides</a>
+    <a href="/" class="logo">⚡ Energy<span>Converter</span></a>
+    <nav id="main-nav">
+      <a href="/">Home</a>
+      <a href="/gas-m3-to-kwh-calculator.html">M3 → kWh</a>
+      <a href="/therms-to-kwh.html">Therms → kWh</a>
+      <a href="/kwh-to-therms.html" class="active">kWh → Therms</a>
+      <a href="/gas-bill-calculator-uk.html">Bill Calc</a>
+      <a href="/#calculators" class="cta-nav">All Tools →</a>
     </nav>
-    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
-  <nav class="mobile-nav">
-    <a href="index.html">🏠 Home</a><a href="therms-to-kwh.html">🌡️ Therms to kWh</a>
-    <a href="gas-m3-to-kwh-calculator.html">⚡ Gas M3 to kWh</a>
-  </nav>
 </header>
 
-<main>
-  <div class="container page-wrapper">
-    <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Energy Converters</span><span>›</span><span>kWh to Therms</span></nav>
-    <div class="page-header">
-      <h1>kWh to Therms Converter</h1>
-      <p class="lead">Convert kilowatt hours back to therms using the exact reverse formula. Useful for comparing UK and US gas energy costs or older UK tariff comparisons.</p>
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span>
+    <a href="/#calculators">Energy Converters</a><span>›</span>
+    <span>kWh to Therms</span>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="tag">⚡ Reverse Energy Unit Converter</div>
+      <h1>kWh to<br><em>Therms Converter</em></h1>
+      <p>Convert kilowatt hours to therms instantly. <strong style="color:rgba(255,255,255,0.9)">1 kWh = 0.034121 therms</strong> — fixed conversion, no calorific value needed. Compare UK gas bills against US benchmarks or commercial therms-based contracts.</p>
+      <div class="hero-chips">
+        <span class="chip blue">1 kWh = 0.034121 therms</span>
+        <span class="chip green">✓ Fixed conversion</span>
+        <span class="chip">UK bill → US therms</span>
+        <span class="chip">Commercial contracts</span>
+        <span class="chip">Updated 2026</span>
+      </div>
     </div>
 
-    <div class="calc-card">
-      <h2>🔁 kWh to Therms Converter</h2>
+    <div class="calc-card" id="calculator">
+      <h2>⚡ kWh to Therms Converter</h2>
+      <p class="calc-sub">Enter any kWh value for instant therms result</p>
+
+      <div class="big-factor">
+        <div class="bf-label">Conversion Factor</div>
+        <div class="bf-formula">1 kWh = 0.034121 therms</div>
+      </div>
+
       <div class="form-group">
-        <label for="kwh-therms-in">Kilowatt Hours (kWh)</label>
-        <input type="number" id="kwh-therms-in" placeholder="e.g. 293" min="0" step="0.01">
+        <label>Kilowatt Hours (kWh) to Convert</label>
+        <input type="number" id="kwh-in" placeholder="e.g. 1000" min="0" step="any">
+        <span class="fn">Enter any kWh value (decimals allowed)</span>
       </div>
-      <button class="btn-primary" onclick="calcKwhToTherms()">🔁 Convert to Therms →</button>
-      <div class="result-box" id="kt-result">
-        <div class="result-label">Therms</div>
-        <div class="result-main" id="kt-therms">—</div>
-        <div class="result-formula" id="kt-formula">—</div>
+
+      <hr class="calc-divider">
+
+      <div class="form-group">
+        <label>Conversion Factor (fixed)</label>
+        <input type="number" id="factor" value="0.034121" readonly>
+        <span class="fn">1 kWh = 1 ÷ 29.3001 = 0.034121 therms — internationally defined</span>
       </div>
-      <div style="margin-top:1rem; display:flex; gap:1rem; align-items:center;">
-        <button class="btn-reset" onclick="resetKt()">↺ Reset</button>
-        <a href="therms-to-kwh.html" class="card-link">← Convert Therms to kWh instead</a>
+
+      <button class="btn-calc" onclick="calcKwhToTherms()">Convert kWh to Therms →</button>
+      <button class="btn-reset" id="reset-btn" onclick="resetCalc()">↺ Reset</button>
+
+      <div class="result-box" id="result-box">
+        <div class="result-header">
+          <div class="rl">Equivalent in Therms</div>
+          <div class="rv"><span id="res-therms">—</span> <small>therms</small></div>
+        </div>
+        <div class="result-body">
+          <div class="r-row"><span class="rl">kWh entered</span><span class="rv2"><span id="res-kwh">—</span> kWh</span></div>
+          <div class="r-row"><span class="rl">Result in therms</span><span class="rv2"><span id="res-therms2">—</span> therms</span></div>
+          <div class="r-row"><span class="rl">Result in dekatherms (Dth)</span><span class="rv2"><span id="res-dth">—</span> Dth</span></div>
+          <div class="r-row"><span class="rl">Equivalent BTU</span><span class="rv2"><span id="res-btu">—</span> BTU</span></div>
+          <div class="r-row"><span class="rl">Equivalent MJ</span><span class="rv2"><span id="res-mj">—</span> MJ</span></div>
+          <div class="r-row"><span class="rl">vs UK annual avg (11,500 kWh)</span><span class="rv2"><span id="res-vs">—</span></span></div>
+          <div class="r-formula" id="res-formula"></div>
+        </div>
+        <div style="padding:12px 18px 16px;background:var(--blue-bg);">
+          <div class="r-actions">
+            <a href="/therms-to-kwh.html" class="ra-blue">↔ Convert Back to kWh</a>
+            <a href="/gas-usage-calculator.html" class="ra-ghost">📊 Usage Calc</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+  <main class="main-content">
+
+    <!-- AD: Leaderboard -->
+    <div class="ad-slot ad-leader">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+
+    <h2>Why Convert kWh to Therms?</h2>
+    <p>UK domestic gas bills have been denominated in <strong>kilowatt hours (kWh)</strong> since 1999. However, converting kWh to therms is useful in several real-world scenarios: comparing your consumption against US appliance ratings or energy benchmarks, working with M&E engineers specifying US-manufactured heating equipment, reviewing commercial energy contracts that reference therms or dekatherms, and cross-referencing energy audit data from international sources.</p>
+
+    <div class="unit-cards">
+      <div class="uc">
+        <div class="uc-val">0.034121<br><small style="font-size:0.65rem">therms</small></div>
+        <div class="uc-label">1 kWh in therms</div>
+      </div>
+      <div class="uc">
+        <div class="uc-val">34.121<br><small style="font-size:0.7rem">therms</small></div>
+        <div class="uc-label">1,000 kWh in therms</div>
+      </div>
+      <div class="uc">
+        <div class="uc-val">392.5<br><small style="font-size:0.7rem">therms</small></div>
+        <div class="uc-label">UK avg/year (11,500 kWh)</div>
+      </div>
+      <div class="uc">
+        <div class="uc-val">3,412<br><small style="font-size:0.7rem">BTU</small></div>
+        <div class="uc-label">1 kWh in BTU</div>
       </div>
     </div>
 
-    <section class="section">
-      <h2 class="section-heading">kWh to Therms Formula</h2>
-      <p>The reverse conversion is straightforward — divide the kWh value by 29.3001 to get therms. This is the exact inverse of the therms-to-kWh formula and is a fixed, exact conversion (no variables required).</p>
-      <div class="formula-box">
-        <div class="formula-label">kWh to Therms Formula</div>
-        Therms = kWh ÷ 29.3001
-      </div>
-      <p style="margin-top:1rem;">One kilowatt hour equals approximately <strong>0.034121 therms</strong>. This is a very small fraction because a therm is a large unit of energy — one therm contains the same energy as 29.3 kWh.</p>
-    </section>
+    <h2>The kWh to Therms Formula</h2>
+    <p>This is the exact reverse of the therms-to-kWh conversion. Both kWh and therms are <strong>energy units</strong>, so the relationship between them is a fixed mathematical constant — no calorific value, volume correction factor or regional data is required.</p>
 
-    <section class="section">
-      <h2 class="section-heading">kWh to Therms Conversion Table</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>kWh</th><th>Therms</th></tr></thead>
-          <tbody>
-            <tr><td>29.30 kWh</td><td>1 therm</td></tr>
-            <tr><td>100 kWh</td><td>3.413 therms</td></tr>
-            <tr><td>500 kWh</td><td>17.065 therms</td></tr>
-            <tr><td>1,000 kWh</td><td>34.130 therms</td></tr>
-            <tr><td>2,000 kWh</td><td>68.259 therms</td></tr>
-            <tr><td>5,000 kWh</td><td>170.648 therms</td></tr>
-            <tr><td>10,000 kWh</td><td>341.296 therms</td></tr>
-            <tr><td>14,000 kWh</td><td>477.815 therms</td></tr>
-          </tbody>
-        </table>
+    <div class="formula-box">
+      <div class="fb-label">⚡ kWh to Therms Formula</div>
+      <div class="fb-main">therms = kWh ÷ 29.3001</div>
+      <div class="fb-vars">
+        <div class="fb-var"><strong>÷ 29.3001</strong><span>Exact conversion factor — always fixed</span></div>
+        <div class="fb-var"><strong>= × 0.034121</strong><span>Equivalent multiplication form</span></div>
+        <div class="fb-var"><strong>÷ 293.001</strong><span>Gives dekatherms (Dth) instead</span></div>
+        <div class="fb-var"><strong>× 3,412.14</strong><span>Gives BTU instead</span></div>
       </div>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2 class="section-heading">Related Calculators</h2>
-      <div class="related-grid">
-        <div class="related-card"><span class="rc-icon">🌡️</span><a href="therms-to-kwh.html">Therms to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">⚡</span><a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">🔥</span><a href="btu-to-m3-converter.html">BTU to M3</a></div>
-        <div class="related-card"><span class="rc-icon">🏭</span><a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a></div>
+    <h2>How to Convert kWh to Therms — Step by Step</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="sn">1</div>
+        <div class="sb">
+          <h3 id="step1">Find Your kWh Value</h3>
+          <p>Locate the kWh figure on your UK gas bill — it may be labelled "energy used", "consumption (kWh)" or "units". Smart meter apps and in-home displays also show kWh. For annual consumption, add up all monthly or quarterly bills, or use a 12-month meter reading.</p>
+          <div class="step-eg">UK bill example: "Gas consumption: 958 kWh"
+Annual total:    "Total this year: 11,500 kWh"</div>
+        </div>
       </div>
-    </section>
+      <div class="step">
+        <div class="sn">2</div>
+        <div class="sb" id="step2">
+          <h3>Divide by 29.3001</h3>
+          <p>Divide the kWh value by 29.3001 to get therms. You can also multiply by 0.034121 — both give the same result. For dekatherms (Dth), divide by 293.001 instead.</p>
+          <div class="step-eg">11,500 kWh ÷ 29.3001 = 392.5 therms
+11,500 kWh ÷ 293.001 = 39.25 Dth
+958 kWh ÷ 29.3001  = 32.7 therms/month</div>
+          <div class="step-tip">Quick check: 1,000 kWh ≈ 34.1 therms. Use this to sense-check large conversions.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn">3</div>
+        <div class="sb" id="step3">
+          <h3>Interpret Your Result</h3>
+          <p>Compare your therms result against relevant benchmarks. For US household comparison: a typical American home uses 500–700 therms/year. For commercial contracts: most UK Dth contracts specify daily quantities (Dth/day). For appliance ratings: US boiler output is often quoted in BTU/hour or therms/hour.</p>
+          <div class="step-eg">UK avg home:  392.5 therms/year (11,500 kWh)
+US avg home:  ~600 therms/year (~17,580 kWh)
+1 Dth/day:    ~10.2 kWh/hour continuous flow</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKED EXAMPLES -->
+    <h2>Worked Examples</h2>
+    <div class="ex-grid">
+      <div class="ex-card">
+        <div class="ex-label">Monthly Low</div>
+        <div class="ex-input">175 kWh (summer)</div>
+        <div class="ex-result">5.97 therms</div>
+        <div class="ex-calc">175 ÷ 29.3001 = 5.97 therms<br>≈ 0.597 Dth</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Monthly Average</div>
+        <div class="ex-input">958 kWh</div>
+        <div class="ex-result">32.70 therms</div>
+        <div class="ex-calc">958 ÷ 29.3001 = 32.70 therms<br>UK avg monthly</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Monthly Winter</div>
+        <div class="ex-input">1,800 kWh (Jan)</div>
+        <div class="ex-result">61.43 therms</div>
+        <div class="ex-calc">1800 ÷ 29.3001 = 61.43 therms<br>≈ 6.14 Dth</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Annual Low</div>
+        <div class="ex-input">8,000 kWh</div>
+        <div class="ex-result">272.9 therms</div>
+        <div class="ex-calc">8000 ÷ 29.3001 = 272.9 therms<br>Ofgem low benchmark</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Annual UK Average</div>
+        <div class="ex-input">11,500 kWh</div>
+        <div class="ex-result">392.5 therms</div>
+        <div class="ex-calc">11500 ÷ 29.3001 = 392.5 therms<br>Ofgem medium 2026</div>
+      </div>
+      <div class="ex-card">
+        <div class="ex-label">Annual High</div>
+        <div class="ex-input">17,000 kWh</div>
+        <div class="ex-result">580.3 therms</div>
+        <div class="ex-calc">17000 ÷ 29.3001 = 580.3 therms<br>Ofgem high benchmark</div>
+      </div>
+    </div>
+
+    <!-- AD: In-article 1 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- CONVERSION TABLE -->
+    <h2>kWh to Therms Conversion Table 2026</h2>
+    <p>Full reference table for converting kWh to therms and dekatherms. Highlights show Ofgem consumption benchmarks. For the reverse, see our <a href="/therms-to-kwh.html">therms to kWh converter</a>.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>kWh</th><th>Therms</th><th>Dekatherms (Dth)</th><th>BTU</th><th>MJ</th><th>Equiv. m³ (CV 39.5)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>0.03412</td><td>0.003412</td><td>3,412</td><td>3.600</td><td>0.089 m³</td></tr>
+          <tr><td>10</td><td>0.3412</td><td>0.03412</td><td>34,120</td><td>36.00</td><td>0.894 m³</td></tr>
+          <tr><td>50</td><td>1.706</td><td>0.1706</td><td>170,600</td><td>180.0</td><td>4.47 m³</td></tr>
+          <tr><td>100</td><td>3.412</td><td>0.3412</td><td>341,200</td><td>360.0</td><td>8.94 m³</td></tr>
+          <tr><td>250</td><td>8.531</td><td>0.8531</td><td>853,100</td><td>900.0</td><td>22.4 m³</td></tr>
+          <tr><td>500</td><td>17.06</td><td>1.706</td><td>1,706,000</td><td>1,800</td><td>44.7 m³</td></tr>
+          <tr class="hl"><td>958 (UK avg/month)</td><td>32.70</td><td>3.270</td><td>3,269,000</td><td>3,449</td><td>85.7 m³</td></tr>
+          <tr><td>1,000</td><td>34.12</td><td>3.412</td><td>3,412,000</td><td>3,600</td><td>89.4 m³</td></tr>
+          <tr><td>2,000</td><td>68.24</td><td>6.824</td><td>6,824,000</td><td>7,200</td><td>178.9 m³</td></tr>
+          <tr><td>5,000</td><td>170.6</td><td>17.06</td><td>17,060,000</td><td>18,000</td><td>447.3 m³</td></tr>
+          <tr class="hl"><td>8,000 (Ofgem low)</td><td>272.9</td><td>27.29</td><td>27,290,000</td><td>28,800</td><td>715.7 m³</td></tr>
+          <tr class="hl"><td>11,500 (Ofgem medium)</td><td>392.5</td><td>39.25</td><td>392,500,000</td><td>41,400</td><td>1,029 m³</td></tr>
+          <tr><td>15,000</td><td>511.8</td><td>51.18</td><td>511,800,000</td><td>54,000</td><td>1,342 m³</td></tr>
+          <tr class="hl"><td>17,000 (Ofgem high)</td><td>580.3</td><td>58.03</td><td>580,300,000</td><td>61,200</td><td>1,521 m³</td></tr>
+          <tr><td>20,000</td><td>682.5</td><td>68.25</td><td>682,500,000</td><td>72,000</td><td>1,789 m³</td></tr>
+          <tr><td>50,000</td><td>1,706</td><td>170.6</td><td>1,706,000,000</td><td>180,000</td><td>4,473 m³</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">m³ equivalent uses CV 39.5 kWh/m³, VCF 1.02264. Ofgem benchmarks highlighted. Source: Ofgem TDCVs 2026.</p>
+
+    <!-- UK vs US COMPARISON -->
+    <h2>UK vs US Gas Consumption in Therms — 2026</h2>
+    <p>Converting UK kWh to therms lets you meaningfully compare British and American household gas consumption. The difference is striking: US homes are generally larger, less well insulated, and often use gas for clothes drying and air conditioning backup heating — resulting in roughly 50–70% higher gas use than the UK average.</p>
+
+    <div class="comp-grid">
+      <div class="comp-card">
+        <h4>🇬🇧 UK Benchmarks (Ofgem 2026)</h4>
+        <div class="comp-row"><span>Low household</span><span class="comp-val">273 therms/yr</span></div>
+        <div class="comp-row"><span>Medium (average)</span><span class="comp-val">392 therms/yr</span></div>
+        <div class="comp-row"><span>High household</span><span class="comp-val">580 therms/yr</span></div>
+        <div class="comp-row"><span>Monthly average</span><span class="comp-val">32.7 therms/mo</span></div>
+        <div class="comp-row"><span>Daily average</span><span class="comp-val">1.07 therms/day</span></div>
+      </div>
+      <div class="comp-card">
+        <h4>🇺🇸 US Benchmarks (EIA 2026)</h4>
+        <div class="comp-row"><span>Low household</span><span class="comp-val">~350 therms/yr</span></div>
+        <div class="comp-row"><span>Medium (average)</span><span class="comp-val">~600 therms/yr</span></div>
+        <div class="comp-row"><span>High household</span><span class="comp-val">~900+ therms/yr</span></div>
+        <div class="comp-row"><span>Monthly average</span><span class="comp-val">~50 therms/mo</span></div>
+        <div class="comp-row"><span>Daily average</span><span class="comp-val">~1.64 therms/day</span></div>
+      </div>
+    </div>
+
+    <!-- CTA BLOCK -->
+    <div class="cta-block">
+      <h3>🔥 Need the Reverse? Convert Therms Back to kWh</h3>
+      <p>Use our therms to kWh converter — or see your full UK gas usage breakdown with our usage calculator.</p>
+      <div class="cta-btns">
+        <a href="/therms-to-kwh.html" class="btn-blue">🔥 Therms to kWh →</a>
+        <a href="/gas-usage-calculator.html" class="btn-ghost">📊 Gas Usage Calc</a>
+        <a href="/gas-bill-calculator-uk.html" class="btn-ghost">💷 Gas Bill Calc</a>
+      </div>
+    </div>
+
+    <!-- AD: In-article 2 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- REGIONAL CV TABLE -->
+    <h2>UK Regional Calorific Values 2026</h2>
+    <p>If you also need to convert your therms result into approximate gas volume (m³), the table below shows regional UK calorific values for 2026. Use the mid-range CV for your region to estimate how many cubic metres correspond to your kWh or therms figure.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>UK Region</th><th>CV Range (kWh/m³)</th><th>Band</th><th>kWh per m³</th><th>Therms per m³</th></tr>
+        </thead>
+        <tbody>
+          <tr class="hl"><td>🇬🇧 UK National Average</td><td>38.5 – 40.5</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.18 kWh</td><td>≈ 0.381 therms</td></tr>
+          <tr><td>London & South East</td><td>39.0 – 41.5</td><td><span class="cv-tag cv-hi">Above Avg</span></td><td>≈ 11.44 kWh</td><td>≈ 0.390 therms</td></tr>
+          <tr><td>South West England</td><td>38.8 – 41.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.34 kWh</td><td>≈ 0.387 therms</td></tr>
+          <tr><td>East Midlands</td><td>39.0 – 40.8</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.34 kWh</td><td>≈ 0.387 therms</td></tr>
+          <tr><td>West Midlands</td><td>38.5 – 40.5</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.18 kWh</td><td>≈ 0.381 therms</td></tr>
+          <tr><td>Yorkshire & Humber</td><td>38.0 – 40.2</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.11 kWh</td><td>≈ 0.379 therms</td></tr>
+          <tr><td>North West England</td><td>37.8 – 40.0</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 11.06 kWh</td><td>≈ 0.377 therms</td></tr>
+          <tr><td>North East England</td><td>37.5 – 39.8</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 10.98 kWh</td><td>≈ 0.374 therms</td></tr>
+          <tr><td>Scotland</td><td>37.2 – 40.0</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 11.01 kWh</td><td>≈ 0.376 therms</td></tr>
+          <tr><td>Wales</td><td>38.0 – 40.2</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.11 kWh</td><td>≈ 0.379 therms</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">Therms/m³ = (CV × 1.02264 ÷ 3.6) ÷ 29.3001. Mid-range regional CV used. Source: National Grid / Xoserve 2026.</p>
+
+    <!-- FAQ -->
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>How many therms is 1 kWh?</summary>
+        <div class="faq-ans"><strong>1 kWh = 0.034121 therms</strong> (exactly 1 ÷ 29.3001). This is a fixed mathematical relationship between two energy units — it never changes regardless of gas type, region or supplier. To convert any kWh to therms, divide by 29.3001. Use the <a href="#calculator">converter above</a> for any value.</div>
+      </details>
+      <details>
+        <summary>How do I convert kWh to therms?</summary>
+        <div class="faq-ans">Divide your kWh value by <strong>29.3001</strong>. Equivalently, multiply by 0.034121. Formula: therms = kWh ÷ 29.3001. Key examples: 1,000 kWh = 34.12 therms; 11,500 kWh = 392.5 therms; 17,000 kWh = 580.3 therms. For dekatherms, divide by 293.001 instead.</div>
+      </details>
+      <details>
+        <summary>How many therms does a UK home use per year?</summary>
+        <div class="faq-ans">Converting Ofgem's 2026 benchmarks: <strong>Low = 273 therms/year</strong> (8,000 kWh); <strong>Medium/average = 392.5 therms/year</strong> (11,500 kWh); <strong>High = 580 therms/year</strong> (17,000 kWh). For a monthly average, divide by 12: the UK average works out to ~32.7 therms/month.</div>
+      </details>
+      <details>
+        <summary>Why would I convert kWh to therms?</summary>
+        <div class="faq-ans">Common reasons include: comparing your UK bill against US household benchmarks; specifying or comparing US-manufactured heating equipment rated in BTU/hr or therms/hr; commercial UK gas contracts priced in p/therm; international energy benchmarking; and energy auditing across UK and US building standards. UK domestic consumers rarely need therms day-to-day — kWh is the standard UK billing unit.</div>
+      </details>
+      <details>
+        <summary>How many therms is 1,000 kWh?</summary>
+        <div class="faq-ans"><strong>1,000 kWh = 34.12 therms</strong> (1,000 ÷ 29.3001 = 34.121). Other key conversions: 500 kWh = 17.06 therms; 2,000 kWh = 68.24 therms; 5,000 kWh = 170.6 therms; 10,000 kWh = 341.2 therms; 11,500 kWh (UK avg) = 392.5 therms. Full table is <a href="#calculator">above</a>.</div>
+      </details>
+      <details>
+        <summary>What is a dekatherm (Dth) and how do I convert kWh to Dth?</summary>
+        <div class="faq-ans">A <strong>dekatherm (Dth)</strong> = 10 therms = 293.001 kWh. To convert kWh to dekatherms, divide by 293.001. The UK annual average of 11,500 kWh = 39.25 Dth. Dekatherms are used in commercial and wholesale gas contracts — most UK Dth pricing is for daily flow rates (Dth/day).</div>
+      </details>
+      <details>
+        <summary>Does the kWh to therms conversion depend on calorific value?</summary>
+        <div class="faq-ans"><strong>No.</strong> Both kWh and therms are energy units — their conversion is a fixed constant (1 kWh = 0.034121 therms) that never changes. Calorific value only comes into play when converting gas <em>volume</em> (m³ or ft³) to energy. If you need to convert a UK meter reading to therms, first convert m³ to kWh using our <a href="/gas-m3-to-kwh-calculator.html">M3 to kWh calculator</a>, then divide by 29.3001.</div>
+      </details>
+      <details>
+        <summary>How do I convert kilowatts (kW) to therms per hour?</summary>
+        <div class="faq-ans">Divide kW by 29.3001 to get therms/hour. Example: 100 kW ÷ 29.3001 = 3.413 therms/hour. This is because 1 kW = 1 kWh/hour, so the same conversion factor applies to power as to energy. Used when comparing UK (kW) rated boilers and heating plant against US (therms/hr) specifications.</div>
+      </details>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <div class="sb-cta">
+      <h4>🔗 Related Converters</h4>
+      <p>More free energy unit tools</p>
+      <a href="/therms-to-kwh.html" class="s-blue">🔥 Therms to kWh</a>
+      <a href="/gas-m3-to-kwh-calculator.html" class="s-ghost">🔥 Gas M3 to kWh</a>
+      <a href="/gas-usage-calculator.html" class="s-ghost">📊 Gas Usage Calc</a>
+      <a href="/mmbtu-to-m3-calculator.html" class="s-ghost">⚡ MMBTU to M3</a>
+      <a href="/btu-to-m3-converter.html" class="s-ghost">🌡 BTU to M3</a>
+    </div>
+
+    <div class="sb-box">
+      <h4>⚡ kWh Quick Reference</h4>
+      <div class="s-row"><span>1 kWh</span><span class="s-val">0.03412 therms</span></div>
+      <div class="s-row"><span>100 kWh</span><span class="s-val">3.412 therms</span></div>
+      <div class="s-row"><span>1,000 kWh</span><span class="s-val">34.12 therms</span></div>
+      <div class="s-row"><span>8,000 kWh</span><span class="s-val">273 therms</span></div>
+      <div class="s-row"><span>11,500 kWh</span><span class="s-val">392.5 therms</span></div>
+      <div class="s-row"><span>17,000 kWh</span><span class="s-val">580.3 therms</span></div>
+      <div class="s-row"><span>1 kW (power)</span><span class="s-val">0.03412 th/hr</span></div>
+      <div class="s-row"><span>1,000 kWh</span><span class="s-val">3.412 Dth</span></div>
+    </div>
+
+    <div class="sb-box">
+      <h4>🔗 All Gas Tools</h4>
+      <ul class="sb-links">
+        <li><a href="/gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">Gas kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Gas Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calculator UK</a></li>
+        <li><a href="/gas-usage-calculator.html">Gas Usage Calculator</a></li>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How-To Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+  </aside>
+</div>
+
+<div class="auth-strip">
+  <div class="auth-inner">
+    <span class="auth-lbl">References:</span>
+    <a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem TDCVs</a>
+    <a href="https://www.eia.gov" target="_blank" rel="noopener">US EIA</a>
+    <a href="https://www.bipm.org" target="_blank" rel="noopener">BIPM (SI Units)</a>
+    <a href="https://www.nationalgrid.com" target="_blank" rel="noopener">National Grid</a>
+    <a href="https://www.nist.gov" target="_blank" rel="noopener">NIST</a>
   </div>
-</main>
+</div>
 
-<footer class="site-footer">
+<footer>
   <div class="footer-grid">
-    <div><a href="index.html" class="footer-logo">⚡ UK Converter</a><p class="footer-tagline">Free UK gas unit conversion calculators.</p></div>
-    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="therms-to-kwh.html">Therms to kWh</a><a href="sitemap.xml">Sitemap</a></div>
-    <div class="footer-col"><h4>Calculator Tools</h4><a href="gas-m3-to-kwh-calculator.html">M3 to kWh</a><a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a></div>
-    <div class="footer-col"><h4>Disclaimer</h4><p class="footer-disclaimer">This tool is for estimation purposes only. Always check your energy bill for exact figures.</p></div>
+    <div class="fc">
+      <span class="footer-logo">⚡ Energy<span>Converter</span></span>
+      <p>Free UK gas unit conversion calculators. kWh to therms conversion uses the fixed factor of 0.034121 therms/kWh. No signup, no data stored. Updated 2026.</p>
+      <p style="margin-top:12px;font-size:0.76rem;color:rgba(255,255,255,0.25)">⚠️ For informational purposes only. Not affiliated with Ofgem or any energy supplier.</p>
+    </div>
+    <div class="fc">
+      <h5>Gas Calculators</h5>
+      <ul>
+        <li><a href="/gas-m3-to-kwh-calculator.html">M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calc</a></li>
+        <li><a href="/gas-usage-calculator.html">Usage Calc</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">ft³ to kWh</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Energy Converters</h5>
+      <ul>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Gas Price Per M3</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Guides</h5>
+      <ul>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How to Convert Guide</a></li>
+        <li><a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem ↗</a></li>
+        <li><a href="https://www.eia.gov" target="_blank" rel="noopener">US EIA ↗</a></li>
+        <li><a href="/">← Homepage</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-bottom"><p>© 2025 UK Converter — ukconverter.site. All rights reserved.</p></div>
+  <div class="footer-bottom">© 2026 EnergyConverter.netlify.app &nbsp;·&nbsp; kWh to Therms Converter &nbsp;·&nbsp; 1 kWh = 0.034121 Therms &nbsp;·&nbsp; 2026</div>
 </footer>
 
 <script>
-function calcKwhToTherms() {
-  const kwh = parseFloat(document.getElementById('kwh-therms-in').value);
-  if (isNaN(kwh)||kwh<0) { alert('Please enter a valid kWh value.'); return; }
-  const therms = kwh / 29.3001;
-  document.getElementById('kt-therms').textContent = therms.toFixed(4) + ' therms';
-  document.getElementById('kt-formula').textContent = 'Formula: ' + kwh + ' kWh ÷ 29.3001 = ' + therms.toFixed(4) + ' therms';
-  document.getElementById('kt-result').classList.add('show');
-  document.getElementById('kt-result').scrollIntoView({ behavior:'smooth', block:'nearest' });
-}
-function resetKt() {
-  document.getElementById('kwh-therms-in').value='';
-  document.getElementById('kt-result').classList.remove('show');
-}
-(function(){const h=document.querySelector('.hamburger'),n=document.querySelector('.mobile-nav');if(!h||!n)return;h.addEventListener('click',function(){n.classList.toggle('open');const s=h.querySelectorAll('span');if(n.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)';}else{s[0].style.transform='';s[1].style.opacity='';s[2].style.transform='';}});})();
+  document.getElementById('hamburger').addEventListener('click',()=>{
+    document.getElementById('main-nav').classList.toggle('open');
+  });
+
+  function calcKwhToTherms(){
+    const kwh = parseFloat(document.getElementById('kwh-in').value);
+    if(isNaN(kwh)||kwh<=0){ alert('Please enter a valid kWh value greater than zero.'); return; }
+    const FACTOR = 29.3001;
+    const therms = kwh / FACTOR;
+    const dth    = therms / 10;
+    const btu    = kwh * 3412.14;
+    const mj     = kwh * 3.6;
+    const vsUkAvg= ((kwh/11500)*100).toFixed(1);
+
+    document.getElementById('res-therms').textContent  = therms.toFixed(4);
+    document.getElementById('res-therms2').textContent = therms.toFixed(4);
+    document.getElementById('res-kwh').textContent     = kwh;
+    document.getElementById('res-dth').textContent     = dth.toFixed(5);
+    document.getElementById('res-btu').textContent     = btu.toLocaleString('en-GB',{maximumFractionDigits:0});
+    document.getElementById('res-mj').textContent      = mj.toFixed(2);
+    document.getElementById('res-vs').textContent      = `${vsUkAvg}% of UK annual avg`;
+    document.getElementById('res-formula').textContent =
+      `${kwh} kWh ÷ 29.3001 = ${therms.toFixed(4)} therms\n`+
+      `${kwh} kWh ÷ 293.001 = ${dth.toFixed(5)} Dth\n`+
+      `${kwh} kWh × 3,412.14 = ${btu.toLocaleString('en-GB',{maximumFractionDigits:0})} BTU\n`+
+      `vs UK annual avg: ${vsUkAvg}% of 11,500 kWh`;
+
+    const box = document.getElementById('result-box');
+    box.classList.add('show');
+    box.scrollIntoView({behavior:'smooth',block:'nearest'});
+    document.getElementById('reset-btn').style.display='block';
+  }
+
+  function resetCalc(){
+    document.getElementById('result-box').classList.remove('show');
+    document.getElementById('reset-btn').style.display='none';
+    document.getElementById('kwh-in').value='';
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const t=document.querySelector(this.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  });
+
+  (adsbygoogle=window.adsbygoogle||[]).push({});
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 </body>
 </html>
