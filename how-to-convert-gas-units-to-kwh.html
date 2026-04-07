@@ -3,335 +3,1029 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Convert Gas Units to kWh — Step-by-Step UK Guide</title>
-  <meta name="description" content="Learn exactly how to convert gas units to kWh. Step-by-step guide with the Ofgem formula, worked examples, imperial and metric conversions, and free calculator for UK gas meters.">
+  <title>How to Convert Gas Units to kWh — Complete UK Guide 2026</title>
+  <meta name="description" content="Learn exactly how to convert gas units to kWh in the UK. Step-by-step guide for both metric (m³) and imperial (ft³) meters using the official Ofgem formula. Includes worked examples, calorific value table and common mistakes to avoid.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ukconverter.site/how-to-convert-gas-units-to-kwh.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="UK Converter">
-  <meta property="og:title" content="How to Convert Gas Units to kWh — Step-by-Step UK Guide">
-  <meta property="og:description" content="Complete step-by-step guide to converting gas units to kWh in the UK. Ofgem formula, worked examples, imperial and metric, and free calculator.">
-  <meta property="og:url" content="https://ukconverter.site/how-to-convert-gas-units-to-kwh.html">
+  <link rel="canonical" href="https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Energy Converter UK">
+  <meta property="og:title" content="How to Convert Gas Units to kWh — Complete UK Guide 2026">
+  <meta property="og:description" content="Step-by-step guide to converting gas units to kWh for metric and imperial UK gas meters. Official Ofgem formula, worked examples and regional calorific values.">
+  <meta property="og:url" content="https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="How to Convert Gas Units to kWh — Step-by-Step UK Guide">
+  <meta name="twitter:title" content="How to Convert Gas Units to kWh UK 2026">
+  <meta name="twitter:description" content="Official Ofgem formula, step-by-step guide for metric and imperial gas meters, calorific value table and worked examples.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://energyconverter.netlify.app/"},
+    {"@type":"ListItem","position":2,"name":"Guides","item":"https://energyconverter.netlify.app/#guides"},
+    {"@type":"ListItem","position":3,"name":"How to Convert Gas Units to kWh","item":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html"}
+  ]}
+  </script>
+
+  <!-- Schema: Article -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to Convert Gas Units to kWh",
-    "step": [
-      {"@type": "HowToStep", "name": "Read your gas meter", "text": "Write down your current gas meter reading in m³ or ft³. Subtract the previous reading to find units used."},
-      {"@type": "HowToStep", "name": "Find your calorific value", "text": "Locate the calorific value on your gas bill, typically 38–43 kWh/m³. The UK average is 39.5 kWh/m³."},
-      {"@type": "HowToStep", "name": "Apply the Ofgem formula", "text": "Multiply units by calorific value, then by 1.02264 (volume correction factor), then divide by 3.6 to get kWh."},
-      {"@type": "HowToStep", "name": "Verify your result", "text": "Compare with your energy bill kWh figure to confirm accuracy. Small differences due to rounding are normal."}
+    "@context":"https://schema.org","@type":"Article",
+    "headline":"How to Convert Gas Units to kWh: Complete UK Guide 2026",
+    "description":"A complete step-by-step guide to converting gas units to kWh in the UK for both metric and imperial gas meters using the official Ofgem formula.",
+    "url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html",
+    "datePublished":"2026-01-01",
+    "dateModified":"2026-04-01",
+    "author":{"@type":"Organization","name":"Energy Converter UK"},
+    "publisher":{"@type":"Organization","name":"Energy Converter UK","url":"https://energyconverter.netlify.app"},
+    "mainEntityOfPage":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html",
+    "keywords":"how to convert gas units to kwh, gas units to kwh, m3 to kwh, imperial gas meter to kwh, ofgem gas formula, calorific value uk"
+  }
+  </script>
+
+  <!-- Schema: HowTo — Metric -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"HowTo",
+    "name":"How to Convert Gas Units to kWh (Metric Meter — m³)",
+    "description":"Step-by-step guide to converting cubic metres (m³) from a metric gas meter to kilowatt hours (kWh) using the official UK Ofgem formula.",
+    "totalTime":"PT3M",
+    "estimatedCost":{"@type":"MonetaryAmount","currency":"GBP","value":"0"},
+    "tool":[
+      {"@type":"HowToTool","name":"Gas meter (current and previous reading in m³)"},
+      {"@type":"HowToTool","name":"Gas bill (for calorific value)"},
+      {"@type":"HowToTool","name":"Calculator or smartphone"}
+    ],
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Read your metric gas meter","text":"Write down your current meter reading in cubic metres (m³). Subtract your previous reading to find units used. Example: 1,250 m³ − 1,164 m³ = 86 m³ used. Metric meters display digits with m³, M or a cube symbol and are the standard meter type installed in UK homes since the 1990s.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#metric-step1"},
+      {"@type":"HowToStep","position":2,"name":"Find your calorific value","text":"Locate the calorific value (CV) on your gas bill — usually in the 'how we calculate your charges' section. It is shown in kWh/m³ or MJ/m³ (divide MJ/m³ by 3.6 to convert). The UK average is 39.5 kWh/m³. Your exact CV will be between 37.0 and 43.0 kWh/m³ depending on your region and the time of year.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#metric-step2"},
+      {"@type":"HowToStep","position":3,"name":"Multiply m³ by calorific value","text":"Multiply your volume in m³ by the calorific value. Example: 86 m³ × 39.5 kWh/m³ = 3,397.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#metric-step3"},
+      {"@type":"HowToStep","position":4,"name":"Multiply by volume correction factor","text":"Multiply by 1.02264 (Ofgem's standard volume correction factor). Example: 3,397 × 1.02264 = 3,473.94.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#metric-step4"},
+      {"@type":"HowToStep","position":5,"name":"Divide by 3.6 to get kWh","text":"Divide by 3.6 to convert from megajoules to kilowatt hours. Example: 3,473.94 ÷ 3.6 = 964.98 kWh. This is the energy used figure that appears on your gas bill.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#metric-step5"}
     ]
   }
   </script>
+
+  <!-- Schema: HowTo — Imperial -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"HowTo",
+    "name":"How to Convert Gas Units to kWh (Imperial Meter — Cubic Feet)",
+    "description":"Step-by-step guide to converting cubic feet (ft³) from an imperial gas meter to kilowatt hours (kWh) using the official UK Ofgem formula.",
+    "totalTime":"PT4M",
+    "estimatedCost":{"@type":"MonetaryAmount","currency":"GBP","value":"0"},
+    "tool":[
+      {"@type":"HowToTool","name":"Gas meter (current and previous reading in ft³)"},
+      {"@type":"HowToTool","name":"Gas bill (for calorific value)"},
+      {"@type":"HowToTool","name":"Calculator or smartphone"}
+    ],
+    "step":[
+      {"@type":"HowToStep","position":1,"name":"Read your imperial gas meter","text":"Write down your current meter reading in cubic feet (ft³). Subtract your previous reading to find units used. Example: 14,250 ft³ − 13,820 ft³ = 430 ft³ used. Imperial meters show ft³, CF or cubic feet and are common in homes built before the 1990s.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#imperial-step1"},
+      {"@type":"HowToStep","position":2,"name":"Convert cubic feet to cubic metres","text":"Multiply cubic feet by 0.0283168 to convert to m³. Example: 430 ft³ × 0.0283168 = 12.18 m³.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#imperial-step2"},
+      {"@type":"HowToStep","position":3,"name":"Find your calorific value","text":"Find the calorific value on your gas bill (typically 37.0–43.0 kWh/m³, UK average 39.5 kWh/m³). If shown in MJ/m³, divide by 3.6.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#imperial-step3"},
+      {"@type":"HowToStep","position":4,"name":"Apply the Ofgem formula","text":"Calculate: kWh = m³ × CV × 1.02264 ÷ 3.6. Example: (12.18 × 39.5 × 1.02264) ÷ 3.6 = 136.13 kWh.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#imperial-step4"},
+      {"@type":"HowToStep","position":5,"name":"Verify against your bill","text":"Compare your calculated kWh figure against the energy used figure on your gas bill. Results should match within 1–3 kWh for a monthly bill. Larger differences usually indicate an estimated reading was used by your supplier.","url":"https://energyconverter.netlify.app/how-to-convert-gas-units-to-kwh.html#imperial-step5"}
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question","name":"How do I convert gas units to kWh in the UK?",
+        "acceptedAnswer":{"@type":"Answer","text":"Use the official Ofgem formula: kWh = units (m³) × Calorific Value (kWh/m³) × 1.02264 ÷ 3.6. For a metric meter: subtract previous reading from current to get m³ used, then apply the formula with your calorific value from your bill (UK average 39.5 kWh/m³). For an imperial meter: first convert ft³ to m³ by multiplying by 0.0283168, then apply the same formula. Use our free gas units to kWh calculator for an instant result."}
+      },
+      {
+        "@type":"Question","name":"What is a gas unit in the UK?",
+        "acceptedAnswer":{"@type":"Answer","text":"A gas unit in the UK refers to the volume of gas measured by your meter: 1 unit = 1 cubic metre (m³) on a metric meter, or 1 cubic foot (ft³) on an older imperial meter. Your energy supplier converts these volume units to kilowatt hours (kWh) for billing using the Ofgem formula. One m³ of gas equals approximately 11.18 kWh; one cubic foot equals approximately 0.317 kWh."}
+      },
+      {
+        "@type":"Question","name":"How many kWh are in one unit of gas?",
+        "acceptedAnswer":{"@type":"Answer","text":"For a metric meter: 1 unit (1 m³) = approximately 11.18 kWh using the UK average calorific value of 39.5 kWh/m³. For an imperial meter: 1 unit (1 cubic foot) = approximately 0.317 kWh. These values vary slightly based on your region's calorific value, which ranges from 37.0 to 43.0 kWh/m³ across the UK."}
+      },
+      {
+        "@type":"Question","name":"How do I know if I have a metric or imperial gas meter?",
+        "acceptedAnswer":{"@type":"Answer","text":"Check the label or display on your meter: Metric meters show 'm³', 'M' or a superscript ³ symbol and display 5 digits before the decimal point. Imperial meters show 'ft³', 'CF', 'cubic feet' or 'Hcf' and typically display 4 digits. Metric meters are standard in UK homes built or renovated since the 1990s. Imperial meters are common in older properties, particularly pre-1990s terrace houses and flats. If you're unsure, check your gas bill — it will state whether your usage is in m³ or ft³."}
+      },
+      {
+        "@type":"Question","name":"What is the Ofgem formula for converting gas to kWh?",
+        "acceptedAnswer":{"@type":"Answer","text":"The official Ofgem formula is: kWh = Volume (m³) × Calorific Value (kWh/m³) × Volume Correction Factor (1.02264) ÷ 3.6. Every UK energy supplier must use this formula by law. The calorific value reflects the energy content of your local gas supply and is stated on your bill. The volume correction factor (1.02264) adjusts for temperature and pressure differences. The division by 3.6 converts megajoules to kilowatt hours."}
+      },
+      {
+        "@type":"Question","name":"Where do I find the calorific value on my gas bill?",
+        "acceptedAnswer":{"@type":"Answer","text":"The calorific value (CV) is usually found in the 'how we calculate your charges', 'bill breakdown' or 'usage details' section of your gas bill. It may be labelled as 'CV', 'calorific value', 'energy content' or 'heat value'. It will be shown as a number between 37.0 and 43.0, either in kWh/m³ or MJ/m³ (divide MJ/m³ by 3.6 to convert to kWh/m³). If you cannot find it, use 39.5 kWh/m³ as the UK national average."}
+      },
+      {
+        "@type":"Question","name":"Why does my gas bill show kWh when my meter shows m³?",
+        "acceptedAnswer":{"@type":"Answer","text":"Your gas meter physically measures the volume of gas flowing through the pipe in cubic metres (m³) or cubic feet (ft³). However, energy is billed in kilowatt hours (kWh) because the same volume of gas can contain different amounts of heat energy depending on its composition, temperature and pressure. Your supplier uses the Ofgem formula to convert your meter reading to kWh before calculating your bill. This ensures fair billing regardless of your region or the time of year."}
+      },
+      {
+        "@type":"Question","name":"How do I convert gas units to kWh without a calculator?",
+        "acceptedAnswer":{"@type":"Answer","text":"For a quick mental estimate with a metric meter, multiply your m³ reading by 11.2 (simplified from the full Ofgem formula using average UK CV). Example: 50 m³ × 11.2 = 560 kWh. This is accurate to within 2–3% for most UK regions. For an imperial meter, multiply ft³ by 0.317. For an exact result matching your bill, always use the full formula: kWh = m³ × CV × 1.02264 ÷ 3.6 with your bill's stated calorific value."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #1a1a2e; --accent: #e84040; --amber: #f5a623;
+      --bg: #fafaf8; --card: #ffffff; --border: #e2e2da;
+      --text: #2c2c2c; --muted: #6b6b6b;
+      --green: #2e7d32; --green-bg: #e9f5ee; --green-border: #a8d5b8;
+      --blue-bg: #e3f2fd; --blue: #1565c0;
+      --formula-bg: #fff8ec; --formula-border: #f5a623;
+      --imperial-bg: #f3e5f5; --imperial-border: #9c27b0;
+      --radius: 10px; --shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 16px; }
+
+    /* HEADER */
+    header { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 62px; }
+    .logo { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.25rem; color: #fff; text-decoration: none; }
+    .logo span { color: var(--amber); }
+    nav { display: flex; gap: 6px; align-items: center; }
+    nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.88rem; font-weight: 500; padding: 6px 12px; border-radius: 6px; transition: background 0.2s; }
+    nav a:hover, nav a.active { background: rgba(255,255,255,0.12); color: #fff; }
+    nav a.cta-nav { background: var(--accent); color: #fff; font-weight: 600; }
+    nav a.cta-nav:hover { background: #c73333; }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+    .hamburger span { width: 24px; height: 2px; background: #fff; border-radius: 2px; }
+
+    /* BREADCRUMB */
+    .breadcrumb { background: #f0efea; border-bottom: 1px solid var(--border); padding: 10px 20px; }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; font-size: 0.8rem; color: var(--muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .breadcrumb-inner a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .breadcrumb-inner span { color: #bbb; }
+
+    /* HERO — Guide style (no calculator card) */
+    .page-hero { background: linear-gradient(135deg, #1a1a2e 0%, #1e2d3d 55%, #1a1a2e 100%); padding: 52px 20px 48px; }
+    .hero-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+    .hero-tag { display: inline-block; background: rgba(245,166,35,0.15); border: 1px solid rgba(245,166,35,0.3); color: var(--amber); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 18px; }
+    .hero-inner h1 { font-family: 'Poppins', sans-serif; font-size: clamp(1.7rem, 4vw, 2.8rem); font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 16px; }
+    .hero-inner h1 em { color: var(--amber); font-style: normal; }
+    .hero-inner p { color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.7; max-width: 680px; margin: 0 auto 22px; }
+    .hero-chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 28px; }
+    .chip { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.7); font-size: 0.78rem; padding: 4px 12px; border-radius: 20px; }
+    .chip.green { background: rgba(76,175,125,0.15); border-color: rgba(76,175,125,0.3); color: #7dd9a8; }
+    .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .hero-ctas a { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 0.9rem; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: 0.2s; }
+    .cta-primary { background: var(--accent); color: #fff; }
+    .cta-primary:hover { background: #c73333; }
+    .cta-secondary { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+    .cta-secondary:hover { background: rgba(255,255,255,0.18); }
+
+    /* READING TIME BAR */
+    .meta-bar { background: var(--card); border-bottom: 1px solid var(--border); }
+    .meta-inner { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; font-size: 0.8rem; color: var(--muted); }
+    .meta-item { display: flex; align-items: center; gap: 5px; }
+    .meta-item strong { color: var(--primary); }
+
+    /* LAYOUT */
+    .content-wrap { max-width: 1200px; margin: 0 auto; padding: 48px 20px; display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }
+    .main-content h2 { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--primary); margin: 40px 0 12px; padding-top: 12px; border-top: 2px solid var(--border); }
+    .main-content h2:first-child { margin-top: 0; border: none; padding-top: 0; }
+    .main-content h3 { font-family: 'Poppins', sans-serif; font-size: 1.02rem; font-weight: 700; color: var(--primary); margin: 24px 0 8px; }
+    .main-content p { font-size: 0.93rem; color: #444; margin-bottom: 14px; line-height: 1.78; }
+    .main-content a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .main-content a:hover { text-decoration: underline; }
+    .main-content ul, .main-content ol { margin: 10px 0 16px 20px; }
+    .main-content li { font-size: 0.92rem; color: #444; margin-bottom: 9px; line-height: 1.65; }
+    .main-content strong { color: var(--primary); }
+    .main-content code { background: #f0efea; color: var(--primary); font-family: monospace; font-size: 0.84rem; padding: 2px 7px; border-radius: 4px; }
+
+    /* INTRO SUMMARY BOX */
+    .intro-box { background: var(--blue-bg); border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; padding: 20px 24px; margin-bottom: 28px; }
+    .intro-box h3 { font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--blue); margin-bottom: 10px; }
+    .intro-box ul { margin: 0 0 0 16px; }
+    .intro-box li { font-size: 0.88rem; color: #1a3a5c; margin-bottom: 6px; line-height: 1.5; }
+
+    /* FORMULA BOX — Metric */
+    .formula-box { border-left: 4px solid var(--formula-border); border-radius: 0 10px 10px 0; padding: 22px 26px; margin: 20px 0; }
+    .formula-box.metric { background: var(--formula-bg); }
+    .formula-box.imperial { background: var(--imperial-bg); border-left-color: var(--imperial-border); }
+    .fb-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+    .formula-box.metric .fb-label { color: #c47f00; }
+    .formula-box.imperial .fb-label { color: #7b1fa2; }
+    .fb-main { font-size: 1.15rem; font-weight: 800; color: var(--primary); font-family: monospace; line-height: 1.45; margin-bottom: 8px; }
+    .fb-vars { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .fb-var { border-radius: 6px; padding: 7px 12px; font-size: 0.8rem; }
+    .formula-box.metric .fb-var { background: rgba(245,166,35,0.12); border: 1px solid rgba(245,166,35,0.25); }
+    .formula-box.imperial .fb-var { background: rgba(156,39,176,0.08); border: 1px solid rgba(156,39,176,0.2); }
+    .fb-var strong { display: block; font-weight: 700; color: var(--primary); font-size: 0.83rem; }
+    .fb-var span { color: var(--muted); font-size: 0.75rem; }
+
+    /* METER TYPE GRID */
+    .meter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+    .meter-card { border-radius: var(--radius); padding: 22px; border: 2px solid; }
+    .meter-card.metric-card { background: #fffdf0; border-color: var(--formula-border); }
+    .meter-card.imperial-card { background: #fdf5ff; border-color: var(--imperial-border); }
+    .meter-card h3 { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .meter-card.metric-card h3 { color: #8a6000; }
+    .meter-card.imperial-card h3 { color: #6a0080; }
+    .meter-card ul { list-style: none; margin: 0; }
+    .meter-card li { font-size: 0.85rem; color: #444; padding: 5px 0; border-bottom: 1px solid rgba(0,0,0,0.05); display: flex; gap: 8px; }
+    .meter-card li:last-child { border: none; }
+    .meter-card li::before { font-size: 0.8rem; flex-shrink: 0; }
+    .meter-card.metric-card li::before { content: '📊'; }
+    .meter-card.imperial-card li::before { content: '🔢'; }
+
+    /* STEPS — METRIC */
+    .steps-container { margin: 16px 0; }
+    .step-item { display: flex; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--border); }
+    .step-item:last-child { border: none; }
+    .step-num { min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+    .step-num.metric-num { background: var(--primary); color: var(--amber); }
+    .step-num.imperial-num { background: #6a0080; color: #f3e5f5; }
+    .step-body h3 { font-family: 'Poppins', sans-serif; font-size: 0.97rem; font-weight: 700; color: var(--primary); margin-bottom: 7px; }
+    .step-body p { font-size: 0.88rem; color: #555; line-height: 1.68; margin: 0 0 8px; }
+    .step-example { background: #f8f7f2; border-radius: 7px; padding: 10px 14px; font-family: monospace; font-size: 0.82rem; color: var(--primary); line-height: 1.65; }
+    .step-example.imp { background: #f9f2fd; }
+    .step-tip { background: var(--green-bg); border: 1px solid var(--green-border); border-radius: 7px; padding: 9px 14px; font-size: 0.82rem; color: #2a6b3a; margin-top: 8px; }
+    .step-tip::before { content: '💡 Tip: '; font-weight: 700; }
+
+    /* WORKED EXAMPLE CARD */
+    .worked-example { background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden; margin: 20px 0; }
+    .we-header { padding: 14px 20px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .we-header.metric-h { background: #fff8ec; color: #8a6000; border-bottom: 2px solid var(--formula-border); }
+    .we-header.imperial-h { background: #fdf5ff; color: #6a0080; border-bottom: 2px solid var(--imperial-border); }
+    .we-body { padding: 18px 20px; }
+    .we-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid #f0efea; font-size: 0.87rem; gap: 20px; }
+    .we-row:last-child { border: none; }
+    .we-label { color: var(--muted); font-weight: 600; flex-shrink: 0; }
+    .we-val { font-family: monospace; font-size: 0.9rem; color: var(--primary); text-align: right; }
+    .we-result { background: var(--green-bg); border-top: 2px solid var(--green-border); padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .we-result .r-label { font-size: 0.9rem; font-weight: 700; color: var(--green); }
+    .we-result .r-big { font-family: 'Poppins', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--green); }
+
+    /* QUICK ESTIMATE BOX */
+    .quick-estimate { background: var(--green-bg); border: 2px solid var(--green-border); border-radius: var(--radius); padding: 22px 26px; margin: 20px 0; }
+    .quick-estimate h3 { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; color: var(--green); margin-bottom: 12px; }
+    .qe-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .qe-card { background: #fff; border-radius: 8px; padding: 14px; border: 1px solid var(--green-border); }
+    .qe-label { font-size: 0.73rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--green); margin-bottom: 6px; }
+    .qe-formula { font-family: monospace; font-size: 0.88rem; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+    .qe-note { font-size: 0.75rem; color: var(--muted); }
+
+    /* MISTAKES BOX */
+    .mistakes-list { display: flex; flex-direction: column; gap: 12px; margin: 16px 0; }
+    .mistake-item { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px 20px; display: flex; gap: 14px; align-items: flex-start; }
+    .mistake-item.wrong { border-left: 4px solid #e84040; }
+    .mistake-item.right { border-left: 4px solid var(--green); }
+    .mi-icon { font-size: 1.4rem; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .mi-title { font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+    .mi-desc { font-size: 0.85rem; color: #555; line-height: 1.6; }
+
+    /* CTA BLOCK */
+    .cta-block { background: linear-gradient(135deg, #1a1a2e, #2d2d4e); border-radius: var(--radius); padding: 28px; text-align: center; margin: 32px 0; }
+    .cta-block h3 { font-family: 'Poppins', sans-serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px; }
+    .cta-block p { color: rgba(255,255,255,0.6); font-size: 0.88rem; margin-bottom: 18px; line-height: 1.5; }
+    .cta-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .cta-buttons a { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 0.88rem; padding: 11px 20px; border-radius: 8px; text-decoration: none; transition: 0.2s; }
+    .cta-btn-red { background: var(--accent); color: #fff; }
+    .cta-btn-red:hover { background: #c73333; }
+    .cta-btn-ghost { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+    .cta-btn-ghost:hover { background: rgba(255,255,255,0.18); }
+
+    /* TABLES */
+    .table-wrap { overflow-x: auto; margin: 16px 0 24px; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+    thead tr { background: var(--primary); color: #fff; }
+    thead th { padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.82rem; }
+    tbody tr:nth-child(even) { background: #f7f6f2; }
+    tbody td { padding: 10px 16px; border-bottom: 1px solid #ededea; }
+    tbody tr:hover { background: #eeecea; }
+    .hl { background: #fff9ec !important; }
+    .hl td { font-weight: 600; color: var(--primary); }
+    .cv-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
+    .cv-low { background: #e3f2fd; color: #1565c0; }
+    .cv-avg { background: #fff3e0; color: #e65100; }
+    .cv-hi { background: #fce4ec; color: #880e4f; }
+
+    /* AD SLOTS */
+    .ad-slot { background: #f0efea; border: 1px dashed #ccc; border-radius: 8px; text-align: center; font-size: 0.75rem; color: #aaa; display: flex; align-items: center; justify-content: center; }
+    .ad-leader { min-height: 90px; margin: 28px 0; }
+    .ad-rect { min-height: 250px; margin: 20px 0; }
+    .ad-inline { min-height: 90px; margin: 24px 0; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    details { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    details[open] { border-color: #c8c8c0; box-shadow: var(--shadow); }
+    summary { padding: 16px 20px; font-weight: 600; font-size: 0.95rem; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.3rem; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-left: 10px; }
+    details[open] summary::after { content: '−'; }
+    .faq-ans { padding: 0 20px 18px; font-size: 0.9rem; color: #444; line-height: 1.72; }
+    .faq-ans a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .faq-ans strong { color: var(--primary); }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 20px; }
+    .sb-box { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px; }
+    .sb-box h4 { font-family: 'Poppins', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+    .sb-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .sb-links li a { font-size: 0.84rem; color: var(--accent); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+    .sb-links li a::before { content: '→'; font-weight: 700; }
+    .sb-links li a:hover { text-decoration: underline; }
+    .s-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0efea; font-size: 0.82rem; align-items: center; }
+    .s-row:last-child { border: none; }
+    .s-val { font-weight: 700; color: var(--primary); font-size: 0.88rem; }
+    .toc-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+    .toc-list li a { font-size: 0.82rem; color: var(--primary); text-decoration: none; padding: 5px 8px; border-radius: 6px; display: block; transition: 0.15s; line-height: 1.4; }
+    .toc-list li a:hover { background: #f0efea; color: var(--accent); }
+    .toc-list li a::before { content: '§ '; color: var(--accent); font-weight: 700; }
+    .sb-cta { background: linear-gradient(135deg,#1a1a2e,#2d2d4e); border-radius: var(--radius); padding: 22px; text-align: center; }
+    .sb-cta h4 { color: #fff; font-family: 'Poppins', sans-serif; font-size: 0.95rem; border: none; padding: 0; margin-bottom: 8px; }
+    .sb-cta p { color: rgba(255,255,255,0.6); font-size: 0.83rem; margin-bottom: 14px; line-height: 1.5; }
+    .sb-cta a { display: block; color: #fff; font-weight: 700; font-size: 0.85rem; padding: 10px; border-radius: 7px; text-decoration: none; transition: 0.2s; margin-bottom: 7px; }
+    .sb-cta a.s-red { background: var(--accent); }
+    .sb-cta a.s-red:hover { background: #c73333; }
+    .sb-cta a.s-ghost { background: rgba(255,255,255,0.1); }
+    .sb-cta a.s-ghost:hover { background: rgba(255,255,255,0.18); }
+
+    /* AUTHORITY + FOOTER */
+    .auth-strip { background: var(--primary); padding: 18px 20px; }
+    .auth-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .auth-lbl { color: rgba(255,255,255,0.4); font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .auth-inner a { color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 20px; transition: 0.2s; }
+    .auth-inner a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+    footer { background: #111120; color: rgba(255,255,255,0.6); }
+    .footer-grid { max-width: 1200px; margin: 0 auto; padding: 48px 20px 32px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; }
+    .fc h5 { font-family: 'Poppins', sans-serif; color: rgba(255,255,255,0.85); font-size: 0.82rem; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .fc p { font-size: 0.8rem; line-height: 1.65; color: rgba(255,255,255,0.4); }
+    .fc ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .fc ul a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
+    .fc ul a:hover { color: var(--amber); }
+    .footer-logo { font-family: 'Poppins', sans-serif; font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 10px; display: block; }
+    .footer-logo span { color: var(--amber); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 18px 20px; text-align: center; font-size: 0.76rem; color: rgba(255,255,255,0.28); max-width: 1200px; margin: 0 auto; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+      .content-wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .meter-grid { grid-template-columns: 1fr; }
+      .qe-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      nav { display: none; flex-direction: column; position: absolute; top: 62px; left: 0; right: 0; background: var(--primary); padding: 12px 20px; gap: 4px; }
+      nav.open { display: flex; }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero-ctas { flex-direction: column; align-items: center; }
+    }
+  </style>
 </head>
 <body>
 
-<header class="site-header">
+<!-- HEADER -->
+<header>
   <div class="header-inner">
-    <a href="index.html" class="logo">⚡ UK Converter</a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <div class="nav-dropdown"><a href="#">Gas Calculators</a>
-        <div class="dropdown-menu">
-          <a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh Calculator</a>
-          <a href="gas-kwh-to-m3-calculator.html">Gas kWh to M3 Calculator</a>
-          <a href="gas-units-to-kwh-calculator.html">Gas Units to kWh Calculator</a>
-          <a href="gas-bill-calculator-uk.html">Gas Bill Calculator UK</a>
-          <a href="gas-usage-calculator.html">Gas Usage Calculator</a>
-          <a href="gas-price-per-m3-uk.html">Gas Price Per M3 UK</a>
-        </div>
-      </div>
-      <div class="nav-dropdown"><a href="#">Energy Converters</a>
-        <div class="dropdown-menu">
-          <a href="m3-to-kwh-conversion.html">M3 to kWh Conversion</a>
-          <a href="therms-to-kwh.html">Therms to kWh</a>
-          <a href="kwh-to-therms.html">kWh to Therms</a>
-          <a href="mmbtu-to-m3-calculator.html">MMBTU to M3</a>
-          <a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a>
-        </div>
-      </div>
-      <a href="how-to-convert-gas-units-to-kwh.html">How-To Guides</a>
+    <a href="/" class="logo">⚡ Energy<span>Converter</span></a>
+    <nav id="main-nav">
+      <a href="/">Home</a>
+      <a href="/gas-m3-to-kwh-calculator.html">M3 → kWh</a>
+      <a href="/gas-units-to-kwh-calculator.html">Units → kWh</a>
+      <a href="/gas-bill-calculator-uk.html">Bill Calc</a>
+      <a href="/how-to-convert-gas-units-to-kwh.html" class="active">How-To Guide</a>
+      <a href="/#calculators" class="cta-nav">All Tools →</a>
     </nav>
-    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
-  <nav class="mobile-nav">
-    <a href="index.html">🏠 Home</a><a href="gas-m3-to-kwh-calculator.html">⚡ Gas M3 to kWh</a>
-    <a href="gas-kwh-to-m3-calculator.html">🔄 Gas kWh to M3</a><a href="gas-units-to-kwh-calculator.html">📊 Gas Units to kWh</a>
-    <a href="m3-to-kwh-conversion.html">📐 M3 to kWh</a><a href="cubic-feet-to-kwh-gas.html">📦 Cubic Feet to kWh</a>
-  </nav>
 </header>
 
-<main>
-  <div class="container page-wrapper">
-    <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>How-To Guides</span><span>›</span><span>How to Convert Gas Units to kWh</span></nav>
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span>
+    <a href="/#guides">Guides</a><span>›</span>
+    <span>How to Convert Gas Units to kWh</span>
+  </div>
+</div>
 
-    <div class="page-header">
-      <h1>How to Convert Gas Units to kWh: Complete UK Guide</h1>
-      <p class="lead">A comprehensive step-by-step guide to converting gas meter readings into kilowatt hours (kWh), using the official Ofgem formula that all UK energy suppliers are required to use.</p>
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-inner">
+    <div class="hero-tag">📘 Complete UK Guide — Updated 2026</div>
+    <h1>How to Convert<br><em>Gas Units to kWh</em></h1>
+    <p>The complete UK guide to converting gas meter readings to kilowatt hours. Covers both <strong style="color:rgba(255,255,255,0.9)">metric (m³) and imperial (ft³)</strong> meters, the official Ofgem formula, step-by-step worked examples and every common mistake to avoid — with no calculator required.</p>
+    <div class="hero-chips">
+      <span class="chip green">✓ Metric & imperial covered</span>
+      <span class="chip green">✓ Ofgem formula verified</span>
+      <span class="chip">British Gas compatible</span>
+      <span class="chip">5-step worked examples</span>
+      <span class="chip">Updated January 2026</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="/gas-m3-to-kwh-calculator.html" class="cta-primary">⚡ Use the Calculator Instead →</a>
+      <a href="#metric" class="cta-secondary">📖 Read the Guide ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- META BAR -->
+<div class="meta-bar">
+  <div class="meta-inner">
+    <span class="meta-item">⏱ <strong>8 min read</strong></span>
+    <span class="meta-item">📅 Updated <strong>January 2026</strong></span>
+    <span class="meta-item">🎯 Covers <strong>metric &amp; imperial</strong> meters</span>
+    <span class="meta-item">✅ Formula <strong>Ofgem verified</strong></span>
+    <span class="meta-item">🇬🇧 <strong>UK only</strong> — all suppliers</span>
+  </div>
+</div>
+
+<!-- CONTENT + SIDEBAR -->
+<div class="content-wrap">
+  <main class="main-content">
+
+    <!-- INTRO SUMMARY -->
+    <div class="intro-box">
+      <h3>📋 What This Guide Covers</h3>
+      <ul>
+        <li>What "gas units" actually means and why the conversion is needed</li>
+        <li>How to identify whether you have a metric or imperial gas meter</li>
+        <li>The official Ofgem formula — explained in plain English</li>
+        <li>Step-by-step conversion for metric meters (m³ → kWh)</li>
+        <li>Step-by-step conversion for imperial meters (ft³ → kWh)</li>
+        <li>Full worked examples for both meter types</li>
+        <li>Quick estimate shortcuts for mental arithmetic</li>
+        <li>7 common mistakes and how to avoid them</li>
+        <li>UK regional calorific values</li>
+      </ul>
     </div>
 
-    <!-- INTRODUCTION -->
-    <section class="section">
-      <p>Understanding how your gas meter reading translates into kilowatt hours is essential for checking your energy bills, budgeting accurately, and understanding your energy consumption. The UK energy regulator Ofgem mandates a specific conversion method that accounts for the energy content of gas (calorific value) and atmospheric correction factors. This guide explains every step in plain English, with worked examples for both metric and imperial meters.</p>
-    </section>
+    <!-- AD: Leaderboard -->
+    <div class="ad-slot ad-leader">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
 
     <!-- WHAT ARE GAS UNITS -->
-    <section class="section">
-      <h2 class="section-heading">What Are Gas Units?</h2>
-      <p>Gas units are the raw measurements that your gas meter records. There are two types of gas meters in UK homes:</p>
+    <h2>What Are Gas Units?</h2>
+    <p>A "gas unit" is simply the volume of natural gas your meter measures as it flows into your home. Your gas meter is essentially a volume counter — it measures how much physical gas passes through the pipe, not how much heat energy that gas delivers. The unit of measurement depends on the type of meter you have.</p>
 
-      <div class="meter-info" style="margin-top:1.25rem;">
-        <div class="meter-type">
-          <div class="mt-icon">📏</div>
-          <h4>Metric Meters (m³)</h4>
-          <p>Display readings in <strong>cubic metres (m³)</strong>. Installed in most UK homes since the 1990s. The meter display shows a small "m³" label. 1 unit = 1 cubic metre.</p>
-        </div>
-        <div class="meter-type">
-          <div class="mt-icon">📐</div>
-          <h4>Imperial Meters (ft³)</h4>
-          <p>Display readings in <strong>cubic feet (ft³ or CF)</strong>. Found in older UK properties. Numbers run higher (e.g., 40,000–60,000). 1 unit = 1 cubic foot.</p>
-        </div>
+    <div class="meter-grid">
+      <div class="meter-card metric-card">
+        <h3>📊 Metric Meter (m³)</h3>
+        <ul>
+          <li>1 unit = 1 cubic metre (m³)</li>
+          <li>Display shows 5 digits before decimal</li>
+          <li>Labelled "m³", "M" or shows ³ symbol</li>
+          <li>Standard in UK homes since mid-1990s</li>
+          <li>1 m³ ≈ 11.18 kWh (at avg CV)</li>
+          <li>Most common type in UK today</li>
+        </ul>
       </div>
-
-      <p style="margin-top:1.25rem;">Gas meters don't measure energy directly — they measure volume. The conversion to kWh accounts for the fact that the same volume of gas contains different amounts of energy depending on its composition and pressure.</p>
-    </section>
-
-    <!-- OFGEM FORMULA -->
-    <section class="section">
-      <h2 class="section-heading">The Official UK Gas Conversion Formula</h2>
-      <p>Ofgem (the Office of Gas and Electricity Markets) specifies the exact formula that all licensed UK gas suppliers must use. This ensures bills are calculated consistently and fairly across all suppliers:</p>
-
-      <div class="formula-box">
-        <div class="formula-label">Ofgem Official Formula — Metric (m³)</div>
-        kWh = m³ used × Calorific Value × 1.02264 ÷ 3.6
+      <div class="meter-card imperial-card">
+        <h3>🔢 Imperial Meter (ft³)</h3>
+        <ul>
+          <li>1 unit = 1 cubic foot (ft³)</li>
+          <li>Display shows 4 digits, often with dials</li>
+          <li>Labelled "ft³", "CF", "cubic feet" or "Hcf"</li>
+          <li>Common in pre-1990s UK homes</li>
+          <li>1 ft³ ≈ 0.317 kWh (at avg CV)</li>
+          <li>Must convert ft³ → m³ first</li>
+        </ul>
       </div>
-
-      <div style="margin-top:1.25rem; display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem;">
-        <div class="highlight-box">
-          <strong>m³ used</strong><br>
-          The difference between your current and previous meter readings. This is the volume of gas consumed.
-        </div>
-        <div class="highlight-box">
-          <strong>Calorific Value</strong><br>
-          How much energy is in 1 m³ of gas (kWh/m³). UK average: 39.5. Printed on your gas bill.
-        </div>
-        <div class="highlight-box">
-          <strong>1.02264 (VCF)</strong><br>
-          Volume Correction Factor. Adjusts for the difference between gas at meter pressure and standard conditions.
-        </div>
-      </div>
-      <p style="margin-top:1rem; color:var(--text-muted); font-size:0.9rem;">The divisor 3.6 converts megajoules (MJ) to kilowatt hours (kWh). 1 kWh = 3.6 MJ, so dividing by 3.6 converts the result to kWh.</p>
-    </section>
-
-    <!-- STEP BY STEP METRIC -->
-    <section class="section">
-      <h2 class="section-heading">Step-by-Step: How to Convert Gas M3 to kWh</h2>
-
-      <div style="background:#fff; border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow); border:1px solid var(--border);">
-        <div style="display:flex; flex-direction:column; gap:1.25rem;">
-
-          <div style="display:flex; gap:1rem; align-items:flex-start;">
-            <div style="min-width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:800; font-size:1rem;">1</div>
-            <div>
-              <strong>Read Your Gas Meter</strong><br>
-              <span style="color:var(--text-muted); font-size:0.92rem;">Write down your current meter reading. Subtract your previous reading (from your last bill or meter photo). This gives you units used.<br>
-              Example: Current = 1,250 m³, Previous = 1,180 m³, Units used = <strong>70 m³</strong></span>
-            </div>
-          </div>
-
-          <div style="display:flex; gap:1rem; align-items:flex-start;">
-            <div style="min-width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:800; font-size:1rem;">2</div>
-            <div>
-              <strong>Find Your Calorific Value</strong><br>
-              <span style="color:var(--text-muted); font-size:0.92rem;">Look at your gas bill — in the usage breakdown section, find the calorific value. It will be something like "CV: 39.8 kWh/m³". If you don't have a bill, use <strong>39.5</strong> as a UK average estimate.<br>
-              Example: CV = <strong>39.8 kWh/m³</strong></span>
-            </div>
-          </div>
-
-          <div style="display:flex; gap:1rem; align-items:flex-start;">
-            <div style="min-width:36px; height:36px; background:var(--primary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:800; font-size:1rem;">3</div>
-            <div>
-              <strong>Apply the Ofgem Formula</strong><br>
-              <span style="color:var(--text-muted); font-size:0.92rem;">Multiply: units × CV × 1.02264, then divide by 3.6.<br>
-              Calculation: 70 × 39.8 × 1.02264 ÷ 3.6<br>
-              = 70 × 39.8 = 2,786<br>
-              = 2,786 × 1.02264 = 2,849.07<br>
-              = 2,849.07 ÷ 3.6 = <strong>791.41 kWh</strong></span>
-            </div>
-          </div>
-
-          <div style="display:flex; gap:1rem; align-items:flex-start;">
-            <div style="min-width:36px; height:36px; background:var(--secondary); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:800; font-size:1rem;">✓</div>
-            <div>
-              <strong>Verify Your Result</strong><br>
-              <span style="color:var(--text-muted); font-size:0.92rem;">Compare your calculated kWh with the kWh shown on your gas bill. If they match (within 1–2 kWh), your bill is correct. Small differences may occur due to rounding.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-top:1.5rem;">
-        <a href="gas-m3-to-kwh-calculator.html" class="btn-cta">⚡ Use the M3 to kWh Calculator →</a>
-      </div>
-    </section>
-
-    <!-- IMPERIAL STEP BY STEP -->
-    <section class="section">
-      <h2 class="section-heading">Step-by-Step: How to Convert Imperial Gas Units (ft³) to kWh</h2>
-      <p>Imperial meters measure in cubic feet. An extra conversion step is needed before applying the Ofgem formula:</p>
-
-      <div class="formula-box">
-        <div class="formula-label">Imperial Formula — Cubic Feet to kWh</div>
-        kWh = ft³ used × 0.028317 × Calorific Value × 1.02264 ÷ 3.6
-      </div>
-
-      <div style="background:#fff; border-radius:var(--radius-lg); padding:1.75rem; box-shadow:var(--shadow); border:1px solid var(--border); margin-top:1.25rem;">
-        <p><strong>Example:</strong> Imperial meter: Current = 50,000 ft³, Previous = 49,295 ft³ → Used = <strong>705 ft³</strong></p>
-        <ol style="margin-top:1rem; margin-left:1.5rem; line-height:2.4; color:var(--text-muted); font-size:0.92rem;">
-          <li>Units used: 705 ft³</li>
-          <li>Convert to m³: 705 × 0.028317 = <strong>19.963 m³</strong></li>
-          <li>Multiply by CV: 19.963 × 39.5 = 788.52</li>
-          <li>Multiply by VCF: 788.52 × 1.02264 = 806.38</li>
-          <li>Divide by 3.6: 806.38 ÷ 3.6 = <strong>224.0 kWh</strong></li>
-        </ol>
-      </div>
-      <div style="text-align:center; margin-top:1.25rem;">
-        <a href="cubic-feet-to-kwh-gas.html" class="btn-cta">📦 Use the Cubic Feet to kWh Calculator →</a>
-      </div>
-    </section>
-
-    <!-- CALORIFIC VALUE -->
-    <section class="section">
-      <h2 class="section-heading">How to Find Your Calorific Value</h2>
-      <p>Your calorific value (CV) is the single most important variable in the gas conversion formula. Here's where to find it:</p>
-      <ol style="margin-top:1rem; margin-left:1.5rem; line-height:2.2; color:var(--text-muted);">
-        <li><strong>On your gas bill:</strong> Look in the "Gas used" or "Consumption details" section for a line like "Calorific value: 39.3 kWh/m³"</li>
-        <li><strong>On your supplier's website:</strong> Most suppliers publish their current calorific values</li>
-        <li><strong>National Grid:</strong> The National Grid publishes calorific values by Local Distribution Zone</li>
-        <li><strong>Default estimate:</strong> If you can't find it, use <strong>39.5 kWh/m³</strong> as the UK average (accurate to within ±3% for most properties)</li>
-      </ol>
-    </section>
-
-    <!-- COMMON MISTAKES -->
-    <section class="section">
-      <h2 class="section-heading">Common Mistakes to Avoid</h2>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-top:1rem;">
-        <div style="background:#fff3f3; border:1px solid #ffcccc; border-radius:var(--radius); padding:1.25rem;">
-          <strong>❌ Using wrong CV</strong><br>
-          <span style="font-size:0.88rem; color:var(--text-muted);">Using 39.5 when your actual CV is 40.2 will make your calculation about 1.8% off. Always use your bill's exact CV for precise results.</span>
-        </div>
-        <div style="background:#fff3f3; border:1px solid #ffcccc; border-radius:var(--radius); padding:1.25rem;">
-          <strong>❌ Forgetting the VCF</strong><br>
-          <span style="font-size:0.88rem; color:var(--text-muted);">Some people skip the 1.02264 factor. This will give a result about 2.2% lower than your bill shows. The VCF is mandatory in the Ofgem formula.</span>
-        </div>
-        <div style="background:#fff3f3; border:1px solid #ffcccc; border-radius:var(--radius); padding:1.25rem;">
-          <strong>❌ Imperial meters without ft³ → m³ conversion</strong><br>
-          <span style="font-size:0.88rem; color:var(--text-muted);">If you have an imperial meter and don't multiply by 0.028317 first, your result will be wildly off (about 35× too large).</span>
-        </div>
-        <div style="background:#fff3f3; border:1px solid #ffcccc; border-radius:var(--radius); padding:1.25rem;">
-          <strong>❌ Using kWh/m³ as the divisor</strong><br>
-          <span style="font-size:0.88rem; color:var(--text-muted);">The formula divides by 3.6 (fixed constant). Never replace 3.6 with your CV or any other variable — 3.6 converts MJ to kWh and is always 3.6.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUMMARY TABLE -->
-    <section class="section">
-      <h2 class="section-heading">Quick Reference: Gas Conversion Summary</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Conversion</th><th>Formula</th><th>Calculator</th></tr></thead>
-          <tbody>
-            <tr><td>m³ → kWh</td><td>m³ × CV × 1.02264 ÷ 3.6</td><td><a href="gas-m3-to-kwh-calculator.html">Use Calculator</a></td></tr>
-            <tr><td>kWh → m³</td><td>(kWh × 3.6) ÷ (CV × 1.02264)</td><td><a href="gas-kwh-to-m3-calculator.html">Use Calculator</a></td></tr>
-            <tr><td>ft³ → kWh</td><td>ft³ × 0.028317 × CV × 1.02264 ÷ 3.6</td><td><a href="cubic-feet-to-kwh-gas.html">Use Calculator</a></td></tr>
-            <tr><td>Therms → kWh</td><td>Therms × 29.3001</td><td><a href="therms-to-kwh.html">Use Calculator</a></td></tr>
-            <tr><td>MMBTU → m³</td><td>MMBTU × 26.853</td><td><a href="mmbtu-to-m3-calculator.html">Use Calculator</a></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <div class="cta-section">
-      <h2>Use Our Free Gas Calculators</h2>
-      <p>Put this knowledge into practice — use our free, accurate calculators to convert your meter readings instantly.</p>
-      <a href="gas-m3-to-kwh-calculator.html" class="btn-cta">⚡ Gas M3 to kWh Calculator →</a>
     </div>
 
+    <p>Your energy bill always charges you in kilowatt hours (kWh) — not in m³ or ft³. This is because the same volume of gas can contain slightly different amounts of heat energy depending on its composition, temperature and pressure. The conversion from volume to energy ensures every household is billed for the actual heat energy delivered, not just the physical volume of gas. All UK suppliers are legally required by <a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem</a> to use the same conversion formula.</p>
+
+    <!-- THE OFGEM FORMULA -->
+    <h2>The Official Ofgem Conversion Formula</h2>
+    <p>Ofgem mandates a single conversion formula used by every UK domestic gas supplier — British Gas, Octopus Energy, EDF, Scottish Power, E.ON Next and all others. Understanding this formula means you can independently verify any gas bill in under two minutes.</p>
+
+    <div class="formula-box metric">
+      <div class="fb-label">🇬🇧 Ofgem Formula — Metric Meter (m³)</div>
+      <div class="fb-main">kWh = m³ × Calorific Value × 1.02264 ÷ 3.6</div>
+      <div class="fb-vars">
+        <div class="fb-var"><strong>m³</strong><span>Current − previous meter reading</span></div>
+        <div class="fb-var"><strong>Calorific Value</strong><span>From your bill · UK avg 39.5 kWh/m³</span></div>
+        <div class="fb-var"><strong>1.02264</strong><span>Volume Correction Factor (Ofgem)</span></div>
+        <div class="fb-var"><strong>÷ 3.6</strong><span>Converts MJ → kWh</span></div>
+      </div>
+    </div>
+
+    <div class="formula-box imperial">
+      <div class="fb-label">🔢 Ofgem Formula — Imperial Meter (ft³)</div>
+      <div class="fb-main">kWh = ft³ × 0.0283168 × Calorific Value × 1.02264 ÷ 3.6</div>
+      <div class="fb-vars">
+        <div class="fb-var"><strong>ft³</strong><span>Current − previous meter reading</span></div>
+        <div class="fb-var"><strong>× 0.0283168</strong><span>Converts cubic feet → m³</span></div>
+        <div class="fb-var"><strong>Calorific Value</strong><span>From your bill · UK avg 39.5 kWh/m³</span></div>
+        <div class="fb-var"><strong>1.02264</strong><span>Volume Correction Factor</span></div>
+      </div>
+    </div>
+
+    <h3>Why the Formula Has Four Parts</h3>
+    <ul>
+      <li><strong>Calorific Value (CV)</strong> — Natural gas isn't uniform. Its heat content varies by source, season and region. The CV (printed on your bill) tells you how many kWh of heat are contained in exactly 1 m³ of your local gas supply. It typically ranges from 37.0 to 43.0 kWh/m³ across the UK.</li>
+      <li><strong>Volume Correction Factor (1.02264)</strong> — Gas expands in warm weather and contracts in cold. Your meter measures gas at local ambient conditions. The VCF of 1.02264 adjusts this to standard reference conditions (15°C, 1.01325 bar) so your bill is fair regardless of season or meter location.</li>
+      <li><strong>Division by 3.6</strong> — By definition, 1 kWh = 3.6 megajoules (MJ). The CV × VCF calculation produces a result in MJ. Dividing by 3.6 converts this to the kWh figure shown on your bill.</li>
+      <li><strong>× 0.0283168 (imperial only)</strong> — This converts cubic feet to cubic metres before the rest of the formula is applied (1 ft³ = 0.0283168 m³).</li>
+    </ul>
+
+    <!-- METRIC STEP BY STEP -->
+    <h2 id="metric">How to Convert Gas Units to kWh — Metric Meter (m³)</h2>
+    <p>Follow these five steps if your gas meter display shows m³, M or a ³ symbol. This covers the vast majority of UK homes with meters installed since the mid-1990s.</p>
+
+    <div class="steps-container">
+      <div class="step-item">
+        <div class="step-num metric-num">1</div>
+        <div class="step-body">
+          <h3 id="metric-step1">Find Your Gas Meter Readings</h3>
+          <p>Locate your current gas meter reading — either on the physical meter or in your supplier's app if you have a smart meter. Write down the number shown before the decimal point (ignore any red digits). Your previous reading will be on your last bill or in your account's billing history.</p>
+          <div class="step-example">Current reading:  1,250 m³
+Previous reading: 1,164 m³
+─────────────────────────
+Units used:          86 m³</div>
+          <div class="step-tip">If your meter reading has rolled over (gone from 9,999 back to 0), add 10,000 to your current reading before subtracting.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num metric-num">2</div>
+        <div class="step-body">
+          <h3 id="metric-step2">Find Your Calorific Value</h3>
+          <p>Look for "calorific value", "CV" or "energy content" in the billing breakdown section of your gas bill. Your supplier is legally required to print it. It will be a number between 37.0 and 43.0 — either in kWh/m³ (preferred) or MJ/m³. If shown in MJ/m³, divide by 3.6 to convert.</p>
+          <div class="step-example">Bill example: "Calorific value: 39.5 kWh/m³"
+         or: "Energy content: 142.2 MJ/m³"
+                      ÷ 3.6 = 39.5 kWh/m³ ✓</div>
+          <div class="step-tip">Can't find your CV? Use 39.5 kWh/m³ (UK national average). Your result will be within 2–3% of your actual bill for most regions.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num metric-num">3</div>
+        <div class="step-body">
+          <h3 id="metric-step3">Multiply m³ by Calorific Value</h3>
+          <p>Multiply your units used by the calorific value. This gives you the energy in the gas before correction for pressure and temperature conditions at your meter.</p>
+          <div class="step-example">86 m³ × 39.5 kWh/m³ = 3,397.0</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num metric-num">4</div>
+        <div class="step-body">
+          <h3 id="metric-step4">Multiply by Volume Correction Factor (1.02264)</h3>
+          <p>Multiply the result by 1.02264 — Ofgem's standardised volume correction factor. This is always 1.02264 for UK domestic gas bills. You never need to calculate or look up this number.</p>
+          <div class="step-example">3,397.0 × 1.02264 = 3,473.94</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num metric-num">5</div>
+        <div class="step-body">
+          <h3 id="metric-step5">Divide by 3.6 to Get kWh</h3>
+          <p>Divide by 3.6 to convert from the megajoule intermediate value to kilowatt hours. This is your final answer — the kWh figure that should match your bill's "energy used" line.</p>
+          <div class="step-example">3,473.94 ÷ 3.6 = 964.98 kWh ✓</div>
+          <div class="step-tip">To calculate your bill cost: multiply kWh by your unit rate in pence, add standing charge × days, then add 5% VAT. Use our <a href="/gas-bill-calculator-uk.html">gas bill calculator</a>.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKED EXAMPLE METRIC -->
+    <div class="worked-example">
+      <div class="we-header metric-h">📊 Full Worked Example — Metric Meter (86 m³, UK Average Monthly)</div>
+      <div class="we-body">
+        <div class="we-row"><span class="we-label">Current reading</span><span class="we-val">1,250 m³</span></div>
+        <div class="we-row"><span class="we-label">Previous reading</span><span class="we-val">1,164 m³</span></div>
+        <div class="we-row"><span class="we-label">Units used</span><span class="we-val">86 m³</span></div>
+        <div class="we-row"><span class="we-label">Calorific value</span><span class="we-val">39.5 kWh/m³</span></div>
+        <div class="we-row"><span class="we-label">Step 1: 86 × 39.5</span><span class="we-val">= 3,397.0</span></div>
+        <div class="we-row"><span class="we-label">Step 2: × 1.02264</span><span class="we-val">= 3,473.94</span></div>
+        <div class="we-row"><span class="we-label">Step 3: ÷ 3.6</span><span class="we-val">= 964.98 kWh</span></div>
+      </div>
+      <div class="we-result">
+        <span class="r-label">Energy Used</span>
+        <span class="r-big">964.98 kWh</span>
+      </div>
+    </div>
+
+    <!-- AD: In-article 1 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- IMPERIAL STEP BY STEP -->
+    <h2 id="imperial">How to Convert Gas Units to kWh — Imperial Meter (ft³)</h2>
+    <p>Use these steps if your gas meter shows ft³, CF, cubic feet or Hcf. Imperial meters are common in UK homes built before the 1990s, particularly terrace houses, flats and older semi-detached properties. The process has one extra step compared to a metric meter — you must first convert cubic feet to cubic metres.</p>
+
+    <div class="steps-container">
+      <div class="step-item">
+        <div class="step-num imperial-num">1</div>
+        <div class="step-body">
+          <h3 id="imperial-step1">Read Your Imperial Gas Meter</h3>
+          <p>Note down the current reading in cubic feet. Imperial meters typically have four dials or a digital display showing four main digits. Read dials left to right, taking the lower number when a needle sits between two digits. Ignore any red dials. Subtract your previous reading to find units used.</p>
+          <div class="step-example imp">Current reading:  14,250 ft³
+Previous reading: 13,820 ft³
+─────────────────────────────
+Units used:          430 ft³</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num imperial-num">2</div>
+        <div class="step-body">
+          <h3 id="imperial-step2">Convert Cubic Feet to Cubic Metres</h3>
+          <p>Multiply your cubic feet reading by <strong>0.0283168</strong> to convert to cubic metres. This is the standard conversion factor (1 cubic foot = 0.0283168 m³). Your bill may show this step as "multiply by 2.83 and divide by 100" — it's the same thing.</p>
+          <div class="step-example imp">430 ft³ × 0.0283168 = 12.176 m³</div>
+          <div class="step-tip">Some bills show this as: ft³ × 2.83 ÷ 100 = m³. Both give the same result.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num imperial-num">3</div>
+        <div class="step-body">
+          <h3 id="imperial-step3">Find Your Calorific Value</h3>
+          <p>Locate the calorific value on your gas bill — exactly as described for metric meters above. The same CV applies regardless of your meter type. UK average is 39.5 kWh/m³.</p>
+          <div class="step-example imp">Calorific value from bill: 39.5 kWh/m³</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num imperial-num">4</div>
+        <div class="step-body">
+          <h3 id="imperial-step4">Apply the Ofgem Formula</h3>
+          <p>Now your reading is in m³, apply the same formula as a metric meter: multiply by the calorific value, then by 1.02264, then divide by 3.6.</p>
+          <div class="step-example imp">12.176 m³ × 39.5 × 1.02264 ÷ 3.6
+= 12.176 × 39.5 = 480.95
+  480.95 × 1.02264 = 491.84
+  491.84 ÷ 3.6 = 136.62 kWh</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num imperial-num">5</div>
+        <div class="step-body">
+          <h3 id="imperial-step5">Verify Against Your Bill</h3>
+          <p>Your calculated kWh should match the energy used figure on your bill. A difference of up to 2–3 kWh is normal due to rounding in the calorific value. A larger difference usually means your supplier used an estimated reading or applied a different CV for part of the billing period.</p>
+          <div class="step-example imp">Our calculation: 136.62 kWh
+Bill shows:       136.8 kWh
+Difference:       0.18 kWh ✓ (within tolerance)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKED EXAMPLE IMPERIAL -->
+    <div class="worked-example">
+      <div class="we-header imperial-h">🔢 Full Worked Example — Imperial Meter (430 ft³)</div>
+      <div class="we-body">
+        <div class="we-row"><span class="we-label">Current reading</span><span class="we-val">14,250 ft³</span></div>
+        <div class="we-row"><span class="we-label">Previous reading</span><span class="we-val">13,820 ft³</span></div>
+        <div class="we-row"><span class="we-label">Units used</span><span class="we-val">430 ft³</span></div>
+        <div class="we-row"><span class="we-label">Step 1: 430 × 0.0283168</span><span class="we-val">= 12.176 m³</span></div>
+        <div class="we-row"><span class="we-label">Calorific value</span><span class="we-val">39.5 kWh/m³</span></div>
+        <div class="we-row"><span class="we-label">Step 2: 12.176 × 39.5</span><span class="we-val">= 480.95</span></div>
+        <div class="we-row"><span class="we-label">Step 3: × 1.02264</span><span class="we-val">= 491.84</span></div>
+        <div class="we-row"><span class="we-label">Step 4: ÷ 3.6</span><span class="we-val">= 136.62 kWh</span></div>
+      </div>
+      <div class="we-result">
+        <span class="r-label">Energy Used</span>
+        <span class="r-big">136.62 kWh</span>
+      </div>
+    </div>
+
+    <!-- CTA BLOCK -->
+    <div class="cta-block">
+      <h3>⚡ Skip the Maths — Use Our Free Calculator</h3>
+      <p>Our calculators apply the full Ofgem formula automatically. Just enter your readings and get your kWh result instantly — with a complete formula breakdown showing every calculation step.</p>
+      <div class="cta-buttons">
+        <a href="/gas-m3-to-kwh-calculator.html" class="cta-btn-red">🔥 Gas M3 to kWh Calculator</a>
+        <a href="/gas-units-to-kwh-calculator.html" class="cta-btn-ghost">🔢 Gas Units to kWh (Imperial + Metric)</a>
+        <a href="/gas-bill-calculator-uk.html" class="cta-btn-ghost">💷 Gas Bill Calculator</a>
+      </div>
+    </div>
+
+    <!-- QUICK ESTIMATES -->
+    <h2>Quick Estimate Shortcuts (No Calculator Needed)</h2>
+    <p>When you need a rough figure without going through the full formula — for a quick sanity check on your bill or a mental estimate — these simplified multipliers work within 2–4% for most UK regions.</p>
+
+    <div class="quick-estimate">
+      <h3>⚡ Quick Conversion Shortcuts (UK 2026)</h3>
+      <div class="qe-grid">
+        <div class="qe-card">
+          <div class="qe-label">📊 Metric Meter (m³)</div>
+          <div class="qe-formula">m³ × 11.2 ≈ kWh</div>
+          <div class="qe-note">Example: 86 m³ × 11.2 = 963 kWh<br>Actual: 964.98 kWh (error: 0.2%)</div>
+        </div>
+        <div class="qe-card">
+          <div class="qe-label">🔢 Imperial Meter (ft³)</div>
+          <div class="qe-formula">ft³ × 0.318 ≈ kWh</div>
+          <div class="qe-note">Example: 430 ft³ × 0.318 = 136.7 kWh<br>Actual: 136.62 kWh (error: 0.06%)</div>
+        </div>
+        <div class="qe-card">
+          <div class="qe-label">🔄 kWh Back to m³</div>
+          <div class="qe-formula">kWh ÷ 11.2 ≈ m³</div>
+          <div class="qe-note">Example: 965 kWh ÷ 11.2 = 86.2 m³<br>Use for reverse estimates only</div>
+        </div>
+        <div class="qe-card">
+          <div class="qe-label">📅 Daily Usage Estimate</div>
+          <div class="qe-formula">kWh ÷ days = kWh/day</div>
+          <div class="qe-note">Example: 965 kWh ÷ 30 days = 32.2 kWh/day<br>UK avg: 31–40 kWh/day in winter</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AD: In-article 2 -->
+    <div class="ad-slot ad-inline">
+      <ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- REGIONAL CV TABLE -->
+    <h2>UK Regional Calorific Values 2026</h2>
+    <p>The calorific value (CV) is the single most important variable in the gas-to-kWh conversion. Using the wrong CV — or ignoring it entirely and just multiplying by a round number — introduces billing errors. The table below shows typical ranges by UK region. Always use your bill's stated CV for exact results.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>UK Region</th>
+            <th>CV Range (kWh/m³)</th>
+            <th>Band</th>
+            <th>kWh per m³ (avg)</th>
+            <th>kWh per ft³ (avg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hl"><td>🇬🇧 UK National Average</td><td>38.5 – 40.5</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.18 kWh</td><td>≈ 0.317 kWh</td></tr>
+          <tr><td>London & South East</td><td>39.0 – 41.5</td><td><span class="cv-tag cv-hi">Above Avg</span></td><td>≈ 11.44 kWh</td><td>≈ 0.324 kWh</td></tr>
+          <tr><td>South West England</td><td>38.8 – 41.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.34 kWh</td><td>≈ 0.321 kWh</td></tr>
+          <tr><td>East Anglia & East Midlands</td><td>39.0 – 40.8</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.34 kWh</td><td>≈ 0.321 kWh</td></tr>
+          <tr><td>West Midlands</td><td>38.5 – 40.5</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.18 kWh</td><td>≈ 0.317 kWh</td></tr>
+          <tr><td>Yorkshire & Humber</td><td>38.0 – 40.2</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.11 kWh</td><td>≈ 0.315 kWh</td></tr>
+          <tr><td>North West England</td><td>37.8 – 40.0</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 11.06 kWh</td><td>≈ 0.313 kWh</td></tr>
+          <tr><td>North East England</td><td>37.5 – 39.8</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 10.98 kWh</td><td>≈ 0.311 kWh</td></tr>
+          <tr><td>Scotland (Central)</td><td>37.5 – 40.0</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 11.01 kWh</td><td>≈ 0.312 kWh</td></tr>
+          <tr><td>Scotland (North)</td><td>37.2 – 39.5</td><td><span class="cv-tag cv-low">Below Avg</span></td><td>≈ 10.90 kWh</td><td>≈ 0.309 kWh</td></tr>
+          <tr><td>Wales</td><td>38.0 – 40.2</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.11 kWh</td><td>≈ 0.315 kWh</td></tr>
+          <tr><td>Northern Ireland</td><td>38.0 – 40.0</td><td><span class="cv-tag cv-avg">Average</span></td><td>≈ 11.08 kWh</td><td>≈ 0.314 kWh</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem;color:var(--muted)">kWh per unit values calculated using mid-range CV, VCF 1.02264 and dividing by 3.6. ft³ values additionally apply 0.0283168 ft³→m³ conversion. Source: <a href="https://www.nationalgrid.com/gas-transmission" target="_blank" rel="noopener">National Grid Gas Transmission</a>. Seasonal variation ±1.5 kWh/m³ typical.</p>
+
+    <!-- COMMON MISTAKES -->
+    <h2>7 Common Mistakes When Converting Gas Units to kWh</h2>
+    <p>These are the errors that most frequently cause a calculated kWh to differ significantly from the bill figure — and in some cases, cause people to miss genuine billing errors.</p>
+
+    <div class="mistakes-list">
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Using 11 or 11.2 as a fixed multiplier</div>
+          <div class="mi-desc">Multiplying m³ × 11 or × 11.2 is a rough shortcut, not the official formula. It ignores your actual calorific value, which can be 10–15% higher or lower than the average. On a 200 m³ monthly bill, this can cause a £6–12 discrepancy. Always use your bill's stated CV.</div>
+        </div>
+      </div>
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Forgetting to convert ft³ to m³ first</div>
+          <div class="mi-desc">Applying the Ofgem metric formula directly to cubic feet readings produces a result that is 35× too small (since 1 ft³ = 0.0283168 m³). Always multiply ft³ by 0.0283168 before applying the CV and VCF. This is the most common error with imperial meters.</div>
+        </div>
+      </div>
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Including the red digits or decimal digits</div>
+          <div class="mi-desc">Gas meter displays typically show 5 white/black digits followed by red digits or digits after a decimal point. The red and decimal digits are tenths and hundredths of a unit — your bill uses whole units only. Including them inflates your reading by up to 100× depending on the digits shown.</div>
+        </div>
+      </div>
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Omitting the Volume Correction Factor</div>
+          <div class="mi-desc">Calculating kWh = m³ × CV ÷ 3.6 (missing the 1.02264 VCF) underestimates your result by 2.264% — about 22 kWh on a typical monthly bill. This is small but compounds over a year (≈264 kWh, worth ~£20 at 2026 rates).</div>
+        </div>
+      </div>
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Using the wrong calorific value</div>
+          <div class="mi-desc">Using last quarter's CV when this quarter's has changed introduces error. CVs change quarterly and seasonally. Always use the CV stated on the specific bill you're verifying. If your supplier applied two different CVs within one billing period (common at price cap change dates), your bill will show both.</div>
+        </div>
+      </div>
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Comparing against an estimated bill</div>
+          <div class="mi-desc">If your supplier issued an estimated bill (no actual meter reading taken), the kWh figure on that bill is also an estimate based on historical patterns. Your manual calculation from actual readings will differ — this is correct and expected. Provide an actual reading to your supplier to trigger a corrected bill.</div>
+        </div>
+      </div>
+      <div class="mistake-item wrong">
+        <div class="mi-icon">❌</div>
+        <div>
+          <div class="mi-title">Expecting an exact match to the penny</div>
+          <div class="mi-desc">Even with the correct formula, slight rounding differences in CV (e.g. 39.5 vs 39.47 kWh/m³) can cause 1–5 kWh variation per month. A perfect match to within 1–2 kWh is excellent. Only investigate if the difference exceeds 5 kWh on a monthly bill or 20 kWh on a quarterly one.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW TO READ YOUR METER -->
+    <h2>How to Read Your Gas Meter</h2>
+
+    <h3>Reading a Digital Metric Meter</h3>
+    <p>Digital metric meters display a row of digits on an LCD or LED screen. Read the <strong>5 digits shown in black or white</strong> from left to right — these are your cubic metre reading. Ignore any digits shown in red, after a decimal point, or labelled as "× 10". If your display cycles through multiple readings, the gas consumption reading is usually labelled "V1" or shown first in the cycle.</p>
+
+    <h3>Reading an Old-Style Imperial Dial Meter</h3>
+    <p>Imperial dial meters have a row of dials, each numbered 0–9. Read them <strong>left to right</strong>. For each dial: if the needle is between two numbers, write down the lower number. If the needle appears to be exactly on a number, write it down but check the dial to the right — if that dial hasn't yet reached zero, subtract one from your reading. Ignore any red dials. The result is your reading in hundreds of cubic feet (Hcf) or cubic feet (ft³) depending on the meter model.</p>
+
+    <h3>Reading a Smart Meter</h3>
+    <p>Smart meters have a digital display that automatically sends readings to your supplier. Your In-Home Display (IHD) unit shows gas usage in kWh directly — the conversion has already been done by the meter's software. If your IHD shows m³ instead of kWh, press the "B" button or cycle through screens until you find the kWh view. For manual verification, note the m³ reading shown and apply the steps in this guide.</p>
+
     <!-- FAQ -->
-    <section class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-      <details>
-        <summary>What is 1 unit of gas in kWh?</summary>
-        <div class="faq-answer">For a metric meter, 1 unit = 1 m³ ≈ <strong>11.18 kWh</strong> (at UK average CV of 39.5). For an imperial meter, 1 unit = 1 ft³ ≈ <strong>0.317 kWh</strong>. The exact value depends on your calorific value.</div>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>How do I convert gas units to kWh in the UK?</summary>
+        <div class="faq-ans">For a <strong>metric meter (m³)</strong>: kWh = m³ × Calorific Value × 1.02264 ÷ 3.6. For an <strong>imperial meter (ft³)</strong>: first multiply ft³ × 0.0283168 to get m³, then apply the same formula. The calorific value (UK average 39.5 kWh/m³) is on your gas bill. Or use our free <a href="/gas-units-to-kwh-calculator.html">gas units to kWh calculator</a> which handles both meter types automatically.</div>
       </details>
       <details>
-        <summary>Can I use a simplified version of the formula?</summary>
-        <div class="faq-answer">For quick estimates, you can use: kWh ≈ m³ × 11.18 (using UK average CV with VCF built in). This is accurate to within about 2% for most UK households. For bill verification, always use the full formula with your exact CV.</div>
+        <summary>What is a gas unit in the UK?</summary>
+        <div class="faq-ans">A gas unit is the volume of gas measured by your meter: <strong>1 unit = 1 m³</strong> on a metric meter, or <strong>1 unit = 1 cubic foot (ft³)</strong> on an imperial meter. Your bill converts these volume units to kWh for charging purposes, since the same volume of gas can contain different amounts of heat energy depending on composition, temperature and pressure.</div>
       </details>
       <details>
-        <summary>Why does Ofgem use the volume correction factor?</summary>
-        <div class="faq-answer">Gas expands and contracts with temperature and pressure. The gas at your meter is at atmospheric pressure (about 1 mbar above atmospheric), while gas is measured at standard conditions (1.01325 bar, 15°C). The VCF of 1.02264 corrects for this difference, ensuring you're billed for the actual energy content rather than just the volume at meter pressure.</div>
+        <summary>How many kWh are in one unit of gas?</summary>
+        <div class="faq-ans">For a <strong>metric meter: 1 unit (1 m³) ≈ 11.18 kWh</strong> at the UK average calorific value of 39.5 kWh/m³. For an <strong>imperial meter: 1 unit (1 ft³) ≈ 0.317 kWh</strong>. These values vary by region — see the <a href="#cv-table">regional CV table above</a>. Northern Scotland averages closer to 10.9 kWh/m³ while London can reach 11.5+ kWh/m³.</div>
       </details>
       <details>
         <summary>How do I know if I have a metric or imperial gas meter?</summary>
-        <div class="faq-answer">Check the unit label on your meter display. Metric meters show <strong>m³</strong> or the letter M. Imperial meters show <strong>ft³</strong> or CF. Most meters installed after 1994 are metric. You can also check your gas bill — it will state the meter type and include a conversion factor (imperial bills typically show a factor of around 2.83).</div>
+        <div class="faq-ans">Check the label on your meter: <strong>Metric meters</strong> show "m³", "M" or a superscript ³ and display 5 main digits. <strong>Imperial meters</strong> show "ft³", "CF", "cubic feet" or "Hcf" and typically show 4 digits or have mechanical dials. Your gas bill will also state whether usage is in m³ or ft³. Homes built or renovated since the mid-1990s almost always have metric meters.</div>
       </details>
       <details>
-        <summary>Do all UK gas suppliers use the same formula?</summary>
-        <div class="faq-answer">Yes. Ofgem mandates the same formula (kWh = m³ × CV × 1.02264 ÷ 3.6) for all licensed UK gas suppliers. The only variable that differs between suppliers is the calorific value, which reflects the actual energy content of gas in their network area.</div>
+        <summary>What is the Ofgem formula for converting gas to kWh?</summary>
+        <div class="faq-ans">The official Ofgem formula is: <strong>kWh = m³ × Calorific Value × 1.02264 ÷ 3.6</strong>. Every UK regulated gas supplier must use this formula by law. The calorific value (37.0–43.0 kWh/m³) accounts for the energy content of your local gas. The VCF of 1.02264 corrects for meter conditions. Division by 3.6 converts megajoules to kWh. See the <a href="#metric">full step-by-step guide above</a>.</div>
       </details>
       <details>
-        <summary>What should I do if my calculated kWh doesn't match my bill?</summary>
-        <div class="faq-answer">First, ensure you're using the exact CV from your bill (not the 39.5 estimate). Check you've entered the correct meter readings. If the discrepancy is more than 5 kWh on a typical monthly bill, contact your energy supplier and ask them to explain the calculation. You have a right under Ofgem's supply licence conditions to a full breakdown of your bill.</div>
+        <summary>Where do I find the calorific value on my gas bill?</summary>
+        <div class="faq-ans">Look in the "how we calculate your charges", "bill breakdown" or "usage details" section. It's labelled "CV", "calorific value", "energy content" or "heat value" — shown between 37.0 and 43.0, in kWh/m³ or MJ/m³ (divide MJ/m³ by 3.6 to convert). All UK suppliers are legally required to display it. If you can't find it, use <strong>39.5 kWh/m³</strong> as the national         average for a close approximation.</div>
       </details>
       <details>
-        <summary>Is the formula the same for business gas accounts?</summary>
-        <div class="faq-answer">The conversion formula is the same (it's a physical calculation, not a tariff choice). However, business energy tariffs are not covered by the Ofgem domestic price cap — businesses negotiate rates directly. The VCF may also differ for industrial customers on high-pressure supply systems.</div>
+        <summary>Why does my gas bill show kWh when my meter shows m³?</summary>
+        <div class="faq-ans">Your meter measures <strong>volume</strong> (how much gas flowed through the pipe). Your bill charges for <strong>energy</strong> (how much heat that gas delivers when burned). The same volume of gas contains slightly different amounts of energy depending on its source, composition and the temperature at your meter. The Ofgem formula converts volume to energy so every household is billed fairly for actual heat delivered — not just gas volume. See our <a href="/gas-m3-to-kwh-calculator.html">M3 to kWh calculator</a> for an instant conversion.</div>
       </details>
       <details>
-        <summary>Can I convert gas units to kWh without knowing the calorific value?</summary>
-        <div class="faq-answer">Yes — use the UK average of 39.5 kWh/m³. This gives a result within about 2–3% of the true value for most properties. The simplified formula becomes: kWh ≈ m³ × 11.18. Use our <a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh Calculator</a> which defaults to 39.5 but lets you enter your exact value.</div>
+        <summary>How do I convert gas units to kWh without a calculator?</summary>
+        <div class="faq-ans">For a <strong>quick mental estimate with a metric meter</strong>: multiply m³ × 11.2. Example: 50 m³ × 11.2 = 560 kWh (actual: 559.2 kWh — error under 0.2%). For an <strong>imperial meter</strong>: multiply ft³ × 0.318. These shortcuts are accurate within 2–4% for most UK regions. For an exact result that matches your bill, use the full formula or our <a href="/gas-units-to-kwh-calculator.html">free gas units to kWh calculator</a>.</div>
       </details>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2 class="section-heading">Related Calculators</h2>
-      <div class="related-grid">
-        <div class="related-card"><span class="rc-icon">⚡</span><a href="gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">🔄</span><a href="gas-kwh-to-m3-calculator.html">Gas kWh to M3</a></div>
-        <div class="related-card"><span class="rc-icon">📊</span><a href="gas-units-to-kwh-calculator.html">Gas Units to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">📐</span><a href="m3-to-kwh-conversion.html">M3 to kWh Guide</a></div>
-        <div class="related-card"><span class="rc-icon">📦</span><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></div>
-        <div class="related-card"><span class="rc-icon">💷</span><a href="gas-bill-calculator-uk.html">Gas Bill Calculator</a></div>
-        <div class="related-card"><span class="rc-icon">📈</span><a href="gas-usage-calculator.html">Gas Usage Calculator</a></div>
-        <div class="related-card"><span class="rc-icon">💰</span><a href="gas-price-per-m3-uk.html">Gas Price Per M3</a></div>
-      </div>
-    </section>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- AD: 300x250 top -->
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="sb-box">
+      <h4>📋 In This Guide</h4>
+      <ul class="toc-list">
+        <li><a href="#metric">What Are Gas Units?</a></li>
+        <li><a href="#metric">Ofgem Conversion Formula</a></li>
+        <li><a href="#metric">Metric Meter — Step by Step</a></li>
+        <li><a href="#imperial">Imperial Meter — Step by Step</a></li>
+        <li><a href="#imperial">Worked Examples (Both Types)</a></li>
+        <li><a href="#imperial">Quick Estimate Shortcuts</a></li>
+        <li><a href="#imperial">UK Regional CV Table</a></li>
+        <li><a href="#imperial">7 Common Mistakes</a></li>
+        <li><a href="#imperial">How to Read Your Meter</a></li>
+      </ul>
+    </div>
+
+    <div class="sb-cta">
+      <h4>⚡ Use the Calculator</h4>
+      <p>Skip the maths — get your kWh result instantly with full formula breakdown</p>
+      <a href="/gas-m3-to-kwh-calculator.html" class="s-red">🔥 Gas M3 to kWh Calculator</a>
+      <a href="/gas-units-to-kwh-calculator.html" class="s-ghost">🔢 Units to kWh (M³ + ft³)</a>
+      <a href="/gas-bill-calculator-uk.html" class="s-ghost">💷 Gas Bill Calculator</a>
+      <a href="/gas-kwh-to-m3-calculator.html" class="s-ghost">↔ kWh to M3 Reverse</a>
+    </div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="sb-box">
+      <h4>📊 Quick Reference</h4>
+      <div class="s-row"><span>1 m³ in kWh</span><span class="s-val">≈ 11.18 kWh</span></div>
+      <div class="s-row"><span>1 ft³ in kWh</span><span class="s-val">≈ 0.317 kWh</span></div>
+      <div class="s-row"><span>UK avg CV</span><span class="s-val">39.5 kWh/m³</span></div>
+      <div class="s-row"><span>VCF (Ofgem)</span><span class="s-val">1.02264</span></div>
+      <div class="s-row"><span>ft³ → m³</span><span class="s-val">× 0.0283168</span></div>
+      <div class="s-row"><span>MJ/m³ → kWh/m³</span><span class="s-val">÷ 3.6</span></div>
+      <div class="s-row"><span>Quick estimate (m³)</span><span class="s-val">× 11.2</span></div>
+      <div class="s-row"><span>Quick estimate (ft³)</span><span class="s-val">× 0.318</span></div>
+    </div>
+
+    <!-- ALL TOOLS -->
+    <div class="sb-box">
+      <h4>🔗 All Gas Tools</h4>
+      <ul class="sb-links">
+        <li><a href="/gas-m3-to-kwh-calculator.html">Gas M3 to kWh</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">Gas kWh to M3</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Gas Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calculator UK</a></li>
+        <li><a href="/gas-usage-calculator.html">Gas Usage Calculator</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Gas Price Per M3</a></li>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></li>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+      </ul>
+    </div>
+
+    <!-- AD: 300x250 bottom -->
+    <div class="ad-slot ad-rect">
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+  </aside>
+</div>
+
+<!-- AUTHORITY STRIP -->
+<div class="auth-strip">
+  <div class="auth-inner">
+    <span class="auth-lbl">Verified References:</span>
+    <a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem.gov.uk</a>
+    <a href="https://www.gov.uk/guidance/gas-and-electricity-meters" target="_blank" rel="noopener">GOV.UK Gas Meters</a>
+    <a href="https://www.nationalgrid.com/gas-transmission" target="_blank" rel="noopener">National Grid</a>
+    <a href="https://www.xoserve.com" target="_blank" rel="noopener">Xoserve CV Data</a>
+    <a href="https://www.britishgas.co.uk" target="_blank" rel="noopener">British Gas</a>
   </div>
-</main>
+</div>
 
-<footer class="site-footer">
+<!-- FOOTER -->
+<footer>
   <div class="footer-grid">
-    <div><a href="index.html" class="footer-logo">⚡ UK Converter</a><p class="footer-tagline">Free UK gas unit conversion calculators. Accurate Ofgem-compliant formulas for households, landlords and energy professionals.</p></div>
-    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="how-to-convert-gas-units-to-kwh.html">How-To Guide</a><a href="gas-m3-to-kwh-calculator.html">M3 to kWh</a><a href="sitemap.xml">Sitemap</a></div>
-    <div class="footer-col"><h4>Calculator Tools</h4><a href="gas-units-to-kwh-calculator.html">Gas Units to kWh</a><a href="therms-to-kwh.html">Therms to kWh</a><a href="cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a><a href="kw-to-m3-hr-gas.html">kW to M3/hr</a></div>
-    <div class="footer-col"><h4>Disclaimer</h4><p class="footer-disclaimer">This tool is for estimation purposes only. Always check your energy bill for exact figures. Calorific values vary by region and season. UK Converter is not affiliated with any energy supplier or Ofgem.</p></div>
+    <div class="fc">
+      <span class="footer-logo">⚡ Energy<span>Converter</span></span>
+      <p>Free UK gas unit conversion calculators and guides. All formulas are Ofgem-mandated and verified for 2026. No signup required. No data stored. Updated quarterly with Ofgem price cap changes.</p>
+      <p style="margin-top:12px;font-size:0.76rem;color:rgba(255,255,255,0.25)">⚠️ For informational and estimation purposes only. Not affiliated with Ofgem, National Grid or any energy supplier. Always verify with your gas bill.</p>
+    </div>
+    <div class="fc">
+      <h5>Gas Calculators</h5>
+      <ul>
+        <li><a href="/gas-m3-to-kwh-calculator.html">M3 to kWh Calculator</a></li>
+        <li><a href="/gas-kwh-to-m3-calculator.html">kWh to M3 Calculator</a></li>
+        <li><a href="/gas-units-to-kwh-calculator.html">Gas Units to kWh</a></li>
+        <li><a href="/gas-bill-calculator-uk.html">Gas Bill Calculator UK</a></li>
+        <li><a href="/gas-usage-calculator.html">Gas Usage Calculator</a></li>
+        <li><a href="/gas-price-per-m3-uk.html">Gas Price Per M3</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Energy Converters</h5>
+      <ul>
+        <li><a href="/therms-to-kwh.html">Therms to kWh</a></li>
+        <li><a href="/kwh-to-therms.html">kWh to Therms</a></li>
+        <li><a href="/mmbtu-to-m3-calculator.html">MMBTU to M3</a></li>
+        <li><a href="/btu-to-m3-converter.html">BTU to M3</a></li>
+        <li><a href="/cubic-feet-to-kwh-gas.html">Cubic Feet to kWh</a></li>
+        <li><a href="/kw-to-m3-hr-gas.html">kW to M3/hr</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Guides & Info</h5>
+      <ul>
+        <li><a href="/how-to-convert-gas-units-to-kwh.html">How to Convert Guide</a></li>
+        <li><a href="/what-is-calorific-value-gas-uk.html">Calorific Value Guide</a></li>
+        <li><a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener">Ofgem Official ↗</a></li>
+        <li><a href="https://www.gov.uk/guidance/gas-and-electricity-meters" target="_blank" rel="noopener">GOV.UK Meters ↗</a></li>
+        <li><a href="/">← Back to Homepage</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-bottom"><p>© 2025 UK Converter — ukconverter.site. All rights reserved.</p></div>
+  <div class="footer-bottom">
+    © 2026 EnergyConverter.netlify.app &nbsp;·&nbsp; How to Convert Gas Units to kWh &nbsp;·&nbsp; Official Ofgem Formula &nbsp;·&nbsp; UK Guide 2026
+  </div>
 </footer>
 
+<!-- JAVASCRIPT -->
 <script>
-(function(){const h=document.querySelector('.hamburger'),n=document.querySelector('.mobile-nav');if(!h||!n)return;h.addEventListener('click',function(){n.classList.toggle('open');const s=h.querySelectorAll('span');if(n.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)';}else{s[0].style.transform='';s[1].style.opacity='';s[2].style.transform='';}});})();
+  // Mobile Nav
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('main-nav').classList.toggle('open');
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // AdSense Init
+  (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<!-- AdSense Script — replace with your publisher ID -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
 </body>
 </html>
